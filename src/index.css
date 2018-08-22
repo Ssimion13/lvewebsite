@@ -33,17 +33,14 @@ body {
 }
 
 /* Navbar CSS */
-
 .logoHolder {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 50%;
 }
 
 .logo {
-  width: 75%;
-  height: 75%;
 }
 
 .navbarMain {
@@ -53,5 +50,61 @@ body {
   justify-content: space-between;
 }
 
-.navbarButton {
+.buttonHolder {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.navbarButton {
+  padding: .75rem 1rem !important;
+}
+
+/* end Navbar CSS */
+
+/* FrontPage CSS */
+
+.frontPage {
+  background-color: #222;
+  height: 500px;
+  color: white;
+}
+
+.imagePlaceholder {
+  height: 20%;
+  border: 1px solid white;
+}
+.frontPageButtonsDiv {
+  height: 80%;
+  display: grid;
+  grid-template-areas: 
+  "Button1 Button2"
+  "Button3 Button4"
+}
+.frontPageButton {
+  border: 1px solid white;
+  background-color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  grid-area: Button1
+}
+.button2 {
+  grid-area: Button2
+}
+.button3 {
+  grid-area: Button3
+}
+.button4 {
+  grid-area: Button4
+}
+
+.whyChooseLVE {
+  height: 500px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+
+/* end FrontPage CSS */
