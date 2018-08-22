@@ -34,10 +34,24 @@ body {
 
 /* Navbar CSS */
 
+.logoHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo {
+  width: 75%;
+  height: 75%;
+}
 
 .navbarMain {
   height: 90px;
   background-color: whitesmoke;
-  display: grid;
-  grid-template-areas: "Logo Options Options Options"
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarButton {
 }

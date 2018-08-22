@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "./logo.png"
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'reactstrap';
 import {Link} from "react-router-dom";
 
 
@@ -22,14 +22,26 @@ class Navbar extends React.Component {
     render(){
         return (
             <div className="navbarMain">
-                <img src={logo} alt="logo" />
-                <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <div className="logoHolder">
+                    <img className="logo" src={logo} alt="logo" />
+                </div>
+                <Dropdown className="navbarButton" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                     <DropdownToggle>
                         ≡
                     </DropdownToggle>
                     <DropdownMenu>
-                        <DropdownItem header>Header</DropdownItem>
-                        <DropdownItem disabled>Action</DropdownItem>
+                        <NavLink href="/"> Home </NavLink>
+                        <DropdownItem>Another Action</DropdownItem>
+                        <DropdownItem divider />
+                        <DropdownItem>Another Action</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                <Dropdown className="navbarButton" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <DropdownToggle>
+                        ≡
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <NavLink href="/"> Home </NavLink>
                         <DropdownItem>Another Action</DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem>Another Action</DropdownItem>
