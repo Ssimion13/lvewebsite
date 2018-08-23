@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from "./logo.png"
+import logo from "./Images/logo.png"
 import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'reactstrap';
-import {Link} from "react-router-dom";
 
 
 
