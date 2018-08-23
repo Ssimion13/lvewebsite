@@ -37,27 +37,27 @@ class FrontPage extends Component {
                     <h5 className="whyChooseLVEUnderline"> </h5>
                     <div className="whyChooseLVEThumbnailDiv">
                         <div className="whyChooseLVEThumbnail"> 
-                            <h5> More experience </h5>
+                            <h5> <b> More experience </b> </h5>
                                 <p> Every year, thousands of people come to Las Vegas Endoscopy for care.
                                 Our Gastroenterologists are experienced
                                 specialists in treating rare and complex gastrointestinal conditions.
                                 </p>   
                         </div>
                         <div className="whyChooseLVEThumbnail"> 
-                            <h5> The right answers </h5>
+                            <h5> <b> The right answers </b> </h5>
                             <p> Getting effective treatment depends on identifying the right problem. 
                                 In a recent study, 9001 percent of patients who came to Las Vegas Endoscopy for a second opinion 
                                 received a new or refined diagnosis.
                             </p>
                         </div>
                         <div className="whyChooseLVEThumbnail">
-                            <h5> Seamless Care </h5>
+                            <h5> <b> Seamless Care </b> </h5>
                             <p> At Las Vegas Endoscopy, every aspect of your care is coordinated and teams of experts work together to provide 
                                 exactly the care you need. What might take months elsewhere can often be done in days here.
                             </p>
                         </div>
                         <div className="whyChooseLVEThumbnail">
-                            <h5> Unparalleled expertise </h5>
+                            <h5> <b> Unparalleled expertise </b> </h5>
                             <p> Our Doctors Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained
                             In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
                             is consistently ranked among the top clinical centers in the nation.

@@ -4,25 +4,27 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  // CarouselCaption
 } from 'reactstrap';
+import lvgdoctors from "./Images/lvgdoctors.jpg"
 
 const items = [
   {
-    src: './Images/note.png',
+    src: lvgdoctors,
     id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+
   },
   {
     id: 2,
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Slide 2',
+    src: "butts"
   },
   {
     id: 3,
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Slide 3',
+    src: "butts2"
   }
 ];
 
@@ -70,11 +72,12 @@ class Example extends Component {
         <CarouselItem
           className="custom-tag"
           tag="div"
-          key={item.id}
           onExiting={this.onExiting}
           onExited={this.onExited}
+          key={item.src}
         >
-          <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
+          <img className="carouselPictures" src={item.src} alt={item.altText} />
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );
     });
@@ -84,8 +87,10 @@ class Example extends Component {
         <style>
           {
             `.custom-tag {
+                align-items: center;
+                justify-content: center;
                 max-width: 100%;
-                height: 300px;
+                height: 150px;
                 background: black;
               }`
           }
