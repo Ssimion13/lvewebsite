@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import conversation from "./Images/conversation.png";
-import certificate from "./Images/certificate.png";
+import certificate from "./Images/blackcertificate.png";
 import note from "./Images/note.png";
 import doctor from "./Images/doctor.png";
 import {Link} from "react-router-dom";

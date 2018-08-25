@@ -20,13 +20,13 @@ class TopBar extends React.Component {
       }
     render(){
         return (
-            <div className="navbarMain">
+            <div className="topbarMain">
                 <div className="logoHolder">
                     <img className="logo" src={logo} alt="logo" />
                 </div>
                 <div className="buttonHolder">
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                        <DropdownToggle className="navbarButton">
+                        <DropdownToggle className="topbarButton">
                             ≡
                         </DropdownToggle>
                         <DropdownMenu>
