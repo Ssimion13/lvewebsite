@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "./Images/logo.png"
+import {Link} from "react-router-dom"
 import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'reactstrap';
 
 
@@ -21,9 +22,9 @@ class TopBar extends React.Component {
     render(){
         return (
             <div className="topbarMain">
-                <div className="logoHolder">
+                <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
-                </div>
+                </Link>
                 <div className="buttonHolder">
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle className="topbarButton">
@@ -31,9 +32,12 @@ class TopBar extends React.Component {
                         </DropdownToggle>
                         <DropdownMenu>
                             <NavLink href="/"> Home </NavLink>
-                            <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem divider />
-                            <DropdownItem>Another Action</DropdownItem>
+                            <NavLink href="/AboutUs"> About Us </NavLink>
+                            <NavLink href="/Services"> Services </NavLink>
+                            <NavLink href="/Awards"> Awards </NavLink>
+                            <NavLink href="/ContactUs"> Contact Us </NavLink>
+                            <DropdownItem divider />
                         </DropdownMenu>
                     </Dropdown>
                 </div>

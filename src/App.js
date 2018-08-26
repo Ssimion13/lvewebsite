@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import TopBar from "./TopBar.js";
-import Navbar from "./Navbar.js";
+// import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
 import FrontPage from "./FrontPage.js";
 import {Route, Switch} from "react-router-dom";
 import AboutUs from "./Pages/AboutUs";
 import Awards from "./Pages/Awards";
 import ContactUs from "./Pages/ContactUs";
-import Services from "./Pages/Services";
+import Services from "./Pages/Services/";
 
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div className="app">
         <TopBar />
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch> 
           <Route exact path="/" component={FrontPage} /> 
           <Route path="/AboutUs" component={AboutUs} />
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/ContactUs" component={ContactUs} />
           <Route path="/Services" component={Services} />
         </Switch>
+        <Footer />
       </div>
     );
   }

@@ -14,18 +14,18 @@ const items = [
     id: 1,
 
   },
-  {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    src: "butts"
-  },
-  {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    src: "butts2"
-  }
+  // {
+  //   id: 2,
+  //   altText: 'Slide 2',
+  //   caption: 'Slide 2',
+  //   src: "butts"
+  // },
+  // {
+  //   id: 3,
+  //   altText: 'Slide 3',
+  //   caption: 'Slide 3',
+  //   src: "butts2"
+  // }
 ];
 
 class Example extends Component {
