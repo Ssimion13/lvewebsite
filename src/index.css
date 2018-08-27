@@ -247,6 +247,33 @@ p {
 
 /* End Footer CSS */
 
+/* Services CSS */
+
+  .servicesMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .serviceDiv {
+    width: 90%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid navy;
+  }
+/* End Services CSS */
+
+/* Side Pages CSS */
+
+  .sidePageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* End Side Pages CSS*/
+
+
+
 
 @media (min-width: 700px){
 
