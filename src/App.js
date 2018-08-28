@@ -8,6 +8,8 @@ import AboutUs from "./Pages/AboutUs";
 import Awards from "./Pages/Awards";
 import ContactUs from "./Pages/ContactUs";
 import Services from "./Pages/Services/";
+import ColonoscopyCancerScreening from "./Pages/Services/ColonoscopyCancerScreening"
+import UpperEndoscopy from "./Pages/Services/UpperEndoscopy";
 
 
 class App extends Component {
@@ -22,6 +24,8 @@ class App extends Component {
           <Route path="/Awards" component={Awards} />
           <Route path="/ContactUs" component={ContactUs} />
           <Route path="/Services" component={Services} />
+          <Route path="/ColonoscopyCancerScreening" component={ColonoscopyCancerScreening} />
+          <Route path="/UpperEndoscopy" component={UpperEndoscopy} />
         </Switch>
         <Footer />
       </div>

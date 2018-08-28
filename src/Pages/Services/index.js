@@ -13,7 +13,7 @@ function Services(){
                     can detect abnormalities within the colon such as ulcerations, inflammation,
                     strictures or narrowing, polyps and neoplasm or cancer.
                 </p>
-                <Link to="/"> 
+                <Link to="/ColonoscopyCancerScreening"> 
                     <Button> Click Here </Button>
                 </Link>
             </div>
@@ -29,7 +29,7 @@ function Services(){
                     stomach and duodenum, and to determine the presence of the bacteria, 
                     Helicobacter pylori, which can cause gastric cancer.
                 </p>
-                <Link to="/"> 
+                <Link to="/UpperEndoscopy"> 
                     <Button> Click Here </Button>
                 </Link>
             </div>
