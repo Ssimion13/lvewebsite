@@ -43,7 +43,7 @@ function Services(){
                     is able to detect abnormalities in the small bowel that the conventional 
                     endoscope and colonoscope is unable to reach.
                 </p>
-                <Link to="/"> 
+                <Link to="/CapsuleEndoscopy"> 
                     <Button> Click Here </Button>
                 </Link>
             </div>
@@ -56,7 +56,7 @@ function Services(){
                     for gastrointestinal motility disorders. These procedures help doctors obtain further 
                     understanding of your diagnosis so you can begin your appropriate treatment.
                 </p>
-                <Link to="/"> 
+                <Link to="/GIMotilityClinic"> 
                     <Button> Click Here </Button>
                 </Link>
             </div>
@@ -71,7 +71,7 @@ function Services(){
                     cancer, as well as other complications that can seriously decrease a person’s
                     quality of life. so you can begin your appropriate treatment.
                 </p>
-                <Link to="/"> 
+                <Link to="/ViralHepatitisClinic"> 
                     <Button> Click Here </Button>
                 </Link>
             </div>

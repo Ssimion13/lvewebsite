@@ -272,6 +272,26 @@ p {
 
 /* End Side Pages CSS*/
 
+/* Award Page */
+
+.centeredTitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.imageHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.awardImage {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 15px;
+}
+
+/* end Award Page */
 
 
 

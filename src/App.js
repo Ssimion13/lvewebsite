@@ -10,7 +10,9 @@ import ContactUs from "./Pages/ContactUs";
 import Services from "./Pages/Services/";
 import ColonoscopyCancerScreening from "./Pages/Services/ColonoscopyCancerScreening"
 import UpperEndoscopy from "./Pages/Services/UpperEndoscopy";
-
+import GIMotilityClinic from "./Pages/Services/GIMotilityClinic/"
+import CapsuleEndoscopy from "./Pages/Services/CapsuleEndoscopy"
+import ViralHepatitisClinic from './Pages/Services/ViralHepatitisClinic.js';
 
 class App extends Component {
   render() {
@@ -26,6 +28,9 @@ class App extends Component {
           <Route path="/Services" component={Services} />
           <Route path="/ColonoscopyCancerScreening" component={ColonoscopyCancerScreening} />
           <Route path="/UpperEndoscopy" component={UpperEndoscopy} />
+          <Route path="/CapsuleEndoscopy" component={CapsuleEndoscopy} />
+          <Route path="/GIMotilityClinic" component={GIMotilityClinic} />
+          <Route path="/ViralHepatitisClinic" component={ViralHepatitisClinic} />
         </Switch>
         <Footer />
       </div>
