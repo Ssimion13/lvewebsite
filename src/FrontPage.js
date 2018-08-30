@@ -66,7 +66,7 @@ class FrontPage extends Component {
                         <div className="whyChooseLVEThumbnail">
                             <img className="frontPageButtonIcons" src={conversation} alt="conversationicon"/>
                             <h5 className="paddedTitle"> <b> Unparalleled expertise </b> </h5>
-                            <p className="paddedText"> Our Doctors Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
+                            <p className="paddedText"> Our Doctors at Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
                             In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
                             is consistently ranked among the top clinical centers in the nation.
                             </p>
