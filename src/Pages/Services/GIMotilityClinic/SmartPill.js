@@ -7,7 +7,6 @@ function SmartPill() {
         <div className="sidePageDiv">
         <h2> Smartpill </h2>
         <p className="sectionText"> 
-            Smartpill
             Smartpill is a wireless motility capsule that measures the pH, temperature 
             and pressure throughout the digestive tract. It allows the gastroenterologist 
             to determine the time it takes to travel from the mouth to the stomach, the small 

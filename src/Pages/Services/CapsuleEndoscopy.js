@@ -25,8 +25,8 @@ function CapsuleEndoscopy() {
         <p>
             Have more questions about this procedure here are some links to help you:
             <ol>
-                <a href="www.google.com"> Visualizing the Entire Small Bowel​ </a>
-                <a href="www.google.com"> What to Expect from the PillCam SB Procedure </a>
+                <a href="www.google.com"> Visualizing the Entire Small Bowel​ </a> <br/>
+                <a href="www.google.com"> What to Expect from the PillCam SB Procedure </a> <br/>
                 <a href="www.google.com"> Small Bowel Resource Center </a>
             </ol>
         </p>

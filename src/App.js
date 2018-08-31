@@ -13,6 +13,11 @@ import UpperEndoscopy from "./Pages/Services/UpperEndoscopy";
 import GIMotilityClinic from "./Pages/Services/GIMotilityClinic/"
 import CapsuleEndoscopy from "./Pages/Services/CapsuleEndoscopy"
 import ViralHepatitisClinic from './Pages/Services/ViralHepatitisClinic.js';
+import SmartPill from "./Pages/Services/GIMotilityClinic/SmartPill.js";
+import EsophagealManometry from "./Pages/Services/GIMotilityClinic/EsophagealManometry.js";
+import EsophagealPH from "./Pages/Services/GIMotilityClinic/EsophagealPH.js";
+import HPyloriBreathTest from "./Pages/Services/GIMotilityClinic/HPyloriBreathTest.js";
+import HydrogenBreathTest from "./Pages/Services/GIMotilityClinic/HydrogenBreathTest.js";
 
 class App extends Component {
   render() {
@@ -31,6 +36,12 @@ class App extends Component {
           <Route path="/CapsuleEndoscopy" component={CapsuleEndoscopy} />
           <Route path="/GIMotilityClinic" component={GIMotilityClinic} />
           <Route path="/ViralHepatitisClinic" component={ViralHepatitisClinic} />
+          <Route path="/SmartPill" component={SmartPill} />
+          <Route path="/EsophagealManometry" component={EsophagealManometry} />
+          <Route path="/EsophagealPH" component={EsophagealPH} />
+          <Route path="/HPyloriBreathTest" component={HPyloriBreathTest} />
+          <Route path="/HydrogenBreathTest" component={HydrogenBreathTest} />
+
         </Switch>
         <Footer />
       </div>

@@ -56,7 +56,7 @@ function GIMotilityClinic() {
                 the patient. This test may also be ordered by the gastroenterologist measure 
                 the effectiveness of acid suppression medications or anti-reflux surgery on a patient.
                 <br/>
-                <Link to="/EsophagealPHMonitoring">
+                <Link to="/EsophagealPH">
                     <Button> Learn More </Button>
                 </Link>
         </p>
