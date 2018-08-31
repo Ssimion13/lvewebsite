@@ -32,11 +32,12 @@ function ColonoscopyCancerScreening() {
             
         </p>
         <p>
-        Have more questions about this procedure here are some links to help you:
+        Have more questions about this procedure? <br/>
+        here are some links to help you:
             <br/>
             <ol>
-            <a href="www.google.com" > Medical Guidelines for Colonoscopy Screening </a>
-            <a> Mayo Clinic Colonoscopy Definition </a>
+            <a href="http://www.gastro.org/practice/medical-position-statements" > Medical Guidelines for Colonoscopy Screening </a>
+            <a href="http://www.mayoclinic.org/tests-procedures/colonoscopy/basics/definition/prc-20013624"> Mayo Clinic Colonoscopy Definition </a>
             </ol>
         </p>
         </div>

@@ -21,6 +21,7 @@ p {
 
 
 .logo {
+  padding-left: 10px;
 }
 
 .topbarMain {
@@ -286,9 +287,8 @@ p {
 }
 
 .awardImage {
-  width: 350px;
+  width: 100%;
   height: 350px;
-  margin-bottom: 15px;
 }
 
 /* end Award Page */
