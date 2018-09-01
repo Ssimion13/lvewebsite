@@ -79,7 +79,24 @@ p {
 
 }
 
+.frontPageButtonCarouselDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
 
+.frontPageEarth {
+  width: 100%;
+}
+
+.carousel-item-active {
+  height: 100% !important;
+  width: 100% !important;
+}
+.custom-tag {
+  height: 100% !important;
+}
 
 .imagePlaceholder {
   height: 20%;
@@ -190,6 +207,9 @@ p {
 
 .carouselPictures {
   width: 100%;
+  height: 100%;
+}
+.carouselContainer {
   height: 100%;
 }
 
@@ -321,19 +341,19 @@ p {
   /* frontPage CSS */
   .frontPageButtonCarouselDiv {
     display: flex;
-    width: 75%;
+    flex-direction: row;
+    width: 90%;
     height: 450px;
-    padding-top: 10px;
-    
+    align-items: center;
+    justify-content: center;
   }
   
   .frontPage {
     background-color: whitesmoke;
   }
-
   .carouselContainer {
     width: 50%;
-    height: 100%;
+    line-height: 0.5;
   }
 
   .frontPageButtonsDiv {

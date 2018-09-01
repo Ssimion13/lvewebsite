@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
 
 
@@ -40,7 +40,7 @@ class ModalExample extends React.Component {
       <div style={styles} onClick={this.toggle}>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalBody>
-            <img className="awardImage" src={this.props.image} />
+            <img className="awardImage" alt={"image " + this.props.number } src={this.props.image} />
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={this.toggle}>Close </Button>

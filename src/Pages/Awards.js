@@ -14,13 +14,13 @@ function Awards(){
             <h2 className="centeredTitle" > Awards </h2>
             <br/>
             <div className="imageHolder">
-                <AwardModal image={AWARD01} />
-                <AwardModal image={AWARD02} />
-                <AwardModal image={AWARD03} />
-                <AwardModal image={AWARD04} />
-                <AwardModal image={AWARD05} />
-                <AwardModal image={AWARD06} />
-                <AwardModal image={AWARD07} />
+                <AwardModal image={AWARD01} number={1}/>
+                <AwardModal image={AWARD02} number={2}/>
+                <AwardModal image={AWARD03} number={3}/>
+                <AwardModal image={AWARD04} number={4}/>
+                <AwardModal image={AWARD05} number={5}/>
+                <AwardModal image={AWARD06} number={6}/>
+                <AwardModal image={AWARD07} number={7}/>
             </div>
         </div>
     )

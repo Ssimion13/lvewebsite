@@ -76,7 +76,7 @@ class Example extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img className="carouselPictures" src={item.src} alt={item.altText} />
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1535788208806!6m8!1m7!1syAJiH73FKoLXOajgHAEVkg!2m2!1d36.05624589136753!2d-115.1009494996736!3f283.34154574786976!4f5.053809294069822!5f2.0360708148318722" width="600" height="450" frameBorder="0" title="fancy" className="frontPageEarth" allowFullScreen></iframe>
           {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );
