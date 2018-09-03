@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function EsophagealPH() {
     return (
@@ -48,6 +50,9 @@ function EsophagealPH() {
                 </a>
             </ol>
         </p>
+        <Link className="backButton" to="/GIMotilityClinic">
+            <Button> Back  </Button>
+        </Link>
         </div>
     )
 } 

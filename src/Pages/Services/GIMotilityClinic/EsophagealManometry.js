@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function EsophagealManometry() {
     return (
@@ -39,6 +41,9 @@ function EsophagealManometry() {
                 <a href="http://www.givenimaging.com/en-us/Innovative-Solutions/Motility/Manometry/ManoScanESO/Pages/default.aspx"> ManoScan Esophageal Manometry </a>
             </ol>
         </p>
+        <Link className="backButton" to="/GIMotilityClinic">
+            <Button> Back  </Button>
+        </Link>
         </div>
     )
 } 

@@ -1,5 +1,6 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function ViralHepatitisClinic() {
     return (
@@ -26,6 +27,9 @@ function ViralHepatitisClinic() {
                 for Filipino communities in the United States.
             </p>
         </p>
+        <Link className="backButton" to="/Services">
+            <Button> Back </Button>
+        </Link>
         </div>
     )
 } 

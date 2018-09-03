@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function HydrogenBreathTest() {
     return (
@@ -27,6 +29,9 @@ function HydrogenBreathTest() {
                 <a href="http://www.breathtests.com/what-is"> Breath Test </a>
             </ol>
         </p>
+        <Link className="backButton" to="/GIMotilityClinic">
+            <Button> Back  </Button>
+        </Link>
         </div>
     )
 } 

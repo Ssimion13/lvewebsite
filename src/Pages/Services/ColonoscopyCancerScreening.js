@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 
 function ColonoscopyCancerScreening() {
@@ -40,6 +42,10 @@ function ColonoscopyCancerScreening() {
             <a href="http://www.mayoclinic.org/tests-procedures/colonoscopy/basics/definition/prc-20013624"> Mayo Clinic Colonoscopy Definition </a>
             </ol>
         </p>
+        <Link className="backButton" to="/Services">
+            <Button> Back </Button>
+        </Link>
+        
         </div>
     )
 } 

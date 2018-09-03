@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
+
 
 function HPyloriBreathTest() {
     return (
@@ -26,6 +29,9 @@ function HPyloriBreathTest() {
                 <a href="https://www.breathtek.com/patients"> BreathTek </a>
             </ol>
         </p>
+        <Link className="backButton" to="/GIMotilityClinic">
+            <Button> Back  </Button>
+        </Link>
         </div>
     )
 } 

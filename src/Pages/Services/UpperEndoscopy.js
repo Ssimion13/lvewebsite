@@ -1,5 +1,6 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function UpperEndoscopy() {
     return (
@@ -29,6 +30,9 @@ function UpperEndoscopy() {
             Complications of the procedure are rare. The complications include perforation, 
             bleeding and infection.
         </p>
+        <Link className="backButton" to="/Services">
+            <Button> Back </Button>
+        </Link>
         </div>
     )
 } 

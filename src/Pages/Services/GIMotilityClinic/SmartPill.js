@@ -1,5 +1,6 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 
 function SmartPill() {
@@ -37,6 +38,9 @@ function SmartPill() {
                 <a href="www.google.com"> Small Bowel Resource Center </a>
             </ol>
         </p>
+        <Link className="backButton" to="/GIMotilityClinic">
+            <Button> Back  </Button>
+        </Link>
         </div>
     )
 } 

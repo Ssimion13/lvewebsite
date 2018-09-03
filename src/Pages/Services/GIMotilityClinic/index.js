@@ -85,7 +85,9 @@ function GIMotilityClinic() {
                     <Button> Learn More </Button>
                 </Link>
         </p>
-
+        <Link className="backButton" to="/Services">
+            <Button> Back  </Button>
+        </Link>
 
         </div>
     )

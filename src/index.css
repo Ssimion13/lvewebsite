@@ -11,6 +11,16 @@ p {
   font-size: 15px;
 }
 
+/* Misc */
+.backButton {
+  padding-bottom: 20px;
+  
+}
+
+/* End Misc */
+
+
+
 /* Topbar CSS */
 .logoHolder {
   display: flex;
@@ -89,6 +99,10 @@ p {
 .frontPageEarth {
   width: 100%;
 }
+.frontPageEarth {
+  width: 100% !important;
+  height: 450px !important; 
+}
 
 .carousel-item-active {
   height: 100% !important;
@@ -152,6 +166,10 @@ p {
 
 .frontPageButtonText{
   color: white !important;
+}
+
+.whyChooseLVEThumbnailTop {
+  height: 25%;
 }
 
 .whyChooseLVEThumbnailDiv {
@@ -371,6 +389,7 @@ p {
 
   .whyChooseLVEThumbnail {
     width: 20%;
+    height: 100%;
   }
 
 

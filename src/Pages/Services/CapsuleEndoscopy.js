@@ -1,5 +1,6 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 function CapsuleEndoscopy() {
     return (
@@ -30,6 +31,9 @@ function CapsuleEndoscopy() {
                 <a href="www.google.com"> Small Bowel Resource Center </a>
             </ol>
         </p>
+        <Link className="backButton" to="/Services">
+            <Button> Back </Button>
+        </Link>
         </div>
     )
 } 
