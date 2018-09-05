@@ -13,8 +13,8 @@ function UpperEndoscopy() {
             a camera at the end. Tissue samples, referred to as biopsies, may be taken during the 
             procedure to check for inflammation, changes in the lining of the esophagus, stomach 
             and duodenum, and to determine the presence of the bacteria, Helicobacter pylori, 
-            which can cause gastric cancer.
-
+            which can cause gastric cancer. <br/> <br/> 
+ 
             An EGD may be done to diagnose certain conditions such as upper gastrointestinal (GI) 
             bleeding, ulcerations of the esophagus, stomach and duodenum, narrowing or strictures of 
             the esophagus, fungal infection of the esophagus, Barrett’s esophagus, varices of the 
@@ -23,12 +23,12 @@ function UpperEndoscopy() {
             stools, difficulty swallowing, esophageal reflux, heartburn, non-cardiac chest pain, 
             unintentional weight loss and loss of appetite. An EGD should also be done when a patient 
             is anemic, has a known history of Barrett’s esophagus, has a history of upper GI cancer 
-            and has known liver cirrhosis.
+            and has known liver cirrhosis. <br/> <br/>
 
             An EGD is usually an outpatient procedure and the patient is allowed to return home after
             the procedure. However, the patient is not allowed to drive himself/herself home. 
             Complications of the procedure are rare. The complications include perforation, 
-            bleeding and infection.
+            bleeding and infection. <br/>
         </p>
         <Link className="backButton" to="/Services">
             <Button> Back </Button>

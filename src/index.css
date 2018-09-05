@@ -14,7 +14,7 @@ p {
 /* Misc */
 .backButton {
   padding-bottom: 20px;
-  
+
 }
 
 /* End Misc */
@@ -236,8 +236,23 @@ p {
 /* About Us Page, or All Side Pages, depending */
 
 .informativePage {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.sidePageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.colonoscope {
+  width: 80%;
+  height: 350px;
+}
+
 .doctorSection {
   padding-top: 10px;
   display: flex;
@@ -246,8 +261,35 @@ p {
   justify-content: center;
 }
 
+.doctorThumbnail {
+  width: 220px;
+  margin: 17px;
+  border: 1px solid #d0dada;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+
+.doctorInfo {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction:  column;
+  color: black;
+}
+
 .doctorPicture {
   width: 100%;
+}
+
+.doctorTitle {
+  font-size: 22px;
+  font-weight: 200;
+  margin: 25px 0 0;
+  color: #464749;
 }
 
 .doctorSectionText {
@@ -298,6 +340,11 @@ p {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid navy;
+  }
+
+  .sectionText {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 /* End Services CSS */
 
@@ -401,4 +448,19 @@ p {
     width: 250px;
   }
   /* End About Us CSS */
+
+  /* Side Page CSS */
+.colonoscope {
+  width: 40%;
+  height: 350px;
 }
+
+.sidePageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* End Side Page CSS */
+}
+

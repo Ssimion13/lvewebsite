@@ -4,7 +4,7 @@ import TopBar from "./TopBar.js";
 import Footer from "./Footer.js";
 import FrontPage from "./FrontPage.js";
 import {Route, Switch} from "react-router-dom";
-import AboutUs from "./Pages/AboutUs";
+import AboutUs from "./Pages/AboutUs/";
 import Awards from "./Pages/Awards";
 import ContactUs from "./Pages/ContactUs";
 import Services from "./Pages/Services/";
@@ -18,6 +18,8 @@ import EsophagealManometry from "./Pages/Services/GIMotilityClinic/EsophagealMan
 import EsophagealPH from "./Pages/Services/GIMotilityClinic/EsophagealPH.js";
 import HPyloriBreathTest from "./Pages/Services/GIMotilityClinic/HPyloriBreathTest.js";
 import HydrogenBreathTest from "./Pages/Services/GIMotilityClinic/HydrogenBreathTest.js";
+import DrFajardo from "./Pages/AboutUs/DrFajardo.js";
+import DrCremonini from "./Pages/AboutUs/DrCremonini.js";
 
 class App extends Component {
   render() {
@@ -41,7 +43,8 @@ class App extends Component {
           <Route path="/EsophagealPH" component={EsophagealPH} />
           <Route path="/HPyloriBreathTest" component={HPyloriBreathTest} />
           <Route path="/HydrogenBreathTest" component={HydrogenBreathTest} />
-
+          <Route path="/DrFajardo" component={DrFajardo} />
+          <Route path="/DrCremonini" component={DrCremonini} />
         </Switch>
         <Footer />
       </div>
