@@ -26,10 +26,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
-
-
+.topbarEmpty {
+  width: 20%
+}
+.topBarLinks {
+  /* do I even need this? */
+}
 .logo {
   padding-left: 10px;
 }
@@ -45,7 +49,7 @@ p {
   width: 75%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .topbarButton {
   padding: .75rem 1rem !important;
@@ -170,6 +174,10 @@ p {
 
 .whyChooseLVEThumbnailTop {
   height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .whyChooseLVEThumbnailDiv {
@@ -251,6 +259,13 @@ p {
 .colonoscope {
   width: 80%;
   height: 350px;
+}
+
+.aboutDoctorSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .doctorSection {
@@ -363,6 +378,7 @@ p {
 .centeredTitle {
   text-align: center;
   margin-bottom: 15px;
+  font: normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif;
 }
 
 .imageHolder {
@@ -400,8 +416,38 @@ p {
   }
 /* end contact us page */
 
+/* Bottom Buttons */
+  .bottomButtonsMain {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomButton1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3364b7;
+    
+  }
+  .bottomButton2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 181, 148);
+  }
+/* End Bottom Buttons */
 
-@media (min-width: 700px){
+
+@media (min-width: 850px){
 
   /* frontPage CSS */
   .frontPageButtonCarouselDiv {
@@ -432,11 +478,15 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 380px;
   }
 
   .whyChooseLVEThumbnail {
     width: 20%;
     height: 100%;
+  }
+  .whyChooseLVEThumbnailBottom {
+    height: 75%;
   }
 
 
@@ -446,6 +496,14 @@ p {
   .doctorPicture {
     height: 300px;
     width: 250px;
+  }
+
+  .aboutDoctorSection {
+    flex-direction: row;
+  }
+
+  .doctorSection {
+    width: 60%;
   }
   /* End About Us CSS */
 
@@ -462,5 +520,20 @@ p {
   justify-content: center;
 }
 /* End Side Page CSS */
+/* topbar css */
+.topbarEmpty {
+  width: 5%
+}
+.logoHolder {
+  width: 20%;
+}
+
+.topbarLinks{
+  font-size: 22px;
+}
+/* end topbar css */
+
+
+/*end media query */
 }
 

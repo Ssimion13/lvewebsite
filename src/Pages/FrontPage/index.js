@@ -1,17 +1,14 @@
-import React, {Component} from "react";
-import conversation from "./Images/conversation.png";
-import certificate from "./Images/blackcertificate.png";
-import note from "./Images/note.png";
-import doctor from "./Images/doctor.png";
+import React from "react";
+import conversation from "../../Images/conversation.png";
+import certificate from "../../Images/blackcertificate.png";
+import note from "../../Images/note.png";
+import doctor from "../../Images/doctor.png";
 import {Link} from "react-router-dom";
 import FrontCarousel from "./FrontCarousel.js";
 
-class FrontPage extends Component {
-
-    render(){
+function FrontPage() {
         return(
             <div className="frontPage">
-                
                 {/* <div className="imagePlaceholder"> Placeholder, Insert image Here </div> */}
                 <div className="frontPageButtonCarouselDiv">
                     <div className="carouselContainer">
@@ -45,46 +42,53 @@ class FrontPage extends Component {
                                 <img className="frontPageButtonIcons" src={conversation} alt="conversationicon"/> 
                                 <h5 className="paddedTitle"> <b> More experience </b> </h5>
                             </div>
+                            <div className="whyChooseLVEThumbnailBottom">
                                 <p className="paddedText"> Every year, thousands of people come to Las Vegas Endoscopy for care.
                                 Our Gastroenterologists are experienced
                                 specialists in treating rare and complex gastrointestinal conditions.
-                                </p>   
+                                </p>  
+                            </div> 
                         </div>
                         <div className="whyChooseLVEThumbnail"> 
                             <div className="whyChooseLVEThumbnailTop">
                                 <img className="frontPageButtonIcons" src={conversation} alt="conversationicon"/>
                                 <h5 className="paddedTitle"> <b> The right answers </b> </h5>
                             </div>
-                            <p className="paddedText"> Getting effective treatment depends on identifying the right problem. 
-                                In a recent study, 9001 percent of patients who came to Las Vegas Endoscopy for a second opinion 
-                                received a new or refined diagnosis.
-                            </p>
+                            <div className="whyChooseLVEThumbnailBottom">
+                                <p className="paddedText"> Getting effective treatment depends on identifying the right problem. 
+                                    In a recent study, 9001 percent of patients who came to Las Vegas Endoscopy for a second opinion 
+                                    received a new or refined diagnosis.
+                                </p>
+                            </div>
                         </div>
                         <div className="whyChooseLVEThumbnail">
                             <div className="whyChooseLVEThumbnailTop">
                                 <img className="frontPageButtonIcons" src={conversation} alt="conversationicon"/>
                                 <h5 className="paddedTitle"> <b> Seamless Care </b> </h5>
                             </div>
-                            <p className="paddedText"> At Las Vegas Endoscopy, every aspect of your care is coordinated and teams of experts work together to provide 
-                                exactly the care you need. What might take months elsewhere can often be done in days here.
-                            </p>
+                            <div className="whyChooseLVEThumbnailBottom">
+                                <p className="paddedText"> At Las Vegas Endoscopy, every aspect of your care is coordinated and teams of experts work together to provide 
+                                    exactly the care you need. What might take months elsewhere can often be done in days here.
+                                </p>
+                            </div>
                         </div>
                         <div className="whyChooseLVEThumbnail">
                             <div className="whyChooseLVEThumbnailTop">
                                 <img className="frontPageButtonIcons" src={conversation} alt="conversationicon"/>
                                 <h5 className="paddedTitle"> <b> Unparalleled expertise </b> </h5>
                             </div>
-                            <p className="paddedText"> Our Doctors at Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
-                            In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
-                            is consistently ranked among the top clinical centers in the nation.
-                            </p>
+                            <div className="whyChooseLVEThumbnailBottom">
+                                <p className="paddedText"> Our Doctors at Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
+                                In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
+                                is consistently ranked among the top clinical centers in the nation.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 
                 </div>
             </div>
         )
-    }
 }
 
 export default FrontPage;

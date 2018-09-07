@@ -1,6 +1,5 @@
 import React from "react";
 import drfajardo from "../../Images/drfajardo.jpg";
-import drcremonini from "../../Images/drcremonini.jpg";
 
 function AboutUs(){
     return(

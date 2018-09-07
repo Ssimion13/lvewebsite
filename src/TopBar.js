@@ -22,10 +22,23 @@ class TopBar extends React.Component {
     render(){
         return (
             <div className="topbarMain">
+                {window.innerWidth > 500 ?
+                <div className="topbarEmpty">
+                </div>
+                : null }
                 <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
+                {window.innerWidth > 500 ?
                 <div className="buttonHolder">
+                    <Link className="topbarLinks" to="/AboutUs"> About Us </Link>
+                    <Link className="topbarLinks" to="/Services"> Services </Link>
+                    <Link className="topbarLinks" to="/Awards"> Awards </Link>
+                    <Link className="topbarLinks" to="/ContactUs"> Contact Us </Link>
+                </div>
+                : null}
+                {window.innerWidth < 500 ? 
+                 <div className="buttonHolder">
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle className="topbarButton">
                             ≡
@@ -40,7 +53,8 @@ class TopBar extends React.Component {
                             <DropdownItem divider />
                         </DropdownMenu>
                     </Dropdown>
-                </div>
+                </div> 
+                : null }
             </div>
         )
     }

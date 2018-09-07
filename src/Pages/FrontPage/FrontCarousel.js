@@ -6,7 +6,7 @@ import {
   // CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
-import lvgdoctors from "./Images/lvgdoctors.jpg"
+import lvgdoctors from "../../Images/lvgdoctors.jpg"
 
 const items = [
   {

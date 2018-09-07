@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import TopBar from "./TopBar.js";
 // import Navbar from "./Navbar.js";
 import Footer from "./Footer.js";
-import FrontPage from "./FrontPage.js";
+import FrontPage from "./Pages/FrontPage";
 import {Route, Switch} from "react-router-dom";
 import AboutUs from "./Pages/AboutUs/";
 import Awards from "./Pages/Awards";
 import ContactUs from "./Pages/ContactUs";
 import Services from "./Pages/Services/";
+import BottomButtons from "./BottomButtons.js";
 import ColonoscopyCancerScreening from "./Pages/Services/ColonoscopyCancerScreening"
 import UpperEndoscopy from "./Pages/Services/UpperEndoscopy";
 import GIMotilityClinic from "./Pages/Services/GIMotilityClinic/"
@@ -47,6 +48,9 @@ class App extends Component {
           <Route path="/DrCremonini" component={DrCremonini} />
         </Switch>
         <Footer />
+        {window.innerWidth < 500 ?
+          <BottomButtons />
+        : null}
       </div>
     );
   }
