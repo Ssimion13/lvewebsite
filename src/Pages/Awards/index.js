@@ -1,11 +1,11 @@
 import React from "react";
-import AWARD01 from "../Images/AWARD01.jpg";
-import AWARD02 from "../Images/AWARD02.jpg";
-import AWARD03 from "../Images/AWARD03.jpg";
-import AWARD04 from "../Images/AWARD04.jpg";
-import AWARD05 from "../Images/AWARD05.jpg";
-import AWARD06 from "../Images/AWARD06.jpg";
-import AWARD07 from "../Images/AWARD07.jpg";
+import AWARD01 from "../../Images/AWARD01.jpg";
+import AWARD02 from "../../Images/AWARD02.jpg";
+import AWARD03 from "../../Images/AWARD03.jpg";
+import AWARD04 from "../../Images/AWARD04.jpg";
+import AWARD05 from "../../Images/AWARD05.jpg";
+import AWARD06 from "../../Images/AWARD06.jpg";
+import AWARD07 from "../../Images/AWARD07.jpg";
 import AwardModal from "./AwardModal"
 
 function Awards(){

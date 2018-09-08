@@ -28,7 +28,7 @@ const items = [
   // }
 ];
 
-class FrontCarousel extends Component {
+class WhyChooseLVECarousel extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -107,4 +107,4 @@ class FrontCarousel extends Component {
   }
 }
 
-export default FrontCarousel;
+export default WhyChooseLVECarousel;

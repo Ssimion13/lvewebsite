@@ -5,7 +5,7 @@ import Footer from "./Footer.js";
 import FrontPage from "./Pages/FrontPage";
 import {Route, Switch} from "react-router-dom";
 import AboutUs from "./Pages/AboutUs/";
-import Awards from "./Pages/Awards";
+import Awards from "./Pages/Awards/";
 import ContactUs from "./Pages/ContactUs";
 import Services from "./Pages/Services/";
 import BottomButtons from "./BottomButtons.js";
