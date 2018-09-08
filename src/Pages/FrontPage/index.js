@@ -5,6 +5,7 @@ import note from "../../Images/note.png";
 import doctor from "../../Images/doctor.png";
 import {Link} from "react-router-dom";
 import FrontCarousel from "./FrontCarousel.js";
+import Testamonials from "./Testamonials.js";
 
 function FrontPage() {
         return(
@@ -85,8 +86,8 @@ function FrontPage() {
                             </div>
                         </div>
                     </div>
-                
                 </div>
+                <Testamonials />
             </div>
         )
 }
