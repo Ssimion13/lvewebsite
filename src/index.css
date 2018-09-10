@@ -483,7 +483,7 @@ p {
 
 .testamonialHeader {
   letter-spacing: 0.35em;
-  font-size: 50px;
+  font-size: 25px;
   color: whitesmoke;
   line-height: 100%;
   padding-top: 10px;
@@ -503,6 +503,10 @@ p {
     justify-content: center;
   }
   
+  .testamonialHeader {
+    font-size: 50px;
+  }
+
   .frontPage {
     background-color: whitesmoke;
   }

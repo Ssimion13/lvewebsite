@@ -28,6 +28,9 @@ const items = [
   // }
 ];
 
+
+
+
 class WhyChooseLVECarousel extends Component {
   constructor(props) {
     super(props);
