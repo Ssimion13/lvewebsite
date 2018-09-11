@@ -2,34 +2,29 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  // CarouselControl,
-  // CarouselIndicators,
-  // CarouselCaption
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
 } from 'reactstrap';
-import lvgdoctors from "../../Images/lvgdoctors.jpg"
+import StockDoctor from "../../Images/StockDoctor.jpg"
+import ShortenedPicture from "../../Images/shortenedpicture.png"
+import Colonoscope from "../../Images/colonoscope.jpg"
 
 const items = [
   {
-    src: lvgdoctors,
-    id: 1,
-
+    src: StockDoctor,
+    altText: 'Slide 1',
+    caption: 'I need real pictures'
   },
-  // {
-  //   id: 2,
-  //   altText: 'Slide 2',
-  //   caption: 'Slide 2',
-  //   src: "butts"
-  // },
-  // {
-  //   id: 3,
-  //   altText: 'Slide 3',
-  //   caption: 'Slide 3',
-  //   src: "butts2"
-  // }
+  {
+    src: ShortenedPicture,
+    caption: `There's not much point to trying to finetune this`
+  },
+  {
+    src: Colonoscope,
+    caption: `No point to finetune without real pictures to edit`
+  }
 ];
-
-
-
 
 class WhyChooseLVECarousel extends Component {
   constructor(props) {
@@ -73,41 +68,33 @@ class WhyChooseLVECarousel extends Component {
     const slides = items.map((item) => {
       return (
         <CarouselItem
-          className="custom-tag"
-          tag="div"
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
         >
-          <iframe src="https://www.google.com/maps/embed?pb=!4v1535788208806!6m8!1m7!1syAJiH73FKoLXOajgHAEVkg!2m2!1d36.05624589136753!2d-115.1009494996736!3f283.34154574786976!4f5.053809294069822!5f2.0360708148318722"   frameBorder="0" title="fancy" className="frontPageEarth" allowFullScreen></iframe>
-          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+          <img src={item.src} className="frontPageEarth" alt={item.altText} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
 
     return (
       <div>
-        <style>
-          {
-            `.custom-tag {
-                align-items: center;
-                justify-content: center;
-                max-width: 100%;
-                height: 150px;
-                background: black;
-              }`
-          }
-        </style>
-        <Carousel
-          activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          {slides}
-        </Carousel>
+      <Carousel
+        activeIndex={activeIndex}
+        next={this.next}
+        previous={this.previous}
+      >
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+      </Carousel>
       </div>
     );
   }
 }
 
+
 export default WhyChooseLVECarousel;
+

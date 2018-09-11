@@ -8,6 +8,7 @@ import FrontCarousel from "./FrontCarousel.js";
 import Testamonials from "./Testamonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import FrontPageButton from "./FrontPageButton.js";
+import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 
 class FrontPage extends Component {
     // constructor(){
@@ -45,6 +46,12 @@ class FrontPage extends Component {
                         </Link> 
                     </div>
                 </div>
+                {window.innerWidth > 500 ?
+                <div className="whyChooseLVECarousel">
+                  <WhyChooseLVECarousel />
+                </div>
+                : null }
+                {window.innerWidth < 500 ?
                 <div className="whyChooseLVESection"> 
                     <h3 className="whyChooseLVETitle"> Why Choose Las Vegas Endoscopy? </h3>
                     <h5 className="whyChooseLVEUnderline"> </h5>
@@ -74,6 +81,7 @@ class FrontPage extends Component {
                         </WhyChooseLVEThumbnail>
                     </div>
                 </div>
+                : null }
                 <Testamonials />
             </div>
         )

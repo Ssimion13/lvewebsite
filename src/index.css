@@ -502,6 +502,15 @@ p {
     align-items: center;
     justify-content: center;
   }
+
+  .whyChooseLVECarousel {
+    width: 90% !important;
+    /* height: 400px !important; */
+  }
+
+  .carousel-caption {
+    color: black !important;
+  }
   
   .testamonialHeader {
     font-size: 50px;
