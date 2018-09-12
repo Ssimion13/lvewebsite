@@ -93,6 +93,12 @@ p {
 
 }
 
+.frontPageIntro {
+  min-height: 550px;
+  background-color: whitesmoke;
+
+}
+
 .frontPageButtonCarouselDiv {
   display: flex;
   flex-direction: column;
@@ -101,11 +107,13 @@ p {
 }
 
 .frontPageEarth {
-  width: 100%;
-}
-.frontPageEarth {
   width: 100% !important;
   height: 450px !important; 
+}
+
+.whyChooseLVECarouselImage {
+  width: 100% !important;
+  height: 600px !important; 
 }
 
 .carousel-item-active {
@@ -215,7 +223,6 @@ p {
   align-items: center;
   text-align: center;
   justify-content: center;
-  border-bottom: 1px solid #3967c1;
 }
 
 .paddedTitle {
@@ -470,7 +477,6 @@ p {
     align-items: center;
     text-align: center;
     justify-content: center;
-    border-bottom: 1px solid #3967c1;
 
 }
 
@@ -515,14 +521,13 @@ p {
   .frontPageButtonCarouselDiv {
     display: flex;
     flex-direction: row;
-    width: 90%;
     height: 450px;
     align-items: center;
     justify-content: center;
   }
 
   .whyChooseLVECarousel {
-    width: 90% !important;
+    width: 100% !important;
     /* height: 400px !important; */
   }
 
@@ -609,6 +614,15 @@ p {
 
 .topbarLinks{
   font-size: 22px;
+}
+
+.topbarMain {
+  height: 200px;
+}
+
+.logo {
+  width: 100%;
+  height: 60%;
 }
 /* end topbar css */
 
