@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import FrontPageButton from "./FrontPageButton.js";
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
+import drfajardo from "../../Images/lol.png";
 
 class FrontPage extends Component {
     // constructor(){
@@ -19,13 +20,26 @@ class FrontPage extends Component {
         return(
             <div className="frontPage">
                 <div className="frontPageIntro">
+
+                <div className="frontPageIntroText">
+                    <h2 className="frontPageHeading">
+                        The best in Las Vegas 
+                    </h2>
+                    <p className="frontPageHeadingText">
+                        Take a look at this doctor to the right. Sure, the guy <br/> who edited the image didn't photoshop very well  (he radiates a <i> POWERFUL blue aura </i>),
+                        but ignore that-- you can tell this doctor knows style. 
+                    </p>
                 </div>
-                {window.innerWidth > 500 ?
+                <img className="drFajardoFrontPicture" src={drfajardo} />
+                </div>
+                <Testimonials />
+                {/* I'm not sure whether I need this part or not. */}
+                {/* {window.innerWidth > 500 ? */}
                 <div className="whyChooseLVECarousel">
                   <WhyChooseLVECarousel />
                 </div>
-                : null }
-                {window.innerWidth < 500 ?
+                 {/* : null } */}
+                {/* {window.innerWidth < 500 ? */}
                 <div className="whyChooseLVESection"> 
                     <h3 className="whyChooseLVETitle"> Why Choose Las Vegas Endoscopy? </h3>
                     <h5 className="whyChooseLVEUnderline"> </h5>
@@ -55,8 +69,8 @@ class FrontPage extends Component {
                         </WhyChooseLVEThumbnail>
                     </div>
                 </div>
-                : null }
-                <Testimonials />
+                {/* : null } */}
+
             </div>
         )
     }
