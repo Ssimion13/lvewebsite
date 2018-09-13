@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
+  // CarouselControl,
+  // CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
 import DarkSide from "../../Images/darkside.jpg"

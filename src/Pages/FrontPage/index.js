@@ -1,15 +1,17 @@
 import React, {Component} from "react";
-import conversation from "../../Images/conversation.png";
-import certificate from "../../Images/blackcertificate.png";
-import note from "../../Images/note.png";
-import doctor from "../../Images/doctor.png";
-import {Link} from "react-router-dom";
-import FrontCarousel from "./FrontCarousel.js";
+// import conversation from "../../Images/conversation.png";
+// import certificate from "../../Images/blackcertificate.png";
+// import note from "../../Images/note.png";
+// import doctor from "../../Images/doctor.png";
+// import {Link} from "react-router-dom";
+// import FrontCarousel from "./FrontCarousel.js";
 import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
-import FrontPageButton from "./FrontPageButton.js";
+// import FrontPageButton from "./FrontPageButton.js";
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 import drfajardo from "../../Images/lol.png";
+import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
+import microscope from "../../Images/microscope.jpg";
 
 class FrontPage extends Component {
     // constructor(){
@@ -30,7 +32,7 @@ class FrontPage extends Component {
                         but ignore that-- you can tell this doctor knows style. 
                     </p>
                 </div>
-                <img className="drFajardoFrontPicture" src={drfajardo} />
+                <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
                 </div>
                 <Testimonials />
                 {/* I'm not sure whether I need this part or not. */}
@@ -68,6 +70,12 @@ class FrontPage extends Component {
                             is consistently ranked among the top clinical centers in the nation." >
                         </WhyChooseLVEThumbnail>
                     </div>
+                </div>
+                <div className="feeSectionThumbnailDiv">
+                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
                 </div>
                 {/* : null } */}
 

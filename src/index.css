@@ -80,7 +80,24 @@ p {
 
 /* end Navbar CSS */
 
+/*Fee Section CSS */
 
+.feeSectionThumbnailDiv {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.feeSectionButton {
+  width: 20%;
+  height: 100%;
+}
+
+
+
+/*End Fee Section CSS */
 
 
 /* FrontPage CSS */
