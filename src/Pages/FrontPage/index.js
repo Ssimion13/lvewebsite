@@ -75,10 +75,19 @@ class FrontPage extends Component {
                     </div>
                 </div>
                 <div className="feeSectionThumbnailDiv">
-                    <FeeSectionThumbnail media={medicine} opacity={"0.2"}/>
-                    <FeeSectionThumbnail media={ourwork} opacity={"0.2"}/>
-                    <FeeSectionThumbnail media={doctorlaptop} opacity={"0.2"}/>
-                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
+
+                    <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
+                        heading={"New Patients"}
+                    />
+                    <FeeSectionThumbnail media={doctorlaptop} opacity={"0.2"}
+                        heading={"Established Patients"}
+                    />
+                    <FeeSectionThumbnail media={medicine} opacity={"0.2"}
+                        heading={"Preparing For Procedure?"}
+                    />
+                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}
+                        heading={"Laboratory"}
+                    />
                 </div>
                 {/* : null } */}
 
