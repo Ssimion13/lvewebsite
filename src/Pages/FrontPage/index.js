@@ -12,6 +12,9 @@ import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 import drfajardo from "../../Images/lol.png";
 import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
 import microscope from "../../Images/microscope.jpg";
+import doctorlaptop from "../../Images/doctorlaptop.jpg";
+import ourwork from "../../Images/ourwork.jpg";
+import medicine from "../../Images/drugggs.jpg"
 
 class FrontPage extends Component {
     // constructor(){
@@ -72,9 +75,9 @@ class FrontPage extends Component {
                     </div>
                 </div>
                 <div className="feeSectionThumbnailDiv">
-                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
-                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
-                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={medicine} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={ourwork} opacity={"0.2"}/>
+                    <FeeSectionThumbnail media={doctorlaptop} opacity={"0.2"}/>
                     <FeeSectionThumbnail media={microscope} opacity={"0.2"}/>
                 </div>
                 {/* : null } */}

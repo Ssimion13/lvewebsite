@@ -93,8 +93,12 @@ p {
 .feeSectionButton {
   width: 20%;
   height: 100%;
+  opacity: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
 /*End Fee Section CSS */
@@ -532,13 +536,14 @@ p {
   background: url('./Images/setuproom.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
+  opacity: 0.1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;   
+  margin-bottom: 80px;
 }
 .testimonialHeader {
   letter-spacing: 0.35em;
