@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TopBar from "./TopBar.js";
 // import Navbar from "./Navbar.js";
-import Footer from "./Footer.js";
 import FrontPage from "./Pages/FrontPage";
 import {Route, Switch} from "react-router-dom";
 import AboutUs from "./Pages/AboutUs/";
@@ -47,7 +46,6 @@ class App extends Component {
           <Route path="/DrFajardo" component={DrFajardo} />
           <Route path="/DrCremonini" component={DrCremonini} />
         </Switch>
-        <Footer />
         {window.innerWidth < 500 ?
           <BottomButtons />
         : null}

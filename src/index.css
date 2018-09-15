@@ -80,21 +80,24 @@ p {
 
 /*Fee Section CSS */
 
-.feeSectionThumbnailDiv {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
+  .feeSectionThumbnailDiv {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+
 .feeSectionButton {
-  width: 20%;
-  height: 100%;
+  width: 70%;
+  height: 400px;
   color: white;
   font-family: "futura-lt-w01-light,sans-serif";
   z-index: 1;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .feeSectionButton::before {
@@ -129,6 +132,7 @@ p {
 .frontPageIntro {
   min-height: 550px;
   display: flex;
+  flex-direction: column;
 }
 
 .frontPageIntroText {
@@ -147,6 +151,7 @@ p {
 
 .drFajardoFrontPicture {
   float: right;
+  width: 100%;
 }
 
 .frontPageButtonCarouselDiv {
@@ -282,6 +287,8 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
 
 /* end FrontPage CSS */
 
@@ -483,6 +490,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
   }
   .bottomButton1 {
     width: 50%;
@@ -506,7 +514,6 @@ p {
 /* testimonial Section */
 .testimonialMain {
   width: 100%;
-  height: 700px;
 }
 .testimonialBar {
   height: 80px;
@@ -519,14 +526,14 @@ p {
 }
 
 .testimonialThumbnail {
-    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-
+    margin-top: 10px;
 }
+
 
 .testimonialThumbnailDiv {
   display: flex;
@@ -567,7 +574,32 @@ p {
 
 @media (min-width: 850px){
 
+  /* Fee Section CSS */
+  .feeSectionThumbnailDiv {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+  .feeSectionButton {
+    width: 20%;
+    height: 100%;
+  }
+  /* End Fee Section CSS *?
+    
   /* frontPage CSS */
+
+  .frontPageIntro {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drFajardoFrontPicture {
+    width: 100%;
+  }
+
   .frontPageButtonCarouselDiv {
     display: flex;
     flex-direction: row;
@@ -617,13 +649,22 @@ p {
   .whyChooseLVEThumbnailBottom {
     height: 75%;
   }
-  /* testimonials */
-  .testimonialThumbnailDiv {
-    flex-direction: row
-  }
-  /* testimonials */
-
   /* end FrontPage CSS */
+
+    /* testimonials */
+
+    .testimonialThumbnailDiv {
+      flex-direction: row;
+    }
+  
+    .testimonialThumbnail {
+      width: 25%;
+    }
+    
+    .testimonialMain {
+      height: 700px;
+    }
+    /* end testimonials */
 
   /* About Us CSS */
   .doctorPicture {

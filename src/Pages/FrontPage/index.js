@@ -1,10 +1,5 @@
 import React, {Component} from "react";
-// import conversation from "../../Images/conversation.png";
-// import certificate from "../../Images/blackcertificate.png";
-// import note from "../../Images/note.png";
-// import doctor from "../../Images/doctor.png";
-// import {Link} from "react-router-dom";
-// import FrontCarousel from "./FrontCarousel.js";
+import Footer from "./Footer.js";
 import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 // import FrontPageButton from "./FrontPageButton.js";
@@ -90,7 +85,7 @@ class FrontPage extends Component {
                     />
                 </div>
                 {/* : null } */}
-
+                <Footer />
             </div>
         )
     }
