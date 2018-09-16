@@ -384,7 +384,8 @@ p {
 /* Footer Page CSS */
 
 .footerMain {
-  height: 250px;
+  height: 600px;
+  width: 100%;
   background-color: #3967c1;
   display: flex;
   justify-content: center;
@@ -401,6 +402,19 @@ p {
   display: flex;
   align-items: center;
   color: white !important;
+}
+
+.footerTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLogo {
+  margin-top: 70px;
+}
+.footerAddress {
+  margin-top: 15px;
+  text-align: center;
 }
 
 
@@ -552,7 +566,7 @@ p {
   background: url('./Images/setuproom.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.1;
+  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -579,6 +593,7 @@ p {
     height: 500px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 20px;
