@@ -25,7 +25,7 @@ class FeeSectionThumbnail extends Component {
       mouseOver = () => {
           this.setState({hover: true,
             styles: {
-              backgroundColor: "black"
+              backgroundColor: "darkblue"
             }});
 
           console.log("hello");

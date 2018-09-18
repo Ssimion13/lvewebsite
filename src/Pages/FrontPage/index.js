@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 import Footer from "./Footer.js";
-import Testimonials from "./Testimonials.js";
+// import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
-// import FrontPageButton from "./FrontPageButton.js";
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
-import drfajardo from "../../Images/lol.png";
+import drfajardo from "../../Images/drfajardo.png";
 import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
 import microscope from "../../Images/microscope.jpg";
 import doctorlaptop from "../../Images/doctorlaptop.jpg";
 import ourwork from "../../Images/ourwork.jpg";
 import medicine from "../../Images/drugggs.jpg"
+import FrontPageButtonContainer from "./FrontPageButtonContainer";
 
 class FrontPage extends Component {
     // constructor(){
@@ -19,30 +19,35 @@ class FrontPage extends Component {
     render(){
         return(
             <div className="frontPage">
+                <div className="whyChooseLVECarousel">
+                    <WhyChooseLVECarousel />
+                </div>
                 <div className="frontPageIntro">
-
-                <div className="frontPageIntroText">
-                    <h2 className="frontPageHeading">
-                        The best in Las Vegas 
-                    </h2>
-                    <p className="frontPageHeadingText">
-                        Take a look at this doctor to the right. Sure, the guy <br/> who edited the image didn't photoshop very well  (he radiates a <i> POWERFUL blue aura </i>),
-                        but ignore that-- you can tell this doctor knows style. 
-                    </p>
+                    <div className="frontPageIntroText">
+                        <h2 className="frontPageHeading">
+                            The best in Las Vegas 
+                        </h2>
+                        <p className="frontPageHeadingText">
+                            Take a look at this doctor. Sure, the guy <br/> who edited the image didn't photoshop very well  (he radiates a <i> POWERFUL blue aura </i>),
+                            but ignore that-- you can tell this doctor knows style. 
+                        </p>
+                    </div>
+                    <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
                 </div>
-                <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Our Services </h1>
                 </div>
-                <Testimonials />
+                <FrontPageButtonContainer />
+                {/* <Testimonials /> */}
                 {/* I'm not sure whether I need this part or not. */}
                 {/* {window.innerWidth > 500 ? */}
-                <div className="whyChooseLVECarousel">
-                  <WhyChooseLVECarousel />
-                </div>
+
                  {/* : null } */}
                 {/* {window.innerWidth < 500 ? */}
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
+                </div>
                 <div className="whyChooseLVESection"> 
-                    <h3 className="whyChooseLVETitle"> Why Choose Las Vegas Endoscopy? </h3>
-                    <h5 className="whyChooseLVEUnderline"> </h5>
                     <div className="whyChooseLVEThumbnailDiv">
                         <WhyChooseLVEThumbnail
                             title="More experience"
@@ -69,6 +74,7 @@ class FrontPage extends Component {
                         </WhyChooseLVEThumbnail>
                     </div>
                 </div>
+
                 <div className="feeSectionThumbnailDiv">
 
                     <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
@@ -85,6 +91,9 @@ class FrontPage extends Component {
                     />
                 </div>
                 {/* : null } */}
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Our location </h1>
+                </div>
                 <Footer />
             </div>
         )

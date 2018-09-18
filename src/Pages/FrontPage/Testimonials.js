@@ -4,8 +4,8 @@ import React from "react";
 function testimonials(){
     return(
         <div className="testimonialMain">
-            <div className="testimonialBar">
-              <h1 className="testimonialHeader"> Testimonials </h1>
+            <div className="blockBar">
+              <h1 className="blockHeader"> Testimonials </h1>
             </div>
             <div className="testimonialThumbnailDiv">
                 <div className="testimonialThumbnail"> 
