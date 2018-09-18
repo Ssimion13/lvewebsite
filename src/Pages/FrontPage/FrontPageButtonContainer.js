@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import FrontPageButton from "./FrontPageButton";
 import note from "../../Images/note.png";
 import conversation from "../../Images/conversation.png"

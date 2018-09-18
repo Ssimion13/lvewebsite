@@ -16,6 +16,12 @@ p {
   padding-bottom: 20px;
 
 }
+.centerAligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /* End Misc */
 
@@ -129,16 +135,16 @@ p {
 
 }
 
-.frontPageIntro {
+.frontPageIntroDiv {
   min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.frontPageIntroText {
+.frontPageIntroSection {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -151,7 +157,6 @@ p {
 }
 
 .drFajardoFrontPicture {
-  float: right;
   width: 80%;
 }
 
@@ -660,13 +665,20 @@ p {
     
   /* frontPage CSS */
 
-  .frontPageIntro {
+  .frontPageIntroDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
+
+  .frontPageIntroSection {
+    height: 600px;
+    flex-direction: column;
+  }
+
 
   .drFajardoFrontPicture {
     width: 100%;
+    height: 100%;
   }
 
   .frontPageButtonCarouselDiv {
@@ -719,6 +731,14 @@ p {
   }
   .whyChooseLVECarouselImage {
     height: 600px !important; 
+  }
+
+  .frontPageAttraction {
+    height: 300px;
+  }
+
+  .frontPageHeadingText {
+    width: 60%;
   }
   /* end FrontPage CSS */
 
@@ -791,3 +811,9 @@ p {
 /*end media query */
 }
 
+
+@media (min-width: 650px){
+  .drFajardoFrontPicture {
+    width: 60%;
+  }
+}

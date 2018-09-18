@@ -19,23 +19,29 @@ class FrontPage extends Component {
     render(){
         return(
             <div className="frontPage">
-                <div className="whyChooseLVECarousel">
-                    <WhyChooseLVECarousel />
-                </div>
-                <div className="frontPageIntro">
-                    <div className="frontPageIntroText">
-                        <h2 className="frontPageHeading">
-                            The best in Las Vegas 
-                        </h2>
-                        <p className="frontPageHeadingText">
-                            Take a look at this doctor. Sure, the guy <br/> who edited the image didn't photoshop very well  (he radiates a <i> POWERFUL blue aura </i>),
-                            but ignore that-- you can tell this doctor knows style. 
-                        </p>
+                <div className="frontPageIntroDiv">
+                    <div className="frontPageAttraction">
+                        placeholder placeholder placeholder
                     </div>
-                    <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
+                    <div className="frontPageIntroSection">
+                        <div className="centerAligner">
+                            <h2 className="centeredTitle">
+                                The Best in Las Vegas 
+                            </h2>
+                            <p className="frontPageHeadingText">
+                                Take a look at this doctor. Sure, the guy <br/> who edited the image didn't photoshop very well  (he radiates a <i> POWERFUL blue aura </i>),
+                                but ignore that-- you can tell this doctor knows style. 
+                            </p>
+                            <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
+                        </div>
+                        
+                    </div>
                 </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Our Services </h1>
+                </div>
+                <div className="whyChooseLVECarousel">
+                    <WhyChooseLVECarousel />
                 </div>
                 <FrontPageButtonContainer />
                 {/* <Testimonials /> */}
