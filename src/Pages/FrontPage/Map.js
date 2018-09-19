@@ -28,7 +28,7 @@ const items = [
   // }
 ];
 
-class FrontCarousel extends Component {
+class Map extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -76,7 +76,7 @@ class FrontCarousel extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <iframe src="https://www.google.com/maps/embed?pb=!4v1535788208806!6m8!1m7!1syAJiH73FKoLXOajgHAEVkg!2m2!1d36.05624589136753!2d-115.1009494996736!3f283.34154574786976!4f5.053809294069822!5f2.0360708148318722"   frameBorder="0" title="fancy" className="frontPageEarth" allowFullScreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1535788208806!6m8!1m7!1syAJiH73FKoLXOajgHAEVkg!2m2!1d36.05624589136753!2d-115.1009494996736!3f283.34154574786976!4f5.053809294069822!5f2.0360708148318722"   frameBorder="0" title="fancy" className="frontPageMap" allowFullScreen></iframe>
           {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );
@@ -107,4 +107,4 @@ class FrontCarousel extends Component {
   }
 }
 
-export default FrontCarousel;
+export default Map;

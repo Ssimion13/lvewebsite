@@ -1,0 +1,418 @@
+/* FrontPage CSS */
+
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .frontPageIntroDiv {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frontPageIntroSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .frontPageHeadingText {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .drFajardoFrontPicture {
+    width: 80%;
+  }
+  
+  .frontPageButtonCarouselDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
+  .frontPageMap {
+    width: 100% !important;
+    height: 400px !important; 
+  }
+  
+  .whyChooseLVECarouselImage {
+    width: 100% !important;
+    height: 280px !important;
+  }
+  
+  .carousel-item-active {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .custom-tag {
+    height: 100% !important;
+  }
+  
+  .imagePlaceholder {
+    height: 20%;
+    border: 1px solid white;
+    color: white;
+  }
+  .frontPageButtonsDiv {
+    height: 350px;
+    margin: 30px;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+    grid-template-areas: 
+    "Button1 Button2"
+    "Button3 Button4"
+  }
+  .frontPageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .frontPageButton:hover {
+    background-color: rgb(0, 0, 163);
+    transition-duration: 0.45s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+  
+  }
+  .button1 {
+    grid-area: Button1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button1div {
+    background-color: #003da5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button2 {
+    grid-area: Button2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button2div {
+    background-color: #3364b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button3 {
+    grid-area: Button3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  .button3div {
+    background-color: #3364b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button4 {
+    grid-area: Button4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button4div {
+    background-color: #003da5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  
+  .whyChooseLVESection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frontPageButtonText{
+    color: white !important;
+  }
+  
+  .whyChooseLVEThumbnailTop {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whyChooseLVEThumbnailDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .frontPageButtonIcons {
+    width: 40px;
+  }
+  
+  .frontPageButton {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .whyChooseLVETitle {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .whyChooseLVEUnderline {
+    margin-top: 10px;
+    width: 30%;
+    border-bottom: 3px solid #3967c1;
+  }
+  
+  .whyChooseLVEThumbnail {
+    height: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #3967c1;
+  }
+  
+  .paddedTitle {
+    padding-top: 5px;
+  }
+  
+  .paddedText {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* end FrontPage CSS */
+
+/* FrontCarousel CSS */
+
+.carouselPictures {
+    width: 100%;
+    height: 100%;
+  }
+  .carouselContainer {
+    height: 400px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  /* end FrontCarousel CSS */
+
+/*Fee Section CSS */
+
+.feeSectionThumbnailDiv {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+
+.feeSectionButton {
+  width: 70%;
+  height: 300px;
+  color: white;
+  font-family: "futura-lt-w01-light,sans-serif";
+  z-index: 1;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.feeSectionButton::before {
+  content: "";
+  background-color: rgb(48, 48, 48);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.feeSectionImageOverlay:hover {
+  opacity: 1;
+}
+
+
+/*End Fee Section CSS */
+
+/* Footer Page CSS */
+
+.footerMain {
+    width: 100%;
+    /* background-color: #3967c1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .footerNavbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerButton {
+    height: 95%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white !important;
+  }
+  
+  .footerTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLogo {
+    margin-top: 50px;
+  }
+  .footerAddress {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  
+  /* End Footer CSS */
+
+  @media (min-width: 850px){
+/* frontPage CSS */
+
+.frontPageIntroDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frontPageIntroSection {
+    height: 600px;
+    flex-direction: column;
+  }
+
+
+  .drFajardoFrontPicture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frontPageButtonCarouselDiv {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whyChooseLVECarousel {
+    width: 100% !important;
+    /* height: 400px !important; */
+  }
+
+  .carousel-caption {
+    color: black !important;
+  }
+  
+  .testimonialHeader {
+    font-size: 50px;
+  }
+
+  .carouselContainer {
+    width: 50%;
+    line-height: 0.5;
+
+  }
+
+  .frontPageButtonsDiv {
+    width: 50%;
+    height: 100%;
+  }
+
+  .whyChooseLVESection {}
+
+  .whyChooseLVEThumbnailDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 380px;
+  }
+
+  .whyChooseLVEThumbnail {
+    width: 20%;
+    height: 100%;
+  }
+  .whyChooseLVEThumbnailBottom {
+    height: 75%;
+  }
+  .whyChooseLVECarouselImage {
+    height: 600px !important; 
+  }
+
+  .frontPageAttraction {
+    height: 300px;
+  }
+
+  .frontPageHeadingText {
+    width: 60%;
+  }
+  /* Fee Section CSS */
+  .feeSectionThumbnailDiv {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+  .feeSectionButton {
+    width: 20%;
+    height: 100%;
+  }
+  /* End Fee Section CSS */
+
+  
+  /* end FrontPage CSS */
+
+  }
+
+  @media (min-width: 650px){
+    .drFajardoFrontPicture {
+      width: 60%;
+    }
+  }

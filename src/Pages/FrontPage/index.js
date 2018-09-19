@@ -98,7 +98,7 @@ class FrontPage extends Component {
                 </div>
                 {/* : null } */}
                 <div className="blockBar">
-                    <h1 className="blockHeader"> Our location </h1>
+                    <h1 className="blockHeader"> Our Location </h1>
                 </div>
                 <Footer />
             </div>

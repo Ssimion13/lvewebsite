@@ -1,7 +1,7 @@
 import React from 'react';
 // import {Link} from "react-router-dom";
 import logo from "../../Images/logo.png"
-import FrontCarousel from "./FrontCarousel";
+import Map from "./Map";
 
 
 const TopBar = function(){
@@ -35,7 +35,7 @@ const TopBar = function(){
                     </h4>
                 </div>
                 <div className="carouselContainer">
-                    <FrontCarousel />
+                    <Map />
                 </div>
 
 

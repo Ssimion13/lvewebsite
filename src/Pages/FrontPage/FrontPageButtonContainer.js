@@ -3,7 +3,7 @@ import React from "react";
 import FrontPageButton from "./FrontPageButton";
 import note from "../../Images/note.png";
 import conversation from "../../Images/conversation.png"
-import certificate from "../../Images/certificate.png";
+import certificate from "../../Images/blackcertificate.png";
 import doctor from "../../Images/doctor.png";
 
 
