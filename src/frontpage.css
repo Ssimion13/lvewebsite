@@ -6,6 +6,68 @@
     align-items: center;
   
   }
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font: normal normal normal 30px/1.4em proxima-n-w01-reg,sans-serif;
+  }
+  .frontPageAttraction {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .frontPageAttraction:before {
+    height: 400px;
+    width: 100%;
+    background: url("./Images/ourwork.jpg");
+    background-size: cover;
+    background-position: center;
+    content: "";
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+  .frontPageAttractionText {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+  }
+  .titleButton {
+    width: 150px;
+
+  }
+  .feeSectionButton {
+    width: 70%;
+    height: 300px;
+    color: white;
+    font-family: "futura-lt-w01-light,sans-serif";
+    z-index: 1;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .feeSectionButton::before {
+    content: "";
+    background-color: rgb(48, 48, 48);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  
   
   .frontPageIntroDiv {
     min-height: 550px;
@@ -314,7 +376,18 @@
 
   @media (min-width: 850px){
 /* frontPage CSS */
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font: normal normal normal 50px/1.4em proxima-n-w01-reg,sans-serif;
+  }
 
+  .frontPageAttraction {
+    height: 550px;
+  }
+  .frontPageAttraction:before {
+    height: 550px;
+  }
 .frontPageIntroDiv {
     display: flex;
     flex-direction: column;
@@ -328,9 +401,11 @@
 
   .drFajardoFrontPicture {
     width: 100%;
-    height: 100%;
+    height: 600px;
   }
-
+  .centerAligner {
+    flex-direction: row;
+  }
   .frontPageButtonCarouselDiv {
     display: flex;
     flex-direction: row;
@@ -369,7 +444,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 380px;
+    height: 300px;
   }
 
   .whyChooseLVEThumbnail {
@@ -383,12 +458,9 @@
     height: 600px !important; 
   }
 
-  .frontPageAttraction {
-    height: 300px;
-  }
 
   .frontPageHeadingText {
-    width: 60%;
+    text-align: center;
   }
   /* Fee Section CSS */
   .feeSectionThumbnailDiv {
@@ -414,5 +486,11 @@
   @media (min-width: 650px){
     .drFajardoFrontPicture {
       width: 60%;
+      height: 600px;
     }
+    
+  .whyChooseLVEThumbnailDiv {
+    height: 380px;
+    /* why doesn't this work? */
+  }
   }

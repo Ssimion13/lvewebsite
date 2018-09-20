@@ -22,10 +22,21 @@ p {
   justify-content: center;
   flex-direction: column;
 }
+.centerAlignerAllColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /* End Misc */
 
-
+/* ReactStrap edits */
+.btn-outline-primary {
+  background-color: rgba(245, 245, 245, 0.589) !important;
+  border: 1px solid darkgrey !important;
+}
+/* End RS Edits*/
 
 
 
