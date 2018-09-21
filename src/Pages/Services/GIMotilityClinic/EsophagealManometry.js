@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function EsophagealManometry() {
     return (
         <div className="sidePageDiv">
-        <h2> Esophageal Manometry </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> Esophageal Manometry </h1>
+        </div>
         <p className="sectionText"> 
             Esophageal manometry is a motility test that evaluates the movements, 
             strength and coordination of the esophagus, also referred to as the food pipe. 

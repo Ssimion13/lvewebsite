@@ -34,6 +34,7 @@ class FrontPage extends Component {
                     <div className="frontPageAttraction">
                         <div className="frontPageAttractionText">
                             <h2> Welcome to Las Vegas Endoscopy </h2>
+                            <p> We are dedicated to bringing you the healthcare of tomorrow, today. </p>
                             <Button className="titleButton" outline color="primary" onClick={this.moveToContact}> Get in Touch </Button>{' '}
                         </div>
                     </div>

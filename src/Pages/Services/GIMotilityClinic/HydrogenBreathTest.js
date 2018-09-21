@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function HydrogenBreathTest() {
     return (
         <div className="sidePageDiv">
-        <h2>  Hydrogen Breath Test </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> Hydrogen Breath Test </h1>
+        </div>
         <p className="sectionText"> 
             The hydrogen breath test is an office-based test that measures the hydrogen 
             and methane levels detected in the breath of a patient. This allows the 

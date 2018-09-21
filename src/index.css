@@ -50,6 +50,10 @@ p {
   flex-direction: column;
 }
 
+.aboutUs {
+  padding-top: 25px;
+}
+
 .sidePageContent {
   display: flex;
   flex-direction: column;
@@ -94,6 +98,7 @@ p {
   text-align: center;
   flex-direction:  column;
   color: black;
+  border-top: 1px solid #d0dada;
 }
 
 .doctorPicture {
@@ -130,6 +135,7 @@ p {
   .serviceDiv {
     width: 90%;
     margin-bottom: 15px;
+    padding-top: 25px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid navy;
   }
@@ -137,6 +143,7 @@ p {
   .sectionText {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 25px;
   }
 /* End Services CSS */
 
@@ -257,8 +264,9 @@ p {
 
 @media (min-width: 850px){
 
-  
-    
+  .aboutDoctorSection {
+    flex-direction: row;
+  }
   
 
     /* testimonials */

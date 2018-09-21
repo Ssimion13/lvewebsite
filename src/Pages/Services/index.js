@@ -5,7 +5,9 @@ import {Link} from 'react-router-dom';
 function Services(){
     return(
         <div className="servicesMain"> 
-            <h1> Services </h1> 
+            <div className="blockBar">
+                <h1 className="blockHeader"> Services </h1>
+            </div>
             <div className="serviceDiv">
                 <h2> Colonoscopy and Colon Cancer Screening Services </h2>
                 <p> A colonoscopy is an exam of the entire colon and the rectum with a colonoscope,

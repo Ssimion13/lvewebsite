@@ -6,7 +6,9 @@ import {Button} from "reactstrap";
 function HPyloriBreathTest() {
     return (
         <div className="sidePageDiv">
-        <h2> H. pylori Breath Test </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> H. pylori Breath Test </h1>
+        </div>
         <p className="sectionText">
             The H. pylori breath test is a quick and simple office-based test that determines the 
             presence of active Helicobacter pylori infection. Helicobacter pylori (H. pylori) is a 

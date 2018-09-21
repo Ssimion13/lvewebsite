@@ -6,7 +6,9 @@ import {Button} from "reactstrap";
 function SmartPill() {
     return (
         <div className="sidePageDiv">
-        <h2> Smartpill </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> About Us </h1>
+        </div>
         <p className="sectionText"> 
             Smartpill is a wireless motility capsule that measures the pH, temperature 
             and pressure throughout the digestive tract. It allows the gastroenterologist 

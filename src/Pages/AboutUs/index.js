@@ -6,9 +6,11 @@ import drcremonini from "../../Images/drcremonini.jpg";
 function AboutUs(){
     return(
         <div className="informativePage"> 
+            <div className="blockBar">
+                <h1 className="blockHeader"> About Us </h1>
+            </div>
             <div className="aboutUs">
-            <h1 className="centeredTitle"> About Us </h1>
-            <p> Read about our main doctors below: </p>
+            <h5> Read about our main doctors below: </h5>
             </div>
             <div className="aboutDoctorSection">
                 <Link to="/DrFajardo" className="doctorThumbnail">

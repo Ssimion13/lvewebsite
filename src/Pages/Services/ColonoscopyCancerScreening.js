@@ -7,7 +7,9 @@ function ColonoscopyCancerScreening() {
     return (
         <div className="sidePageDiv">
             <div className="sidePageContent">
-                <h2 className="centeredTitle" > Colonoscopy and Cancer Screening </h2>
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Colonoscopy & Cancer Screening </h1>
+                </div>
                 <p className="sectionText"> 
                     A colonoscopy is an exam of the entire colon and the rectum with a colonoscope, 
                     a thin flexible tube with a small camera at the end. This painless procedure can

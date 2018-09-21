@@ -5,7 +5,9 @@ import {Link} from 'react-router-dom';
 function GIMotilityClinic() {
     return (
         <div className="sidePageDiv">
-        <h2 className="centeredTitle"> GI Motility Clinic  </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> About Us </h1>
+        </div>
         <p className="sectionText"> 
         Dr. Fajardo and Dr. Cremonini have both undergone specialized training in GI Motility and 
         Neurogastroenterology Disorders.  Las Vegas Gastroenterology provides state-of-the-art technology

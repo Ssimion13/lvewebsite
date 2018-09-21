@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function CapsuleEndoscopy() {
     return (
         <div className="sidePageDiv">
-        <h2> Capsule Endoscopy  </h2>
+            <div className="blockBar">
+                <h1 className="blockHeader"> Capsule Endoscopy </h1>
+            </div>
         <p className="sectionText"> 
             Capsule endoscopy is an outpatient procedure that involves visualization of the small 
             intestine with the use of a wireless capsule equipped with a tiny camera that takes 

@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function EsophagealPH() {
     return (
         <div className="sidePageDiv">
-        <h2> Esophageal pH Monitoring (24 hour) </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> Esophageal pH Monitoring </h1>
+        </div>
         <p className="sectionText"> 
             Esophageal pH monitoring is a test that involves 24-hour measuring and recording of 
             the acid levels in the esophagus, also referred to as the food pipe. This test can 

@@ -11,7 +11,9 @@ import AwardModal from "./AwardModal"
 function Awards(){
     return(
         <div className="informativePage"> 
-            <h2 className="centeredTitle" > Awards </h2>
+            <div className="blockBar">
+                <h1 className="blockHeader"> Awards </h1>
+            </div>
             <br/>
             <div className="imageHolder">
                 <AwardModal image={AWARD01} number={1}/>

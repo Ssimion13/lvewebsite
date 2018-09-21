@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function ViralHepatitisClinic() {
     return (
         <div className="sidePageDiv">
-        <h2> Upper endoscopy – EGD  </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> Viral Hepatitis Clinic </h1>
+        </div>
         <p className="sectionText"> 
             <h2> Viral Hepatitis Clinic </h2>
             <p> 

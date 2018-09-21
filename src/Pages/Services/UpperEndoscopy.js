@@ -5,7 +5,9 @@ import {Button} from "reactstrap";
 function UpperEndoscopy() {
     return (
         <div className="sidePageDiv">
-        <h2> Upper endoscopy – EGD  </h2>
+        <div className="blockBar">
+            <h1 className="blockHeader"> Upper Endoscopy (EGD) </h1>
+        </div>
         <p className="sectionText"> 
             An upper endoscopy, also referred to as an esophagogastroduodenoscopy, or EGD, 
             is a painless examination of the esophagus, stomach and the first portion of the small
