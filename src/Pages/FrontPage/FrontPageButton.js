@@ -6,7 +6,7 @@ function FrontPageButton(props){
     return (
         <Link to={props.link} className={`${props.buttonnumber}`}>
             <div className={`frontPageButton ${props.buttonnumber}div`}>
-                <span> <img className="frontPageButtonIcons" src={props.picture} alt={props.altname}/> </span> 
+                <span> <img className={props.buttonnumber !== "button4" ? "frontPageButtonIcons" : "oddButtonIcon"} src={props.picture} alt={props.altname}/> </span> 
                 <span className="frontPageButtonText"> {props.text} </span> 
             </div>
         </Link>

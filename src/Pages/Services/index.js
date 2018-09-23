@@ -10,7 +10,7 @@ function Services(){
             </div>
             <div className="serviceDiv">
                 <h2> Colonoscopy and Colon Cancer Screening Services </h2>
-                <p> A colonoscopy is an exam of the entire colon and the rectum with a colonoscope,
+                <p className="serviceDescriptionText"> A colonoscopy is an exam of the entire colon and the rectum with a colonoscope,
                     a thin flexible tube with a small camera at the end. This painless procedure
                     can detect abnormalities within the colon such as ulcerations, inflammation,
                     strictures or narrowing, polyps and neoplasm or cancer.
@@ -21,7 +21,7 @@ function Services(){
             </div>
             <div className="serviceDiv">
                 <h2> Upper Endoscopy - EGD </h2>
-                <p>
+                <p className="serviceDescriptionText">
                     An upper endoscopy, also referred to as an esophagogastroduodenoscopy, 
                     or EGD, is a painless examination of the esophagus, stomach and the 
                     first portion of the small intestine or the duodenum. This is done 
@@ -37,7 +37,7 @@ function Services(){
             </div>
             <div className="serviceDiv">
                 <h2> Capsule Endoscopy </h2>
-                <p>
+                <p className="serviceDescriptionText">
                     Capsule endoscopy is an outpatient procedure that involves visualization 
                     of the small intestine with the use of a wireless capsule equipped with a 
                     tiny camera that takes thousands of pictures for later evaluation by the 
@@ -51,7 +51,7 @@ function Services(){
             </div>
             <div className="serviceDiv">
                 <h2> GI Motility Clinic </h2>
-                <p>
+                <p className="serviceDescriptionText">
                     Dr. Fajardo and Dr. Cremonini have both undergone specialized training in GI Motility
                     and Neurogastroenterology Disorders. Las Vegas Gastroenterology provides state-of-the-art 
                     technology that has the ability to perform certain specialized diagnostic procedures 
@@ -64,7 +64,7 @@ function Services(){
             </div>
             <div className="serviceDiv">
                 <h2> Viral Hepatitis Clinic </h2>
-                <p>
+                <p className="serviceDescriptionText">
                     Las Vegas Gastroenterology provides care for patients infected with viral 
                     hepatitis B and C. With comprehensive, in-depth training and years of 
                     experience in the field of hepatology, our physicians are able to diagnose, 
