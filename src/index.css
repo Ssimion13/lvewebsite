@@ -32,9 +32,17 @@ p {
 /* End Misc */
 
 /* ReactStrap edits */
-.btn-outline-primary {
-  background-color: rgba(245, 245, 245, 0.589) !important;
-  border: 1px solid darkgrey !important;
+.btn-outline-secondary {
+  color: white !important;
+  border: 2px solid white !important;
+  font-size: 22px !important;
+  width: 150px !important;
+}
+.btn-outline-secondary:hover { 
+  background-color: transparent !important;
+  color: rgb(247, 243, 44) !important;
+  border: 2px solid rgb(247, 243, 44) !important;
+  transition-duration: 0.50s;
 }
 /* End RS Edits*/
 
@@ -162,6 +170,8 @@ p {
 .serviceDescriptionText {
   font-size: 20px;
   text-indent: 50px;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
 }
 /* End Side Pages CSS*/
 
@@ -171,6 +181,9 @@ p {
   text-align: center;
   margin-bottom: 15px;
   font: normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif;
+}
+.centeredText {
+  text-align: center;
 }
 
 .imageHolder {
@@ -291,6 +304,13 @@ p {
       height: 700px;
     }
     /* end testimonials */
+
+    /* Awards */
+    .imageHolder{
+      display: grid;
+      grid-template-columns: 33% 33% 33%
+    }
+    /* end Awards */
 
 
 

@@ -6,10 +6,14 @@
     align-items: center;
   
   }
+  .centerAlignerText {
+    padding-top: 30px;
+  }
   .title {
     text-align: center;
     margin-bottom: 15px;
     font: normal normal normal 30px/1.4em proxima-n-w01-reg,sans-serif;
+    font-weight: bolder;
   }
   .frontPageAttraction {
     height: 400px;
@@ -28,7 +32,7 @@
     background-size: cover;
     background-position: center;
     content: "";
-    opacity: 0.7;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -92,6 +96,7 @@
   
   .drFajardoFrontPicture {
     width: 80%;
+    height: 400px;
   }
   
   .frontPageButtonCarouselDiv {
@@ -378,6 +383,12 @@
   
   /* End Footer CSS */
 
+  @media (min-width: 1000px){
+    .whyChooseLVEThumbnailTop{
+      height: 45%;
+    }
+  }
+
   @media (min-width: 850px){
 /* frontPage CSS */
   .title {
@@ -410,10 +421,13 @@
   .centerAligner {
     flex-direction: row;
   }
+  .centerAlignerText{
+    width: 55%;
+  }
   .frontPageButtonCarouselDiv {
     display: flex;
     flex-direction: row;
-    height: 450px;
+    height: 550px;
     align-items: center;
     justify-content: center;
   }
@@ -490,7 +504,7 @@
   @media (min-width: 650px){
     .drFajardoFrontPicture {
       width: 60%;
-      height: 600px;
+      height: 450px;
     }
     
   .whyChooseLVEThumbnailDiv {
@@ -498,3 +512,4 @@
     /* why doesn't this work? */
   }
   }
+

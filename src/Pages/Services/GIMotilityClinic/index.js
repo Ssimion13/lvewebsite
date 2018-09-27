@@ -8,7 +8,7 @@ function GIMotilityClinic() {
         <div className="blockBar">
             <h1 className="blockHeader"> About Us </h1>
         </div>
-        <p className="serviceDiv"> 
+        <p className="serviceDiv centeredText"> 
         Dr. Fajardo and Dr. Cremonini have both undergone specialized training in GI Motility and 
         Neurogastroenterology Disorders.  Las Vegas Gastroenterology provides state-of-the-art technology
          that has the ability to perform certain specialized diagnostic procedures for gastrointestinal 
@@ -21,8 +21,9 @@ function GIMotilityClinic() {
         </p>
 
         <h2> Among the studies we offer include: </h2>
+        <h2> Smartpill </h2>
         <p className="serviceDescriptionText">
-            <h3> Smartpill </h3>
+
             Smartpill is a wireless motility capsule that measures the pH, 
             temperature and pressure throughout the digestive tract. 
             It allows the gastroenterologist to determine the time it takes to travel 
@@ -33,8 +34,9 @@ function GIMotilityClinic() {
                 <Button> Learn More </Button>
             </Link>
         </p>
+        <h2> Esophageal Manometry </h2>
         <p className="serviceDescriptionText">
-            <h2> Esophageal Manometry </h2>
+
             Esophageal manometry is a motility test that evaluates the movements,
              strength and coordination of the esophagus, also referred to as the food pipe.
             This test measures the progression of food and liquids down the esophagus. 
@@ -47,8 +49,9 @@ function GIMotilityClinic() {
                 <Button> Learn More </Button>
             </Link>
         </p>
+        <h2> Esophageal pH Monitoring (24 hour) </h2>
         <p className="serviceDescriptionText">
-            <h2> Esophageal pH Monitoring (24 hour) </h2>
+
                 Esophageal pH monitoring is a test that involves 24-hour measuring and recording of the
                 acid levels in the esophagus, also referred to as the food pipe. This test can
                 determine the frequency, duration and intensity of the acid within the esophagus.
@@ -62,8 +65,9 @@ function GIMotilityClinic() {
                     <Button> Learn More </Button>
                 </Link>
         </p>
+        <h2> Hydrogen Breath Test </h2>
         <p className="serviceDescriptionText">
-            <h2> Hydrogen Breath Test </h2>
+           
             The hydrogen breath test is an office-based test that measures the hydrogen and methane 
             levels detected in the breath of a patient. This allows the gastroenterologist to help 
             determine the presence of small intestinal bacterial overgrowth (SIBO). The small bowel 
@@ -75,8 +79,9 @@ function GIMotilityClinic() {
                 <Button> Learn More </Button>
             </Link>
         </p>
+        <h2> H. Pylori Breath Test </h2>
         <p className="serviceDescriptionText">
-            <h2> H. Pylori Breath Test </h2>
+            
                 The H. pylori breath test is a quick and simple office-based test that determines the presence
                 of active Helicobacter pylori infection. Helicobacter pylori (H. pylori) is a bacteria
                 that can cause ulcers in the stomach and the duodenum or the first part of the small intestine.

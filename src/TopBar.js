@@ -23,13 +23,13 @@ class TopBar extends React.Component {
         return (
             <div className="topbarMain">
                 {window.innerWidth > 500 ?
-                <div className="topbarEmpty">
+                <div className="topbarEmptyLeft">
                 </div>
                 : null }
                 <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
-                {window.innerWidth > 500 ?
+                {window.innerWidth > 600 ?
                 <div className="buttonHolder">
                     <Link className="topbarLinks" to="/AboutUs"> About Us </Link>
                     <Link className="topbarLinks" to="/Services"> Services </Link>
@@ -37,7 +37,7 @@ class TopBar extends React.Component {
                     <Link className="topbarLinks" to="/ContactUs"> Contact Us </Link>
                 </div>
                 : null}
-                {window.innerWidth < 500 ? 
+                {window.innerWidth < 600 ? 
                  <div className="buttonHolder">
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle className="topbarButton">
@@ -55,6 +55,8 @@ class TopBar extends React.Component {
                     </Dropdown>
                 </div> 
                 : null }
+                <div className="topbarEmptyRight">
+                </div>
             </div>
         )
     }

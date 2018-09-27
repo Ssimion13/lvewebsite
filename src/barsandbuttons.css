@@ -5,12 +5,10 @@
     justify-content: center;
     width: 40%;
   }
-  .topbarEmpty {
+  .topbarEmptyLeft {
     width: 20%
   }
-  .topBarLinks {
-    /* do I even need this? */
-  }
+
   .logo {
     padding-left: 30px;
   }
@@ -26,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-left: 10px;
   }
   .topbarButton {
     padding: .75rem 1rem !important;
@@ -87,8 +86,11 @@
 
 @media (min-width: 850px){
     /* topbar css */
-    .topbarEmpty {
+    .topbarEmptyLeft {
         width: 5%
+    }
+    .topbarEmptyRight {
+      width: 20%;
     }
     .logoHolder {
         width: 20%;
@@ -96,15 +98,20 @@
     
     .topbarLinks{
         font-size: 22px;
+        color: black !important;
     }
+    .topbarLinks:hover{
+      font-size: 22px;
+      color: #007bff !important;
+  }
     
     .topbarMain {
-        height: 200px;
+        height: 100px;
     }
     
     .logo {
         width: 100%;
-        height: 60%;
+        height: 80%;
     }
     /* end topbar css */
 }

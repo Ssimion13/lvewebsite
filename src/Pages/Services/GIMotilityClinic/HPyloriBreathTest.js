@@ -27,10 +27,11 @@ function HPyloriBreathTest() {
         </p>
         <p> 
             Have more questions about this procedure? <br/> here are some links to help you:
+        </p>
             <ol>
                 <a href="https://www.breathtek.com/patients"> BreathTek </a>
             </ol>
-        </p>
+
         <Link className="backButton" to="/GIMotilityClinic">
             <Button> Back  </Button>
         </Link>
