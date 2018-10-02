@@ -56,9 +56,9 @@ function ContactUs(props){
                     <br/>
                     <p> Subject </p>
                     <input />
+                    <br/>
                     <p> Your Message </p>
                     <input />
-                    <br/>
                     <br/>
                     <Button> Send </Button>
                 </div>

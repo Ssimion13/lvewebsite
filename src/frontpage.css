@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+    margin-top: 100px;
   }
+
   .centerAlignerText {
     padding-top: 30px;
   }
@@ -26,7 +27,6 @@
     justify-content: center;
   }
   .frontPageAttraction:before {
-    height: 400px;
     width: 100%;
     background: url("./Images/ourwork.jpg");
     background-size: cover;
@@ -40,11 +40,16 @@
     position: absolute;
     z-index: -1; 
   }
+  .frontTitle {
+    font-size: 35px;
+  }
+
   .frontPageAttractionText {
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
+    text-align: center;
   }
   .titleButton {
     width: 150px;
@@ -282,6 +287,7 @@
   }
   
   .paddedText {
+    font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -396,12 +402,18 @@
     margin-bottom: 15px;
     font: normal normal normal 50px/1.4em proxima-n-w01-reg,sans-serif;
   }
+  .frontTitle {
+    font-size: 45px;
+  }
+  .frontSubtitle {
+    font-size: 30px;
+  }
 
   .frontPageAttraction {
-    height: 550px;
+    height: 85vh;
   }
   .frontPageAttraction:before {
-    height: 550px;
+    height: 85vh;
   }
 .frontPageIntroDiv {
     display: flex;
@@ -422,7 +434,7 @@
     flex-direction: row;
   }
   .centerAlignerText{
-    width: 55%;
+    width: 40%;
   }
   .frontPageButtonCarouselDiv {
     display: flex;
@@ -503,8 +515,7 @@
 
   @media (min-width: 650px){
     .drFajardoFrontPicture {
-      width: 60%;
-      height: 450px;
+      width: 50%;
     }
     
   .whyChooseLVEThumbnailDiv {

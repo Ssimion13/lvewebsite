@@ -14,9 +14,16 @@
   }
   
   .topbarMain {
-    height: 90px;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    opacity: 0.85;
+    padding-top: 5px;
   }
   
   .buttonHolder {
@@ -55,7 +62,7 @@
   /* end Navbar CSS */
   /* Bottom Buttons */
   .bottomButtonsMain {
-    height: 10%;
+    height: 8%;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -107,6 +114,8 @@
     
     .topbarMain {
         height: 100px;
+        padding-bottom: 5px; 
+        padding-top: 5px; 
     }
     
     .logo {
