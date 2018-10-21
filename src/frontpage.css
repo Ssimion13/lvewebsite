@@ -4,7 +4,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+  }
+
+
+  .background-video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -100;
+  }
+
+  .frontPageVideo {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .centerAlignerText {

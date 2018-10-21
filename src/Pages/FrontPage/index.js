@@ -10,7 +10,9 @@ import doctorlaptop from "../../Images/doctorlaptop.jpg";
 import ourwork from "../../Images/ourwork.jpg";
 import medicine from "../../Images/drugggs.jpg"
 import FrontPageButtonContainer from "./FrontPageButtonContainer";
-import { Button } from 'reactstrap'
+import { Button } from 'reactstrap';
+import lvecommercial from "../../Videos/lvecommercial.mp4";
+
 
 class FrontPage extends Component {
     constructor(){
@@ -30,6 +32,15 @@ class FrontPage extends Component {
     render(){
         return(
             <div className="frontPage">
+                <div className="frontPageVideo">
+                <video className="background-video" muted loop autoPlay>
+                <source src={lvecommercial} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+                </div>
+
+
+
                 <div className="frontPageIntroDiv">
                     <div className="frontPageAttraction">
                         <div className="frontPageAttractionText">
