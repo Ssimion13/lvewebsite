@@ -8,20 +8,34 @@ import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'r
 class TopBar extends React.Component {
     constructor() {
         super();
-        this.toggle = this.toggle.bind(this);
+
         this.state = {
-          dropdownOpen: false
+          dropdownOpen: false,
+          transparency: true,
         };
+        this.toggle = this.toggle.bind(this);
       }
-    
-      toggle() {
-        this.setState(prevState => ({
-          dropdownOpen: !prevState.dropdownOpen
-        }));
-      }
+
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 100;
+            if (isTop !== this.state.transparency) {
+                this.setState({ transparency: false })
+            }
+        });
+    }
+
+    toggle() {
+    this.setState(prevState => ({
+        dropdownOpen: !prevState.dropdownOpen
+    }));
+    }
+
+
     render(){
+        const currentTransparency = this.state.transparency ? "topbarTransparent topbarMain" : "topbarColor topbarMain"
         return (
-            <div className="topbarMain">
+            <div className={currentTransparency}>
                 {window.innerWidth > 500 ?
                 <div className="topbarEmptyLeft">
                 </div>

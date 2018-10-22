@@ -21,9 +21,17 @@
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: transparent;
     opacity: 0.85;
     padding-top: 5px;
+  }
+
+  .topbarTransparent {
+    background-color: transparent;
+
+  }
+
+  .topbarColor {
+    background-color: white;
   }
   
   .buttonHolder {
