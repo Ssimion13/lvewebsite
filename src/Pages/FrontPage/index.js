@@ -33,7 +33,7 @@ class FrontPage extends Component {
         return(
             <div className="frontPage">
                 <div className="frontPageVideo">
-                <video className="background-video" muted loop autoPlay>
+                <video className="background-video" muted loop autoPlay >
                 <source src={lvecommercial} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>

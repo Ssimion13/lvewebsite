@@ -18,9 +18,12 @@ class TopBar extends React.Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 100;
+            const isTop = window.scrollY < 450;
             if (isTop !== this.state.transparency) {
                 this.setState({ transparency: false })
+            }
+            if (isTop !== this.state.transparency) {
+                this.setState({ transparency: true })
             }
         });
     }
