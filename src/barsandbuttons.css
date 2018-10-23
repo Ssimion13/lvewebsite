@@ -27,11 +27,12 @@
 
   .topbarTransparent {
     background-color: transparent;
-
+    transition-duration: 1s;
   }
 
-  .topbarColor {
+  .topbarOpaque {
     background-color: white;
+    transition-duration: 1s;
   }
   
   .buttonHolder {
@@ -113,12 +114,23 @@
     
     .topbarLinks{
         font-size: 22px;
-        color: black !important;
+        color: white !important;
+        font-weight: bolder;
+        
+    }
+    .topbarLinksOpaque{
+      font-size: 22px;
+      color: black !important;
+      font-weight: bolder;
     }
     .topbarLinks:hover{
       font-size: 22px;
       color: #007bff !important;
-  }
+    }
+    .topbarLinksOpaque:hover{
+      font-size: 22px;
+      color: #007bff !important;
+    }
     
     .topbarMain {
         height: 100px;

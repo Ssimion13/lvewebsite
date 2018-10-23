@@ -9,16 +9,17 @@
 
   .background-video {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     object-fit: fill;
     z-index: -100;
   }
 
   .frontPageVideo {
-    min-height: 300px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .centerAlignerText {

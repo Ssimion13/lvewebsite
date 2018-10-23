@@ -36,9 +36,10 @@ class TopBar extends React.Component {
 
 
     render(){
-        const currentTransparency = this.state.transparency ? "topbarTransparent topbarMain" : "topbarColor topbarMain"
+        const navbarStatus = this.state.transparency ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
+        const linkStatus = this.state.transparency ? "topbarLinks" : "topbarLinksOpaque"
         return (
-            <div className={currentTransparency}>
+            <div className={navbarStatus}>
                 {window.innerWidth > 500 ?
                 <div className="topbarEmptyLeft">
                 </div>
@@ -48,10 +49,10 @@ class TopBar extends React.Component {
                 </Link>
                 {window.innerWidth > 600 ?
                 <div className="buttonHolder">
-                    <Link className="topbarLinks" to="/AboutUs"> About Us </Link>
-                    <Link className="topbarLinks" to="/Services"> Services </Link>
-                    <Link className="topbarLinks" to="/Awards"> Awards </Link>
-                    <Link className="topbarLinks" to="/ContactUs"> Contact Us </Link>
+                    <Link className={linkStatus} to="/AboutUs"> About Us </Link>
+                    <Link className={linkStatus} to="/Services"> Services </Link>
+                    <Link className={linkStatus} to="/Awards"> Awards </Link>
+                    <Link className={linkStatus} to="/ContactUs"> Contact Us </Link>
                 </div>
                 : null}
                 {window.innerWidth < 600 ? 
