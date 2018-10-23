@@ -34,22 +34,15 @@ class FrontPage extends Component {
             <div className="frontPage">
                 <div className="frontPageVideo">
                 <video className="background-video" muted loop autoPlay >
-                <source src={lvecommercial} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+                    <source src={lvecommercial} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <Button className="videoButton" outline  onClick={this.moveToContact}> Contact Us</Button>{' '}
                 </div>
 
 
 
                 <div className="frontPageIntroDiv">
-                    <div className="frontPageAttraction">
-                        <div className="frontPageAttractionText">
-                            <h1 className="frontTitle"> Welcome to Las Vegas Endoscopy! </h1>
-                            <h5 className="frontSubtitle"> We are dedicated to bringing you the healthcare of tomorrow, today. </h5>
-                            <br/>
-                            <Button className="titleButton" outline  onClick={this.moveToContact}> Contact Us</Button>{' '}
-                        </div>
-                    </div>
                     <div className="frontPageIntroSection">
                         <div className="centerAligner">
                             <div className="centerAlignerText">

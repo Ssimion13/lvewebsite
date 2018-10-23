@@ -40,22 +40,17 @@ class TopBar extends React.Component {
         const linkStatus = this.state.transparency ? "topbarLinks" : "topbarLinksOpaque"
         return (
             <div className={navbarStatus}>
-                {window.innerWidth > 500 ?
-                <div className="topbarEmptyLeft">
-                </div>
-                : null }
                 <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
-                {window.innerWidth > 600 ?
+                {window.innerWidth > 800 ?
                 <div className="buttonHolder">
                     <Link className={linkStatus} to="/AboutUs"> About Us </Link>
                     <Link className={linkStatus} to="/Services"> Services </Link>
                     <Link className={linkStatus} to="/Awards"> Awards </Link>
                     <Link className={linkStatus} to="/ContactUs"> Contact Us </Link>
                 </div>
-                : null}
-                {window.innerWidth < 600 ? 
+                : 
                  <div className="buttonHolder">
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle className="topbarButton">
@@ -72,7 +67,7 @@ class TopBar extends React.Component {
                         </DropdownMenu>
                     </Dropdown>
                 </div> 
-                : null }
+                }
                 <div className="topbarEmptyRight">
                 </div>
             </div>
