@@ -12,7 +12,7 @@ import medicine from "../../Images/drugggs.jpg"
 import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
-
+import VideoModal from "./VideoModal.js";
 
 class FrontPage extends Component {
     constructor(){
@@ -33,13 +33,24 @@ class FrontPage extends Component {
         return(
             <div className="frontPage">
                 <div className="frontPageVideo">
-                <video className="background-video" muted loop autoPlay >
-                    <source src={lvecommercial} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <Button className="videoButton" outline  onClick={this.moveToContact}> Contact Us</Button>{' '}
+                    <video className="background-video" muted loop autoPlay >
+                        <source src={lvecommercial} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="videoButtonDiv">
+                        <Button  className="videoButton" outline  onClick={this.moveToContact}> Contact Us</Button>
+                        <VideoModal />
+                    </div>
                 </div>
+                <div className="frontPageIntroDiv">
+                    <div className="centerAlignerText">
+                        <h1 className='centeredTitle'>  Bringing Tomorrow, Today </h1>
 
+                        <h4 className="frontPageHeadingText">
+                        "Insert one of those questionable one-liner quotes like those think tanks do that hire hundreds of people to subliminally convince people to buy something for here because Scott needs this to hold as a placeholder"
+                        </h4>
+                    </div>
+                </div>
 
 
                 <div className="frontPageIntroDiv">

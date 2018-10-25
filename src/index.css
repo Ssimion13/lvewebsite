@@ -11,6 +11,9 @@ p {
 }
 
 /* Misc */
+.centeredTitle {
+  text-align: center;
+}
 .backButton {
   padding-bottom: 20px;
 
@@ -181,7 +184,7 @@ p {
 .centeredTitle {
   text-align: center;
   margin-bottom: 15px;
-  font: normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif;
+  font: normal normal normal 35px/1.4em proxima-n-w01-reg,sans-serif;
 }
 .centeredText {
   text-align: center;
