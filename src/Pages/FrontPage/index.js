@@ -53,7 +53,7 @@ class FrontPage extends Component {
                 </div>
 
 
-                <div className="frontPageIntroDiv">
+                {/* <div className="frontPageIntroDiv">
                     <div className="frontPageIntroSection">
                         <div className="centerAligner">
                             <div className="centerAlignerText">
@@ -71,7 +71,7 @@ class FrontPage extends Component {
                         </div>
                         
                     </div>
-                </div>
+                </div> */}
                 <div className="blockBar">
                     <h1 className="blockHeader"> Our Services </h1>
                 </div>
