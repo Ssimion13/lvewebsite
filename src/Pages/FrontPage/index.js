@@ -3,7 +3,7 @@ import Footer from "./Footer.js";
 // import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
-import drfajardo from "../../Images/drfajardo.png";
+// import drfajardo from "../../Images/drfajardo.png";
 import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
 import microscope from "../../Images/microscope.jpg";
 import doctorlaptop from "../../Images/doctorlaptop.jpg";
@@ -13,6 +13,13 @@ import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+
+
+
 
 class FrontPage extends Component {
     constructor(){
@@ -115,7 +122,6 @@ class FrontPage extends Component {
                         </WhyChooseLVEThumbnail>
                     </div>
                 </div>
-
                 <div className="feeSectionThumbnailDiv">
 
                     <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
@@ -130,6 +136,20 @@ class FrontPage extends Component {
                     <FeeSectionThumbnail media={microscope} opacity={"0.2"}
                         heading={"Laboratory"}
                     />
+                </div>
+                <div className="linkThumbnailHolder">
+                    <a href="https://www.facebook.com/lvgastro/" className="linkThumbnailDiv facebook">
+                        <FontAwesomeIcon icon={['fab', 'facebook']} size="6x"className="linkThumbnail"/>
+                    </a>
+                    <a href="https://twitter.com/lvgastro?lang=en" className="linkThumbnailDiv twitter">
+                        <FontAwesomeIcon icon={['fab', 'twitter']} size="6x" />
+                    </a>
+                    <a href="https://www.instagram.com/lvgastro/?hl=en" className="linkThumbnailDiv instagram">
+                        <FontAwesomeIcon icon={['fab', 'instagram']} size="6x" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC8UcyfVXDiZLm4NjXP3IRTg" className="linkThumbnailDiv youtube">
+                        <FontAwesomeIcon icon={['fab', 'youtube']} size="6x" />
+                    </a>
                 </div>
                 {/* : null } */}
                 <div className="blockBar">
