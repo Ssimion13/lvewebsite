@@ -12,6 +12,7 @@
   .logo {
     padding-left: 30px;
     height: 80%;
+    width: 65%;
   }
   
   .topbarMain {
@@ -141,6 +142,7 @@
     
     .logo {
         height: 95%;
+        width: 95%;
     }
     /* end topbar css */
 }

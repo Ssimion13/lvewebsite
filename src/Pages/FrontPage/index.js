@@ -37,6 +37,8 @@ class FrontPage extends Component {
     }
 
     render(){
+        //this variable determines the size of icons based on window size.
+        const icons = window.innerWidth > 800 ? "6x" : "3x";
         return(
             <div className="frontPage">
                 <div className="frontPageVideo">
@@ -137,19 +139,24 @@ class FrontPage extends Component {
                         heading={"Laboratory"}
                     />
                 </div>
-                <div className="linkThumbnailHolder">
-                    <a href="https://www.facebook.com/lvgastro/" className="linkThumbnailDiv facebook">
-                        <FontAwesomeIcon icon={['fab', 'facebook']} size="6x"className="linkThumbnail"/>
-                    </a>
-                    <a href="https://twitter.com/lvgastro?lang=en" className="linkThumbnailDiv twitter">
-                        <FontAwesomeIcon icon={['fab', 'twitter']} size="6x" />
-                    </a>
-                    <a href="https://www.instagram.com/lvgastro/?hl=en" className="linkThumbnailDiv instagram">
-                        <FontAwesomeIcon icon={['fab', 'instagram']} size="6x" />
-                    </a>
-                    <a href="https://www.youtube.com/channel/UC8UcyfVXDiZLm4NjXP3IRTg" className="linkThumbnailDiv youtube">
-                        <FontAwesomeIcon icon={['fab', 'youtube']} size="6x" />
-                    </a>
+                <div className="socialMedia">
+                    <div className="socialMediaDiv">
+                        <h4> Find us on Social Media! </h4>
+                        <div className="linkThumbnailHolder">
+                            <a href="https://www.facebook.com/lvgastro/" className="linkThumbnailDiv facebook">
+                                <FontAwesomeIcon icon={['fab', 'facebook']} size={icons} className="linkThumbnail"/>
+                            </a>
+                            <a href="https://twitter.com/lvgastro?lang=en" className="linkThumbnailDiv twitter">
+                                <FontAwesomeIcon icon={['fab', 'twitter']} size={icons} />
+                            </a>
+                            <a href="https://www.instagram.com/lvgastro/?hl=en" className="linkThumbnailDiv instagram">
+                                <FontAwesomeIcon icon={['fab', 'instagram']} size={icons} />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC8UcyfVXDiZLm4NjXP3IRTg" className="linkThumbnailDiv youtube">
+                                <FontAwesomeIcon icon={['fab', 'youtube']} size={icons} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 {/* : null } */}
                 <div className="blockBar">

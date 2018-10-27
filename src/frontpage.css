@@ -288,6 +288,7 @@
     width: 100%;
     align-items: center;
     padding-bottom: 20px;
+    height: auto;
   }
   
   .frontPageButtonIcons {
@@ -336,12 +337,25 @@
   /* end FrontPage CSS */
 
   /*Link Thumbnails CSS */
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .socialMediaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 450px;
+  }
   .linkThumbnailHolder {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
-    height: 300px;
+    width: 100%;
   }
 
   .linkThumbnailDiv {
@@ -616,9 +630,8 @@
       width: 50%;
     }
     
-  .whyChooseLVEThumbnailDiv {
-    height: 380px;
-    /* why doesn't this work? */
-  }
+    .whyChooseLVEThumbnailDiv {
+      width: 60%;
+    }
   }
 
