@@ -342,6 +342,21 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  .socialMedia::before {
+    content: "";
+    background: url("./Images/samplegroupphoto.jpg");
+    background-size: cover;
+    background-position: center-top;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
   }
   .socialMediaDiv {
     display: flex;
@@ -492,10 +507,13 @@
   
   
   /* End Footer CSS */
-
-  @media (min-width: 1000px){
-    .whyChooseLVEThumbnailTop{
-      height: 45%;
+  @media (min-width: 650px){
+    .drFajardoFrontPicture {
+      width: 50%;
+    }
+    
+    .whyChooseLVEThumbnailDiv {
+      width: 60%;
     }
   }
 
@@ -584,7 +602,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 300px;
+    height: 450px;
+    width: 100%;
   }
 
   .whyChooseLVEThumbnail {
@@ -625,13 +644,10 @@
 
   }
 
-  @media (min-width: 650px){
-    .drFajardoFrontPicture {
-      width: 50%;
-    }
-    
-    .whyChooseLVEThumbnailDiv {
-      width: 60%;
+  @media (min-width: 1000px){
+    .whyChooseLVEThumbnailTop{
+      height: 45%;
     }
   }
+
 

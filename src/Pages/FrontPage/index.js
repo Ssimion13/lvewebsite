@@ -38,7 +38,7 @@ class FrontPage extends Component {
 
     render(){
         //this variable determines the size of icons based on window size.
-        const icons = window.innerWidth > 800 ? "6x" : "3x";
+        const icons = window.innerWidth > 800 ? "5x" : "3x";
         return(
             <div className="frontPage">
                 <div className="frontPageVideo">
