@@ -9,10 +9,11 @@ import microscope from "../../Images/microscope.jpg";
 import doctorlaptop from "../../Images/doctorlaptop.jpg";
 import ourwork from "../../Images/ourwork.jpg";
 import medicine from "../../Images/drugggs.jpg"
-import FrontPageButtonContainer from "./FrontPageButtonContainer";
+// import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
+import FrontPageServices from "./FrontPageServices.js"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -37,6 +38,7 @@ class FrontPage extends Component {
     }
 
     render(){
+        
         //this variable determines the size of icons based on window size.
         const icons = window.innerWidth > 800 ? "5x" : "3x";
         return(
@@ -62,32 +64,15 @@ class FrontPage extends Component {
                 </div>
 
 
-                {/* <div className="frontPageIntroDiv">
-                    <div className="frontPageIntroSection">
-                        <div className="centerAligner">
-                            <div className="centerAlignerText">
-                            <h3 className="title">
-                                Quality You Can Trust
-                            </h3>
-                            <h5 className="frontPageHeadingText"> (Hopefully with a better font when I find one) </h5>
-                            <p className="frontPageHeadingText">
-                                "Insert one of those questionable one-liner quotes like those think tanks do that hire hundreds of people to subliminally convince people to buy something for here because Scott needs this to hold as a placeholder"
-                                
-                            </p>
-                            <p className="frontPageHeadingText"> --Scott Simion </p>
-                            </div>
-                            <img alt="DrFajardo" className="drFajardoFrontPicture" src={drfajardo} />
-                        </div>
-                        
-                    </div>
-                </div> */}
                 <div className="blockBar">
                     <h1 className="blockHeader"> Our Services </h1>
                 </div>
                 <div className="whyChooseLVECarousel">
                     <WhyChooseLVECarousel />
                 </div>
-                <FrontPageButtonContainer />
+
+                <FrontPageServices />
+                {/* <FrontPageButtonContainer /> */}
                 {/* <Testimonials /> */}
                 {/* I'm not sure whether I need this part or not. */}
                 {/* {window.innerWidth > 500 ? */}

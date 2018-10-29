@@ -11,8 +11,8 @@
 
   .logo {
     padding-left: 30px;
-    height: 80%;
-    width: 65%;
+    height: 150px;
+    width: 95%;
   }
   
   .topbarMain {
@@ -25,6 +25,7 @@
     z-index: 10;
     opacity: 0.95;
     padding-top: 5px;
+    padding-bottom: 10px;
     height: 100px;
   }
 
@@ -34,7 +35,7 @@
   }
 
   .topbarOpaque {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.904);
     transition-duration: 1s;
   }
   
@@ -123,7 +124,6 @@
     }
     .topbarLinksOpaque{
       font-size: 22px;
-      color: black !important;
       font-weight: bolder;
     }
     .topbarLinks:hover{

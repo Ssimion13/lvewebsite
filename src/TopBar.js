@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./Images/logo.png"
+import logo from "./Images/transparentlogo.png"
 import {Link} from "react-router-dom"
 import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'reactstrap';
 
@@ -19,11 +19,15 @@ class TopBar extends React.Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 450;
-            if (isTop !== this.state.transparency) {
-                this.setState({ transparency: false })
-            }
-            if (isTop !== this.state.transparency) {
-                this.setState({ transparency: true })
+            if(window.location.href !== "http://localhost:3000"){
+                this.setState({transparency: false})
+            } else {
+                if (isTop !== this.state.transparency  ) {
+                    this.setState({ transparency: false })
+                }
+                if (isTop !== this.state.transparency) {
+                    this.setState({ transparency: true })
+                }
             }
         });
     }
@@ -36,7 +40,7 @@ class TopBar extends React.Component {
 
 
     render(){
-        const navbarStatus = this.state.transparency ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
+        const navbarStatus = this.state.transparency  ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
         const linkStatus = this.state.transparency ? "topbarLinks" : "topbarLinksOpaque"
         return (
             <div className={navbarStatus}>

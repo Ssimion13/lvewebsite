@@ -380,6 +380,11 @@
     color: white !important;
   }
 
+  .linkThumbnailDiv:hover {
+    opacity: 0.65;
+    transition-duration: 0.55s;
+  }
+
   .linkThumbnail {
     z-index: 100;
   }
@@ -462,6 +467,115 @@
   opacity: 1;
 }
 
+/* testimonial Section */
+.blockMain {
+  width: 100%;
+}
+.blockBar {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialThumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.testimonialThumbnailDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.testimonialThumbnailDiv::before {
+  content: "";
+  background: url('./Images/setuproom.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  margin-bottom: 80px;
+}
+.blockHeader {
+  letter-spacing: 8px;
+  font-size: 25px;
+  color: whitesmoke;
+  line-height: 100%;
+  padding-top: 10px;
+  
+}
+/* End testimonial */
+
+/* Front Page Services Main */
+
+.frontPageServicesMain {
+  width: 100%;
+  height: 1500px;
+
+}
+.frontPageServicesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frontPageService {
+  display: flex;
+  width: 95%;
+  height: 400px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.topService {
+  /*  this is so inefficient.... */
+  margin-top: 50px;
+}
+
+.endoscopy {
+  background: url("./Images/sampleORroom.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.giClinic {
+  background: url("./Images/happysunrise.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hepatitisClinic {
+  background: url("./Images/totallyorroom.jpeg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center top;
+}
 
 /*End Fee Section CSS */
 

@@ -29,7 +29,7 @@ class VideoModal extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalBody>
           <div className="videoWrapper">
-            <iframe title="YouTube video player" class="youtube-player" type="text/html" 
+            <iframe title="YouTube video player" className="youtube-player" type="text/html" 
                 width="640" height="390" src="https://www.youtube.com/embed/ngfaCPHcJFM"
                 frameborder="0" allowFullScreen></iframe>
           </div>
