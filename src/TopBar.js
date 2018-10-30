@@ -19,16 +19,15 @@ class TopBar extends React.Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 450;
-            if(window.location.href !== "http://localhost:3000/"){
-                this.setState({transparency: false})
-            } 
             if (isTop !== this.state.transparency ) {
                     this.setState({ transparency: false })
             }
             if (isTop !== this.state.transparency) {
-                if(window.location.href === "http://localhost:3000/"){
+                
                     this.setState({ transparency: true })
-                }
+            }
+            if(window.location.href !== "http://localhost:3000/"){
+                this.setState({transparency: false})
             }
         });
     }

@@ -13,7 +13,11 @@ import medicine from "../../Images/drugggs.jpg"
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
-import FrontPageServices from "./FrontPageServices.js"
+import FrontPageService from "./FrontPageService/"
+import ORRoom from "../../Images/sampleORroom.jpg";
+import sunrise from "../../Images/happysunrise.jpg";
+import trollpicture from "../../Images/totallyorroom.jpeg";
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -70,8 +74,13 @@ class FrontPage extends Component {
                 <div className="whyChooseLVECarousel">
                     <WhyChooseLVECarousel />
                 </div>
-
-                <FrontPageServices />
+                <div className="frontPageServicesMain">
+                <div className="frontPageServicesDiv">
+                    <FrontPageService media={ORRoom}  heading={"Colonoscopies and Endoscopies"} margin="40px"/>
+                    <FrontPageService media={sunrise} heading={"GI Clinic"}/>
+                    <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"}/>
+                </div>
+                </div>
                 {/* <FrontPageButtonContainer /> */}
                 {/* <Testimonials /> */}
                 {/* I'm not sure whether I need this part or not. */}

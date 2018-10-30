@@ -548,6 +548,9 @@
   background-color: whitesmoke;
   margin-bottom: 20px;
   margin-top: 20px;
+  border-radius: 40px 100px 40px;
+  z-index: 1;
+  position: relative;
 
 }
 
@@ -556,26 +559,7 @@
   margin-top: 50px;
 }
 
-.endoscopy {
-  background: url("./Images/sampleORroom.jpg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-}
 
-.giClinic {
-  background: url("./Images/happysunrise.jpg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.hepatitisClinic {
-  background: url("./Images/totallyorroom.jpeg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: center top;
-}
 
 /*End Fee Section CSS */
 
