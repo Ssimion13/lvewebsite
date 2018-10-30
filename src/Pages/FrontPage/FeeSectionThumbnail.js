@@ -25,7 +25,9 @@ class FeeSectionThumbnail extends Component {
       mouseOver = () => {
           this.setState({hover: true,
             styles: {
-              backgroundColor: "darkblue"
+              backgroundColor: "darkblue",
+              transitionDuration: "0.25s",
+              transitionTimingFunction: "ease-out",
             }});
 
           console.log("hello");
@@ -45,7 +47,7 @@ class FeeSectionThumbnail extends Component {
     render() {
       return (
         
-          <button className="feeSectionButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <div className="feeSectionButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
@@ -58,7 +60,7 @@ class FeeSectionThumbnail extends Component {
               <h3> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
             </div>}  
-          </button>
+          </div>
       );
     }
   }

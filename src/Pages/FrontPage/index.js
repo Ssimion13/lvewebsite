@@ -76,9 +76,10 @@ class FrontPage extends Component {
                 </div>
                 <div className="frontPageServicesMain">
                 <div className="frontPageServicesDiv">
-                    <FrontPageService media={ORRoom}  heading={"Colonoscopies and Endoscopies"} margin="40px"/>
-                    <FrontPageService media={sunrise} heading={"GI Clinic"}/>
-                    <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"}/>
+                    <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screening"} margin="40px"/>
+                    <FrontPageService media={ORRoom} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopy"} margin="40px"/>
+                    <FrontPageService media={sunrise} heading={"GI Clinic"} linkTarget={"/GIMotilityClinic"} />
+                    <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"} linkTarget={"/ViralHepatitisClinic"} />
                 </div>
                 </div>
                 {/* <FrontPageButtonContainer /> */}

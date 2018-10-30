@@ -23,7 +23,6 @@
     top: 0;
     width: 100%;
     z-index: 10;
-    opacity: 0.95;
     padding-top: 5px;
     padding-bottom: 10px;
     height: 100px;
@@ -35,7 +34,7 @@
   }
 
   .topbarOpaque {
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: rgb(0, 0, 0);
     transition-duration: 1s;
   }
   

@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
+import { Button } from 'reactstrap';
 
 class FrontPageService extends Component {
     constructor(props) {
@@ -23,7 +25,9 @@ class FrontPageService extends Component {
       mouseOver = () => {
           this.setState({hover: true,
             styles: {
-              backgroundColor: "darkblue"
+              backgroundColor: "darkblue",
+              transitionDuration: "0.25s",
+              transitionTimingFunction: "ease-out"
             }});
 
           console.log("hello");
@@ -43,19 +47,24 @@ class FrontPageService extends Component {
     render() {
       return (
         
-          <button className="feeSectionButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <div className="servicesButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
-                  <h3><b> Hello {this.props.heading}, I am empty space, just waiting to know what I should exist for!</b></h3>
+                  <h3><b> Under Construction </b></h3>
                   <h4> {this.props.info}</h4>
+                  <Link to={this.props.linkTarget || "hi"}> 
+                  <Button> Learn More </Button>
+                  </Link>
                 </div>
               </div>) : 
             <div className="feeSectionImageOverlay overlay">
               <h3> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
+              
             </div>}  
-          </button>
+            
+          </div>
       );
     }
   }
