@@ -136,7 +136,7 @@ class FrontPage extends Component {
                 </div>
                 <div className="socialMedia">
                     <div className="socialMediaDiv">
-                        <h4> Find us on Social Media! </h4>
+                        <h2 className="socialMediaTitle"> Find us on Social Media! </h2>
                         <div className="linkThumbnailHolder">
                             <a href="https://www.facebook.com/lvgastro/" className="linkThumbnailDiv facebook">
                                 <FontAwesomeIcon icon={['fab', 'facebook']} size={icons} className="linkThumbnail"/>

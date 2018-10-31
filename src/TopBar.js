@@ -50,9 +50,9 @@ class TopBar extends React.Component {
                     <Link className={linkStatus} to="/ContactUs"> Contact Us </Link>
                 </div>
                 : 
-                 <div className="buttonHolder">
+                 <div >
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                        <DropdownToggle className="topbarButton">
+                        <DropdownToggle className="hamburgerButton" >
                             ≡
                         </DropdownToggle>
                         <DropdownMenu>

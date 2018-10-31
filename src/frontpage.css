@@ -370,6 +370,14 @@
     width: 100%;
     height: 450px;
   }
+
+  .socialMediaTitle {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+
   .linkThumbnailHolder {
     display: flex;
     align-items: center;
@@ -380,7 +388,7 @@
   .linkThumbnailDiv {
     background-color: black;
     border-radius: 50%;
-    padding: 30px;
+    padding: 20px;
     color: white !important;
   }
 
@@ -458,7 +466,7 @@
 .feeSectionButton::before {
   content: "";
   background-color: rgb(48, 48, 48);
-  opacity: 0.3;
+  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -776,6 +784,9 @@
 
   /* End Fee Section CSS */
 
+  .linkThumbnailDiv {
+    padding: 30px;
+  }
   
   /* end FrontPage CSS */
 
