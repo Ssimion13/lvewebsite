@@ -19,15 +19,10 @@ class TopBar extends React.Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 450;
-            if (isTop !== this.state.transparency ) {
+            if (isTop) {
+                this.setState({ transparency: true })
+            } else {
                     this.setState({ transparency: false })
-            }
-            if (isTop !== this.state.transparency) {
-                
-                    this.setState({ transparency: true })
-            }
-            if(window.location.href !== "http://localhost:3000/"){
-                this.setState({transparency: false})
             }
         });
     }
@@ -40,8 +35,8 @@ class TopBar extends React.Component {
 
 
     render(){
-        const navbarStatus = this.state.transparency  ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
-        const linkStatus = this.state.transparency ? "topbarLinks" : "topbarLinksOpaque"
+        const navbarStatus = this.state.transparency && window.location.href.length === 22  ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
+        const linkStatus = this.state.transparency && window.location.href.length === 22 ? "topbarLinks" : "topbarLinksOpaque"
         return (
             <div className={navbarStatus}>
                 <Link to="/" className="logoHolder">    
