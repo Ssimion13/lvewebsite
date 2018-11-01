@@ -14,14 +14,19 @@
     z-index: -100;
   }
   .videoButtonDiv {
-    transform: translateY(-50px) !important;
+    transform: translateY(-30px) !important;
     position: absolute !important;
     bottom: 100px !important;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
 
   .videoButton {
-    margin-right: 20px;
+    width: 130px !important;
+    font-size: 18px !important;
+    text-align: center !important;
   }
   .videoWrapper {
     position: relative;
@@ -463,6 +468,10 @@
   margin-bottom: 15px;
 }
 
+.feeSectionButtonHeadings {
+  font-size: 2.0rem;
+}
+
 .feeSectionButton::before {
   content: "";
   background-color: rgb(48, 48, 48);
@@ -680,6 +689,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #406ae6;
+    color: white;
   }
 
   .frontPageIntroSection {

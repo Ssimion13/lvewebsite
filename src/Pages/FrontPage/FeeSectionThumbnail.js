@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import {Button} from "reactstrap";
 
 
 
@@ -51,13 +52,16 @@ class FeeSectionThumbnail extends Component {
             {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
-                <div className="feeSectionTextOverlay">
-                  <h3><b> Hello {this.props.heading}, I am empty space, just waiting to know what I should exist for!</b></h3>
-                  <h4> {this.props.info}</h4>
-                </div>
-              </div>) : 
+              <div className="feeSectionTextOverlay">
+                <h3><b> Something about {this.props.heading} </b></h3>
+                <h4> {this.props.info}</h4>
+                <Link to={this.props.linkTarget || "hi"}> 
+                <Button> Learn More </Button>
+                </Link>
+              </div>
+            </div>) : 
             <div className="feeSectionImageOverlay overlay">
-              <h3> <b> {this.props.heading} </b> </h3>
+              <h3 className="feeSectionButtonHeadings"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
             </div>}  
           </div>

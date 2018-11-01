@@ -53,7 +53,7 @@ class FrontPage extends Component {
                         Your browser does not support the video tag.
                     </video>
                     <div className="videoButtonDiv">
-                        <Button  className="videoButton" outline  onClick={this.moveToContact}> Contact Us</Button>
+                        <Button  className="videoButton"   onClick={this.moveToContact}> Contact Us</Button>
                         <VideoModal />
                     </div>
                 </div>
