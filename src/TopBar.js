@@ -42,7 +42,7 @@ class TopBar extends React.Component {
                 <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
-                {window.innerWidth > 800 ?
+                {window.innerWidth > 500 ?
                 <div className="buttonHolder">
                     <Link className={linkStatus} to="/AboutUs"> About Us </Link>
                     <Link className={linkStatus} to="/Services"> Services </Link>

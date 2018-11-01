@@ -9,12 +9,12 @@
 
   .background-video {
     width: 100%;
-    height: 95vh;
+    height: 75vh;
     object-fit: fill;
     z-index: -100;
   }
   .videoButtonDiv {
-    transform: translateY(-30px) !important;
+    transform: translateY(-75px) !important;
     position: absolute !important;
     bottom: 100px !important;
     display: flex;
@@ -43,7 +43,7 @@
   }
 
   .frontPageVideo {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,10 +130,14 @@
   
   
   .frontPageIntroDiv {
-    min-height: 550px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #406ae6;
+    color: white;
+    margin-top: 150px;
   }
   
   .frontPageIntroSection {
@@ -147,7 +151,7 @@
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    font-size: 35px;
+    font-size: 22px;
   }
   
   .drFajardoFrontPicture {
@@ -577,6 +581,13 @@
 
 }
 
+.servicesButtonDiv {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .servicesButton {
   width: 70%;
   height: 300px;
@@ -655,6 +666,17 @@
   
   /* End Footer CSS */
   @media (min-width: 650px){
+
+    .background-video {
+      height: 100vh;
+    }
+    .frontPageVideo {
+      height: 100vh;
+    }
+    .videoButtonDiv {
+      transform: translateY(50px) !important;
+    }
+
     .drFajardoFrontPicture {
       width: 50%;
     }
@@ -664,7 +686,7 @@
     }
   }
 
-  @media (min-width: 850px){
+  @media (min-width: 650px){
 /* frontPage CSS */
   .title {
     text-align: center;
@@ -689,8 +711,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #406ae6;
     color: white;
+    margin-top: 0px;
   }
 
   .frontPageIntroSection {

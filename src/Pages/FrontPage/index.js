@@ -17,7 +17,8 @@ import FrontPageService from "./FrontPageService/"
 import ORRoom from "../../Images/sampleORroom.jpg";
 import sunrise from "../../Images/happysunrise.jpg";
 import trollpicture from "../../Images/totallyorroom.jpeg";
-
+//react reveal
+import Fade from "react-reveal/Fade";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -76,10 +77,26 @@ class FrontPage extends Component {
                 </div>
                 <div className="frontPageServicesMain">
                 <div className="frontPageServicesDiv">
-                    <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screening"} margin="40px"/>
-                    <FrontPageService media={ORRoom} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopy"} margin="40px"/>
-                    <FrontPageService media={sunrise} heading={"GI Clinic"} linkTarget={"/GIMotilityClinic"} />
-                    <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"} linkTarget={"/ViralHepatitisClinic"} />
+                    <Fade bottom>
+                        <div className="servicesButtonDiv">
+                            <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screening"} margin="40px"/>
+                        </div>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="servicesButtonDiv">
+                            <FrontPageService media={ORRoom} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopy"} margin="40px"/>
+                        </div>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="servicesButtonDiv">
+                            <FrontPageService media={sunrise} heading={"GI Clinic"} linkTarget={"/GIMotilityClinic"} />
+                        </div>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="servicesButtonDiv">
+                            <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"} linkTarget={"/ViralHepatitisClinic"} />
+                        </div>
+                    </Fade>
                 </div>
                 </div>
                 {/* <FrontPageButtonContainer /> */}
