@@ -53,7 +53,7 @@ class FeeSectionThumbnail extends Component {
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
               <div className="feeSectionTextOverlay">
-                <h3><b> Something about {this.props.heading} </b></h3>
+                <h3><b> Something about {this.props.heading} , filler text </b></h3>
                 <h4> {this.props.info}</h4>
                 <Link to={this.props.linkTarget || "hi"}> 
                 <Button> Learn More </Button>
