@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(25,25,25);
 }
 p {
   font-size: 15px;
@@ -167,6 +167,41 @@ p {
 
 /* end About Us Page */
 
+/* Footer */
+
+.footerMain {
+  background-color: rgb(25,25,25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footerThumbnailDiv {
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 20px;
+}
+.footerLogo {
+  height: 65%;
+  width: 65%;
+}
+.footerDiv {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* end Footer */
+
 
 
 
@@ -268,7 +303,48 @@ p {
 
 /* end contact us page */
 
+/* contact Page CSS */
 
+.contactMain {
+  width: 100%;
+  /* background-color: #3967c1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.contactNavbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactButton {
+  height: 95%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: white !important;
+}
+
+.contactTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.contactLogo {
+  height: 50%;
+  width: 50%;
+}
+.contactAddress {
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+/* End contact CSS */
 
 
 @media (min-width: 850px){
@@ -300,7 +376,24 @@ p {
     }
     /* end Awards */
 
+    /*footer */
+    .footerMain {
+      height: 250px;
+      width: 100%;
+      flex-direction: row;
+      text-align: center;
+      padding-bottom: 0px;
+    }
+    .footerDiv {
+      width: 33%;
+      height: 100%;
+    }
+    .footerLogo {
+      width: 80%;
+      height: 100%;
+    }
 
+    /* end footer */
 
 
 
@@ -309,5 +402,4 @@ p {
 
 
 @media (min-width: 650px){
-
 }

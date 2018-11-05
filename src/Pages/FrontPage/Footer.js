@@ -1,44 +1,33 @@
 import React from 'react';
 // import {Link} from "react-router-dom";
-import logo from "../../Images/logo.png"
-import Map from "./Map";
+import logo from "../../Images/transparentlogo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const TopBar = function(){
+    const icons = window.innerWidth > 800 ? "2x" : "1x";
         return (
             <div className="footerMain">
-                <div className="footerTextContent">
-                    {/* <div className="footerNavbar">
-                        <Link className="footerButton" to="/"> Home </Link>
-                        <Link className="footerButton" to="/Services"> Services </Link>
-                        <Link className="footerButton" to="/AboutUs"> About </Link>
-                        <Link className="footerButton" to="/Awards"> Awards </Link>
-                        <Link className="footerButton" to="/ContactUs"> Contact </Link>
-                    </div> */}
+                <div className="footerDiv">
                     <img className="footerLogo" alt="logo" src={logo} />
-                    <h4 className="footerAddress">    
-                        <b> Las Vegas Endoscopy </b> <br/>
-                        7315 S Pecos Road <br/>
-                        Suite 103 <br/>
-                        Las Vegas, NV 89120 <br/>
-                    </h4>
-                    <h4 className="footerAddress">
-                    Phone: (816) 232-2333 
-                    </h4>
-                    <h3 className="footerAddress"> Hours of Operation </h3>
-                    <h4 className="footerAddress">
-                        Monday: 6:30am - 4pm <br/>
-                        Tuesday: 6:30am - 4pm <br/>
-                        Wednesday: 6:30am - 4pm <br/>
-                        Thursday: 6:30am - 4pm <br/>
-                        Friday: 6:30am - 4pm <br/>
-                    </h4>
                 </div>
-                <div className="carouselContainer">
-                    <Map />
+                <div className="footerDiv">
+                    <h4> Made by　Scott Simion </h4>
                 </div>
-
-
+                <div className="footerDiv">
+                    <a href="https://www.facebook.com/lvgastro/" className="footerThumbnailDiv facebook">
+                        <FontAwesomeIcon icon={['fab', 'facebook']} size={icons} className="linkThumbnail"/>
+                    </a>
+                    <a href="https://twitter.com/lvgastro?lang=en" className="footerThumbnailDiv twitter">
+                        <FontAwesomeIcon icon={['fab', 'twitter']} size={icons} />
+                    </a>
+                    <a href="https://www.instagram.com/lvgastro/?hl=en" className="footerThumbnailDiv instagram">
+                        <FontAwesomeIcon icon={['fab', 'instagram']} size={icons} />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC8UcyfVXDiZLm4NjXP3IRTg" className="footerThumbnailDiv youtube">
+                        <FontAwesomeIcon icon={['fab', 'youtube']} size={icons} />
+                    </a>
+                </div>
 
             </div>
         )

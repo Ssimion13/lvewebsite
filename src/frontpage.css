@@ -395,7 +395,7 @@
   }
 
   .linkThumbnailDiv {
-    background-color: black;
+    background-color: rgb(25,25,25);
     border-radius: 50%;
     padding: 20px;
     color: white !important;
@@ -499,7 +499,7 @@
 .blockBar {
   height: 80px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(25,25,25);
   text-align: center;
   display: flex;
   align-items: center;
@@ -623,48 +623,7 @@
 
 /*End Fee Section CSS */
 
-/* Footer Page CSS */
 
-.footerMain {
-    width: 100%;
-    /* background-color: #3967c1; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-  }
-  .footerNavbar {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footerButton {
-    height: 95%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    color: white !important;
-  }
-  
-  .footerTextContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-  }
-  .footerLogo {
-    height: 50%;
-    width: 50%;
-  }
-  .footerAddress {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  
-  /* End Footer CSS */
   @media (min-width: 650px){
 
     .background-video {
@@ -791,6 +750,7 @@
 
   .frontPageHeadingText {
     text-align: center;
+    width: 60%;
   }
 
 
