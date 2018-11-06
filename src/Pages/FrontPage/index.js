@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Footer from "./Footer.js";
+import Footer from "../../Footer.js";
 // import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
@@ -60,7 +60,7 @@ class FrontPage extends Component {
                 </div>
                 <div className="frontPageIntroDiv">
                     <div className="centerAlignerText">
-                        <h1 className='centeredTitle'>  Bringing Tomorrow, Today </h1>
+                        <h1 className='centeredIntroTitle'>  Bringing Tomorrow, Today </h1>
 
                         <h4 className="frontPageHeadingText">
                         "Insert one of those questionable one-liner quotes like those think tanks do that hire hundreds of people to subliminally convince people to buy something for here because Scott needs this to hold as a placeholder"
@@ -171,7 +171,7 @@ class FrontPage extends Component {
                     </div>
                 </div>
                 {/* : null } */}
-                <Footer />
+                
             </div>
         )
     }

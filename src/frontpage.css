@@ -135,7 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #406ae6;
+    background-color: #2442ED;
     color: white;
     margin-top: 150px;
   }
@@ -672,6 +672,7 @@
     justify-content: center;
     color: white;
     margin-top: 0px;
+    min-height: 550px;
   }
 
   .frontPageIntroSection {
@@ -750,7 +751,8 @@
 
   .frontPageHeadingText {
     text-align: center;
-    width: 60%;
+    width: 80%;
+    font-size: 35px;
   }
 
 
@@ -758,7 +760,7 @@
 
   /* Fee Section CSS */
   .feeSectionThumbnailDiv {
-    height: 500px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: row;

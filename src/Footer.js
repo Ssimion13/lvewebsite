@@ -1,7 +1,8 @@
 import React from 'react';
 // import {Link} from "react-router-dom";
-import logo from "../../Images/transparentlogo.png"
+import logo from "./Images/transparentlogo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {Link} from "react-router-dom";
 
 
 const TopBar = function(){
@@ -9,7 +10,9 @@ const TopBar = function(){
         return (
             <div className="footerMain">
                 <div className="footerDiv">
-                    <img className="footerLogo" alt="logo" src={logo} />
+                    <Link to="/" className="footerLogo">
+                        <img className="footerLogo" alt="logo" src={logo} />
+                    </Link>
                 </div>
                 <div className="footerDiv">
                     <h4> Made by　Scott Simion </h4>

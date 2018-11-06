@@ -5,7 +5,7 @@ import FrontPage from "./Pages/FrontPage";
 import {Route, Switch} from "react-router-dom";
 import AboutUs from "./Pages/AboutUs/";
 import Awards from "./Pages/Awards/";
-import ContactUs from "./Pages/ContactUs";
+import Location from "./Pages/Location";
 import Services from "./Pages/Services/";
 import BottomButtons from "./BottomButtons.js";
 import ColonoscopyCancerScreening from "./Pages/Services/ColonoscopyCancerScreening"
@@ -20,6 +20,7 @@ import HPyloriBreathTest from "./Pages/Services/GIMotilityClinic/HPyloriBreathTe
 import HydrogenBreathTest from "./Pages/Services/GIMotilityClinic/HydrogenBreathTest.js";
 import DrFajardo from "./Pages/AboutUs/DrFajardo.js";
 import DrCremonini from "./Pages/AboutUs/DrCremonini.js";
+import Footer from "./Footer.js"
 
 class App extends Component {
   render() {
@@ -31,7 +32,7 @@ class App extends Component {
           <Route exact path="/" component={FrontPage} /> 
           <Route path="/AboutUs" component={AboutUs} />
           <Route path="/Awards" component={Awards} />
-          <Route path="/ContactUs" component={ContactUs} />
+          <Route path="/Location" component={Location} />
           <Route path="/Services" component={Services} />
           <Route path="/ColonoscopyCancerScreening" component={ColonoscopyCancerScreening} />
           <Route path="/UpperEndoscopy" component={UpperEndoscopy} />
@@ -46,6 +47,7 @@ class App extends Component {
           <Route path="/DrFajardo" component={DrFajardo} />
           <Route path="/DrCremonini" component={DrCremonini} />
         </Switch>
+        <Footer />
         {window.innerWidth < 500 ?
           <BottomButtons />
         : null}

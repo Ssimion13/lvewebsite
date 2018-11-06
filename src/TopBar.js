@@ -47,7 +47,7 @@ class TopBar extends React.Component {
                     <Link className={linkStatus} to="/AboutUs"> About Us </Link>
                     <Link className={linkStatus} to="/Services"> Services </Link>
                     <Link className={linkStatus} to="/Awards"> Awards </Link>
-                    <Link className={linkStatus} to="/ContactUs"> Contact Us </Link>
+                    <Link className={linkStatus} to="/Location"> Location </Link>
                 </div>
                 : 
                  <div >

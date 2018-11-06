@@ -10,7 +10,7 @@
   }
 
   .logo {
-    padding-left: 30px;
+    padding-left: 20px;
     height: 100px;
     width: 200px;
   }
@@ -133,19 +133,22 @@
         font-size: 22px;
         color: white !important;
         font-weight: bolder;
-        
     }
+
+
     .topbarLinksOpaque{
       font-size: 22px;
       font-weight: bolder;
     }
     .topbarLinks:hover{
-      font-size: 22px;
-      color: #007bff !important;
+      opacity: 0.50;
+      transition-duration: 0.35s;
+      text-decoration: none !important;
     }
     .topbarLinksOpaque:hover{
-      font-size: 22px;
-      color: #007bff !important;
+      opacity: 0.50;
+      transition-duration: 0.35s;
+      text-decoration: none !important;
     }
     
     .topbarMain {

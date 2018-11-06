@@ -6,7 +6,7 @@ import Map from "./FrontPage/Map.js";
 // //import MapWithAMarker2 from "./MapWithAMarker2";
 // import {Button} from "reactstrap";
 
-class ContactUs extends Component{
+class Location extends Component{
     componentDidMount() {
         window.scrollTo(0, 0)
     }
@@ -19,7 +19,7 @@ class ContactUs extends Component{
                     <Link className="contactButton" to="/Services"> Services </Link>
                     <Link className="contactButton" to="/AboutUs"> About </Link>
                     <Link className="contactButton" to="/Awards"> Awards </Link>
-                    <Link className="contactButton" to="/ContactUs"> Contact </Link>
+                    <Link className="contactButton" to="/Location"> Contact </Link>
                 </div> */}
                 <img className="contactLogo" alt="logo" src={logo} />
                 <h4 className="contactAddress">    
@@ -113,5 +113,5 @@ class ContactUs extends Component{
     }
 }
 
-export default ContactUs;
+export default Location;
 

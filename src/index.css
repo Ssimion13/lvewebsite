@@ -190,6 +190,11 @@ p {
   color: white;
   margin-right: 20px;
 }
+.footerThumbnailDiv:hover {
+  opacity: 0.75;
+  transition-duration: 0.35s;
+  color: white;
+}
 .footerLogo {
   height: 65%;
   width: 65%;
@@ -251,6 +256,12 @@ p {
 /* Award Page */
 
 .centeredTitle {
+  text-align: center;
+  margin-bottom: 15px;
+  font: normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif;
+  font-weight: bold;
+}
+.centeredIntroTitle {
   text-align: center;
   margin-bottom: 15px;
   font: normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif;
@@ -352,7 +363,12 @@ p {
   .aboutDoctorSection {
     flex-direction: row;
   }
-  
+  .centeredIntroTitle {
+    text-align: center;
+    margin-bottom: 15px;
+    font: normal normal normal 65px/1.4em proxima-n-w01-reg,sans-serif;
+    font-weight: bold;
+  }
 
     /* testimonials */
 
@@ -378,7 +394,7 @@ p {
 
     /*footer */
     .footerMain {
-      height: 250px;
+      height: 200px;
       width: 100%;
       flex-direction: row;
       text-align: center;
