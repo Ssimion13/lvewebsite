@@ -37,6 +37,33 @@
     background-color: rgb(25,25,25);
     transition-duration: 1s;
   }
+
+  .topbarLinks{
+    font-size: 22px !important;
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+  .topbarLinksOpaque{
+    font-size: 22px !important;
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .topbarLinks:hover{
+    opacity: 0.50;
+    transition-duration: 0.35s;
+    text-decoration: none !important;
+  }
+  .topbarLinksOpaque:hover{
+    opacity: 0.50;
+    transition-duration: 0.35s;
+    text-decoration: none !important;
+  }
   
   .buttonHolder {
     width: 75%;
@@ -57,6 +84,7 @@
     border-radius: 50% !important;
     background-color: #3364b7 !important;
     font-size: 25px !important;
+    z-index: 100 !important;
   }
 
   .mobileMenu {
@@ -65,12 +93,15 @@
     background-color: rgb(25,25,25);
     position: fixed;
     left: 0px;
-    top: 75px;
+    top: 70px;
     opacity: 0.95;
+  }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .mobileMenuDiv {
+    /* color: white; */
+    background-color: white;
+    width: 50%;
+    height: 50%;
   }
 
   .nothing {

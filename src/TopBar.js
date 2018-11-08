@@ -107,25 +107,25 @@ class TopBar extends React.Component {
                         {this.state.mobileMenuOpen ? 
                         <Fade bottom>
                             <div className="mobileMenu">
-                                <div className="mobileMenu....Menu">
-                                    <ol> 
-                                        <ul>
-                                            <li> fuck bitches </li>
-                                        </ul>
-                                    </ol>
+                                <div className="mobileMenuDiv">
+                                <Link to="/"> Home </Link>
+                                <DropdownItem divider />
+                                <Link to="/AboutUs"> About Us </Link>
+                                <br/>
+                                <Link to="/Services"> Services </Link>
+                                <br/>
+                                <Link to="/Awards"> Awards </Link>
+                                <br/>
+                                <Link to="/ContactUs"> Contact Us </Link>
+                                <br/>
+                                <DropdownItem divider />
                                 </div>
                             </div>
                         </Fade>
                         : null 
                         }
                         {/* <DropdownMenu>
-                            <NavLink href="/"> Home </NavLink>
-                            <DropdownItem divider />
-                            <NavLink href="/AboutUs"> About Us </NavLink>
-                            <NavLink href="/Services"> Services </NavLink>
-                            <NavLink href="/Awards"> Awards </NavLink>
-                            <NavLink href="/ContactUs"> Contact Us </NavLink>
-                            <DropdownItem divider />
+
                         </DropdownMenu> */}
                     </Dropdown>
                 </div> 
