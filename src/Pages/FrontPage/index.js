@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Footer from "../../Footer.js";
 // import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";

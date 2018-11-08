@@ -55,8 +55,27 @@
     width: 50px !important;
     height: 50px !important;
     border-radius: 50% !important;
-    background-color: #00468B !important;
+    background-color: #3364b7 !important;
     font-size: 25px !important;
+  }
+
+  .mobileMenu {
+    width: 100vh;
+    height: 100vh;
+    background-color: rgb(25,25,25);
+    position: fixed;
+    left: 0px;
+    top: 75px;
+    opacity: 0.95;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nothing {
+    /* lol this is lazy as fuck i am a baddie.... */
+    display: none;
   }
 
   .topbarButton {
@@ -130,15 +149,20 @@
     }
     
     .topbarLinks{
-        font-size: 22px;
+        font-size: 22px !important;
         color: white !important;
-        font-weight: bolder;
+        background-color: transparent !important;
+        border: none !important;
+        font-family: 'Roboto', sans-serif !important;
     }
 
 
     .topbarLinksOpaque{
-      font-size: 22px;
-      font-weight: bolder;
+      font-size: 22px !important;
+      color: white !important;
+      background-color: transparent !important;
+      border: none !important;
+      font-family: 'Roboto', sans-serif !important;
     }
     .topbarLinks:hover{
       opacity: 0.50;
@@ -172,7 +196,7 @@
     width: 100px !important;
     height: 100px !important;
     border-radius: 50% !important;
-    background-color: #00468B !important;
+    background-color: #3364b7 !important;
     font-size: 45px !important;
   }
 }
