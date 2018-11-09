@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 
 
 
+
 class TopBar extends React.Component {
     constructor() {
         super();
@@ -18,6 +19,7 @@ class TopBar extends React.Component {
         };
         this.toggle = this.toggle.bind(this);
         this.toggleMobile = this.toggleMobile.bind(this);
+        this.turnOffMobile = this.toggleMobile.bind(this);
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
       }
@@ -28,10 +30,12 @@ class TopBar extends React.Component {
             if (isTop) {
                 this.setState({ transparency: true })
             } else {
-                    this.setState({ transparency: false })
+                this.setState({ transparency: false })
             }
         });
+
     }
+
 
     toggle() {
     this.setState(prevState => ({
@@ -43,6 +47,11 @@ class TopBar extends React.Component {
         this.setState(prevState => ({
             mobileMenuOpen: !prevState.mobileMenuOpen
         }))
+    }
+    turnOffMobile () {
+        this.setState({
+            mobileMenuOpen: false
+        })
     }
 
     onMouseEnter(checker) {
@@ -110,13 +119,13 @@ class TopBar extends React.Component {
                                 <div className="mobileMenuDiv">
                                 <Link to="/"> Home </Link>
                                 <DropdownItem divider />
-                                <Link to="/AboutUs"> About Us </Link>
+                                    <Link to="/AboutUs"> About Us </Link>
                                 <br/>
                                 <Link to="/Services"> Services </Link>
                                 <br/>
                                 <Link to="/Awards"> Awards </Link>
                                 <br/>
-                                <Link to="/ContactUs"> Contact Us </Link>
+                                <Link to="/Location"> Location </Link>
                                 <br/>
                                 <DropdownItem divider />
                                 </div>

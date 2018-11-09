@@ -99,9 +99,10 @@
 
   .mobileMenuDiv {
     /* color: white; */
-    background-color: white;
+    background-color: rgb(25,25,25);
     width: 50%;
     height: 50%;
+    font-size: 30px;
   }
 
   .nothing {

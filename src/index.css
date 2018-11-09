@@ -184,11 +184,17 @@ p {
   color: white;
 }
 
+.footerThumbnailHolder {
+  width: 65%;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 .footerThumbnailDiv {
   padding: 10px;
   border-radius: 50%;
   color: white;
-  margin-right: 20px;
 }
 .footerThumbnailDiv:hover {
   opacity: 0.75;
@@ -198,6 +204,9 @@ p {
 .footerLogo {
   height: 65%;
   width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footerDiv {
   height: 100%;
@@ -343,7 +352,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 90px;
 }
 .contactLogo {
   height: 50%;

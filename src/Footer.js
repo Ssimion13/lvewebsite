@@ -17,7 +17,7 @@ const TopBar = function(){
                 <div className="footerDiv">
                     <h4> Made by　Scott Simion </h4>
                 </div>
-                <div className="footerDiv">
+                <div className="footerThumbnailHolder">
                     <a href="https://www.facebook.com/lvgastro/" className="footerThumbnailDiv facebook">
                         <FontAwesomeIcon icon={['fab', 'facebook']} size={icons} className="linkThumbnail"/>
                     </a>
