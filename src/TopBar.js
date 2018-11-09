@@ -25,7 +25,12 @@ class TopBar extends React.Component {
       }
 
     componentDidMount() {
+        //this is a pretty jury rigged system to check if the user is on the front page, since that's the only place where any transparency matters, anyways....
+        this.setState ({
+            startingURLLength: window.location.href.length
+        })
         document.addEventListener('scroll', () => {
+            
             const isTop = window.scrollY < 450;
             if (isTop) {
                 this.setState({ transparency: true })
@@ -74,8 +79,9 @@ class TopBar extends React.Component {
 
 
     render(){
-        const navbarStatus = this.state.transparency && window.location.href.length === 22  ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
-        const linkStatus = this.state.transparency && window.location.href.length === 22 ? "topbarLinks" : "topbarLinksOpaque"
+        const currentURLLength = window.location.href.length;
+        const navbarStatus = this.state.transparency && this.state.startingURLLength === currentURLLength  ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
+        const linkStatus = this.state.transparency && this.state.startingURLLength === currentURLLength ? "topbarLinks" : "topbarLinksOpaque"
         return (
             <div className={navbarStatus}>
                 <Link to="/" className="logoHolder">    

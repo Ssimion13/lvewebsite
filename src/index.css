@@ -417,6 +417,13 @@ p {
       width: 80%;
       height: 100%;
     }
+    .footerThumbnailHolder {
+      justify-content: center;
+      width: 33%;
+    }
+    .footerThumbnailDiv {
+      margin-right: 20px;
+    }
 
     /* end footer */
 
