@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 // import Testimonials from "./Testimonials.js";
 import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
@@ -29,17 +30,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class FrontPage extends Component {
     constructor(){
         super();
-        this.moveToContact = this.moveToContact.bind(this);
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
     }
 
-    moveToContact() {
-        window.scrollTo (0, 3450);
-        //if more stuff is added, increase this number
-    }
 
     render(){
         
@@ -53,7 +49,9 @@ class FrontPage extends Component {
                         Your browser does not support the video tag.
                     </video>
                     <div className="videoButtonDiv">
-                        <Button  className="videoButton"   onClick={this.moveToContact}> Contact Us</Button>
+                        <Button className="videoButton"> 
+                            <Link to="/Location" className="videoButtonText" > Location </Link>
+                        </Button>
                         <VideoModal />
                     </div>
                 </div>

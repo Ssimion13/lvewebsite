@@ -30,6 +30,11 @@
     font-size: 18px !important;
     text-align: center !important;
   }
+  .videoButtonText {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
   .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
