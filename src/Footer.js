@@ -15,7 +15,7 @@ const TopBar = function(){
                     </Link>
                 </div>
                 <div className="footerDiv">
-                    <h4> Made by　Scott Simion </h4>
+                    <h4> Made by Scott Simion </h4>
                 </div>
                 <div className="footerThumbnailHolder">
                     <a href="https://www.facebook.com/lvgastro/" className="footerThumbnailDiv facebook">

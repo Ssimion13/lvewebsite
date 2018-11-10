@@ -29,8 +29,6 @@ class FrontPageService extends Component {
               transitionDuration: "0.25s",
               transitionTimingFunction: "ease-out"
             }});
-
-          console.log("hello");
       }
       mouseOut() {
           this.setState({hover: false,
