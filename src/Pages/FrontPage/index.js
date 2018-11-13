@@ -28,9 +28,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 class FrontPage extends Component {
-    constructor(){
-        super();
-    }
 
     componentDidMount() {
         window.scrollTo(0, 0)

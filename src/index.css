@@ -261,6 +261,15 @@ p {
   border-bottom: 1px solid black;
   padding-bottom: 30px;
 }
+
+.sidePageVideoDiv {
+  width: 95%;
+}
+
+.sidePageVideo {
+  width: 100%;
+}
+
 /* End Side Pages CSS*/
 
 /* Award Page */

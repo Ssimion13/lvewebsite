@@ -6,6 +6,9 @@ import {Button} from "reactstrap";
 function HPyloriBreathTest() {
     return (
         <div className="sidePageDiv">
+            <div className="sidePageVideo">
+                <iframe title="LVE Breath Test" width="560" height="315" src="https://www.youtube.com/embed/nn4LfCr_1Hk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
         <div className="blockBar">
             <h1 className="blockHeader"> H. pylori Breath Test </h1>
         </div>

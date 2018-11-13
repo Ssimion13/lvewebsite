@@ -597,6 +597,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .servicesButton {
@@ -659,6 +660,7 @@
 
   @media (min-width: 650px){
 /* frontPage CSS */
+
   .title {
     text-align: center;
     margin-bottom: 15px;
@@ -695,7 +697,9 @@
     height: 100vh;
   }
 
-
+  .servicesButtonDiv {
+    padding-bottom: 20px;
+  }
 
   .drFajardoFrontPicture {
     width: 100%;

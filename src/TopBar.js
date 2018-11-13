@@ -38,10 +38,13 @@ class TopBar extends React.Component {
     }
 
 
-    toggle() {
-    this.setState(prevState => ({
-        dropdownOpen1: !prevState.dropdownOpen1
-    }));
+    toggle(checker) {
+        if(checker === "one"){
+            this.setState({dropdownOpen1: true});
+        }
+        if(checker === "two"){
+            this.setState({dropdownOpen2: true});
+        }
     }
 
     toggleMobile () {
@@ -86,25 +89,25 @@ class TopBar extends React.Component {
                 </Link>
                 {window.innerWidth > 500 ?
                 <div className="buttonHolder">
-                    <Dropdown  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={this.toggle}>
+                    <Dropdown  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
                         <DropdownToggle className={linkStatus}>
                             <div> About Us </div>
                         </DropdownToggle>
-                        <DropdownMenu>
-                                <NavLink href="/DrFajardo"> Dr. Fajardo </NavLink>  
-                                <NavLink href="/DrCremonini"> Dr. Cremonini </NavLink> 
+                        <DropdownMenu className="topBarDropdownMenu">
+                                <NavLink className="topBarDropdownLink" href="/DrFajardo"> Dr. Fajardo </NavLink>  
+                                <NavLink className="topBarDropdownLink" href="/DrCremonini"> Dr. Cremonini </NavLink> 
                         </DropdownMenu>
                     </Dropdown>
-                    <Dropdown onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={this.toggle}>
+                    <Dropdown onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={()=> this.toggle("two")}>
                         <DropdownToggle  className={linkStatus}>
                             <div to="/Services"> Services </div>
                         </DropdownToggle>
-                        <DropdownMenu>
-                            <NavLink href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>
-                            <NavLink href="/UpperEndoscopy"> Upper Endoscopy </NavLink>
-                            <NavLink href="/GIMotilityClinic"> GI Motility Clinic </NavLink>
-                            <NavLink href="/ViralHepatitisClinic"> Viral Hepatitis Clinic  </NavLink>
-                            <NavLink href="/SmartPill"> Capsule Endoscopy </NavLink>
+                        <DropdownMenu className="topBarDropdownMenu">
+                            <NavLink className="topBarDropdownLink" href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/UpperEndoscopy"> Upper Endoscopy </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/GIMotilityClinic"> GI Motility Clinic </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/ViralHepatitisClinic"> Viral Hepatitis Clinic  </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/CapsuleEndoscopy"> Capsule Endoscopy (SmartPill) </NavLink>
                         </DropdownMenu>
                     </Dropdown>
                     <Link className={linkStatus} to="/Awards"> Awards </Link>

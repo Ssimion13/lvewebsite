@@ -38,9 +38,10 @@ class App extends Component {
   }
 
   timer() {
+    //set to 2 seconds when done, leave at 1 seconds while testing so i don't have to see that ballin animation
     setTimeout(() => {
       this.setState({doneLoading: true})
-    }, 1500);
+    }, 1000);
   }
 
 
@@ -80,7 +81,7 @@ class App extends Component {
         <div className="loadingScreen"> 
           <h2 className="loadingScreenText"> <i> Now Loading </i> </h2>
           <div className="loadingScreenLogoDiv">
-            <img className="loadingScreenLogo" src={logo} />
+            <img className="loadingScreenLogo" alt="logo" src={logo} />
           </div>
       
         </div>
