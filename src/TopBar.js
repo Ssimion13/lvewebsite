@@ -91,7 +91,7 @@ class TopBar extends React.Component {
                 <div className="buttonHolder">
                     <Dropdown  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
                         <DropdownToggle className={linkStatus}>
-                            <div> About Us </div>
+                            <Link className={linkStatus}  to="/AboutUs"> About Us </Link>
                         </DropdownToggle>
                         <DropdownMenu className="topBarDropdownMenu">
                                 <NavLink className="topBarDropdownLink" href="/DrFajardo"> Dr. Fajardo </NavLink>  
@@ -100,7 +100,7 @@ class TopBar extends React.Component {
                     </Dropdown>
                     <Dropdown onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={()=> this.toggle("two")}>
                         <DropdownToggle  className={linkStatus}>
-                            <div to="/Services"> Services </div>
+                            <Link className={linkStatus}  to="/Services"> Services </Link>
                         </DropdownToggle>
                         <DropdownMenu className="topBarDropdownMenu">
                             <NavLink className="topBarDropdownLink" href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>

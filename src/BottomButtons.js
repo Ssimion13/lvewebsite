@@ -14,7 +14,7 @@ function BottomButtons(){
                     </svg>
                 </div>
             </a>
-            <Link className="bottomButton2" to="/ContactUs">
+            <Link className="bottomButton2" to="/Location">
                 <div className="bottomButton2">
                     <svg width="50" height="30" viewBox="0 0 50 30" xmlns="http://www.w3.org/2000/svg">
                         <g>

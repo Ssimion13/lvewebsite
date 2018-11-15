@@ -1,11 +1,15 @@
 import React from "react";
-import drfajardo from "../../Images/drfajardo.jpg";
 
 function AboutUs(){
     return(
         <div className="informativePage"> 
+            <div className="blockBar">
+                <h1 className="blockHeader"> Dr. Noel Fajardo </h1>
+            </div>
             <div className="doctorSection">
-                <img className="doctorInfo" alt="drFajardo" src={drfajardo} />
+            <div className="sidePageVideoDiv">
+                <iframe title="LVE Capsule Endoscopy" width="560" height="315" className="sidePageVideo" src="https://www.youtube.com/embed/gzZopr91nYk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
                 <p className="doctorSectionText"> 
                     Dr. Noel R. Fajardo, MD is a graduate of University of the Philippines College of Medicine.
                     He finished residency and chief residency at Mount Sinai School of Medicine Affiliate,
