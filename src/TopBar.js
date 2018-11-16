@@ -16,6 +16,10 @@ class TopBar extends React.Component {
           dropdownOpen2: false,
           transparency: true,
           mobileMenuOpen: false,
+          one: false,
+          two: false,
+          three: false,
+          four: false,
         };
         this.toggle = this.toggle.bind(this);
         this.toggleMobile = this.toggleMobile.bind(this);
@@ -26,7 +30,6 @@ class TopBar extends React.Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            
             const isTop = window.scrollY < 450;
             if (isTop) {
                 this.setState({ transparency: true })
@@ -48,9 +51,24 @@ class TopBar extends React.Component {
     }
 
     toggleMobile () {
-        this.setState(prevState => ({
-            mobileMenuOpen: !prevState.mobileMenuOpen
-        }))
+        if(this.state.transparency){
+            this.setState(prevState => ({
+                mobileMenuOpen: !prevState.mobileMenuOpen,
+                transparency: false
+            }))
+        }
+        if(!this.state.transparency){
+            if(window.scrollY < 450){
+                this.setState(prevState => ({
+                    mobileMenuOpen: !prevState.mobileMenuOpen,
+                    transparency: true
+                }))
+            } else {
+                this.setState(prevState => ({
+                    mobileMenuOpen: !prevState.mobileMenuOpen
+                }))
+            }
+        }
     }
     turnOffMobile () {
         this.setState({
@@ -78,8 +96,7 @@ class TopBar extends React.Component {
 
 
     render(){
-        
-
+    
         const navbarStatus = this.state.transparency && window.location.pathname === "/" ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
         const linkStatus = this.state.transparency && window.location.pathname === "/" ? "topbarLinks" : "topbarLinksOpaque"
         return (
@@ -124,16 +141,26 @@ class TopBar extends React.Component {
                             <div className="mobileMenu">
                                 <div className="mobileMenuDiv">
                                 <Link to="/"> Home </Link>
-                                <DropdownItem divider />
-                                    <Link to="/AboutUs"> About Us </Link>
-                                <br/>
-                                <Link to="/Services"> Services </Link>
-                                <br/>
-                                <Link to="/Awards"> Awards </Link>
-                                <br/>
-                                <Link to="/Location"> Location </Link>
-                                <br/>
-                                <DropdownItem divider />
+                                    <DropdownItem divider />
+                                        {/* <div onClick={this.openDropdown('one')}> About Us </div>
+                                        {this.state.one ?
+                                        <div>
+                                            <div> Dr. Fajardo </div>
+                                            <div> Dr. Cremonini </div>
+                                        </div>
+                                        : null}
+                                        <div onClick={this.openDropdown('two')}> Services </div>
+                                        <div onClick={this.openDropdown('three')}> Awards  </div>
+                                        <div onClick={this.openDropdown('four')}> Location </div> */}
+                                        {/* <Link to="/AboutUs"> About Us </Link>
+                                        <br/>
+                                        <Link to="/Services"> Services </Link>
+                                        <br/>
+                                        <Link to="/Awards"> Awards </Link>
+                                        <br/>
+                                        <Link to="/Location"> Location </Link>
+                                        <br/> */}
+                                    <DropdownItem divider />
                                 </div>
                             </div>
                         </Fade>

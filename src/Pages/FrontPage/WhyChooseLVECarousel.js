@@ -6,7 +6,7 @@ import {
   // CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
-import DarkSide from "../../Images/darkside.jpg"
+// import DarkSide from "../../Images/darkside.jpg"
 import FancyPoseFajardo from "../../Images/fancyposefajardo.jpg"
 import DoctorLaptop from "../../Images/doctorlaptop.jpg"
 
@@ -17,10 +17,10 @@ const items = [
     altText: 'Slide 1',
     caption: 'I need real pictures'
   },
-  {
-    src: DarkSide,
-    caption: `There's not much point to trying to finetune this`
-  },
+  // {
+  //   src: DarkSide,
+  //   caption: `There's not much point to trying to finetune this`
+  // },
   {
     src: FancyPoseFajardo,
     caption: `No point to finetune without real pictures to edit`

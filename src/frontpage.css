@@ -144,7 +144,7 @@
     align-items: center;
     background-color: rgb(26, 49, 180);
     color: white;
-    margin-top: 150px;
+    margin-top: 85px;
   }
   
   .frontPageIntroSection {
@@ -767,7 +767,6 @@
 
   .frontPageHeadingText {
     text-align: center;
-    width: 80%;
     font-size: 35px;
   }
 
