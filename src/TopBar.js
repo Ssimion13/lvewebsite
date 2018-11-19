@@ -16,10 +16,10 @@ class TopBar extends React.Component {
           dropdownOpen2: false,
           transparency: true,
           mobileMenuOpen: false,
-          one: false,
-          two: false,
-          three: false,
-          four: false,
+          hamburgerDropdown1: false,
+          hamburgerDropdown2: false,
+          hamburgerDropdown3: false,
+          hamburgerDropdown4: false,
         };
         this.toggle = this.toggle.bind(this);
         this.toggleMobile = this.toggleMobile.bind(this);
@@ -48,6 +48,16 @@ class TopBar extends React.Component {
         if(checker === "two"){
             this.setState({dropdownOpen2: true});
         }
+        if(checker === "hamburgerDropdown1"){
+            this.setState(prevState => ({
+              hamburgerDropdown1: !prevState.hamburgerDropdown1
+            })
+        )}
+        if(checker === "hamburgerDropdown2"){
+            this.setState(prevState => ({
+              hamburgerDropdown2: !prevState.hamburgerDropdown2
+            })
+        )}
     }
 
     toggleMobile () {
@@ -140,8 +150,58 @@ class TopBar extends React.Component {
                         <Fade bottom>
                             <div className="mobileMenu">
                                 <div className="mobileMenuDiv">
-                                <Link to="/"> Home </Link>
-                                    <DropdownItem divider />
+                                <Link onClick={()=> this.toggleMobile()} to="/"> Home </Link>
+
+                                {/*the dropdown menus, top part is what appears if not clicked */}
+                                {!this.state.hamburgerDropdown1 ?
+                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}> 
+                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors  v </Link>
+                                        {/* <div> ▼ </div> */}
+                                    </div> 
+                                : 
+
+                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
+                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors             ^ </Link>
+                                        <Fade right>
+                                            <div className="activeHamburgerMenu">
+                                                <Link onClick={()=> this.toggleMobile()} to="/DrFajardo"> Dr. Fajardo </Link>
+                                                <br/>
+                                                <Link onClick={()=> this.toggleMobile()} to="/DrCremonini">Dr. Cremonini </Link> 
+                                            </div>
+                                        </Fade>
+                                    </div>
+                                }
+
+                                {!this.state.hamburgerDropdown2 ?
+                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}> 
+                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Services             v </Link>
+                                    </div> 
+                                : 
+
+                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}>
+                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Services             v </Link>
+                                        <Fade right>
+                                            <div className="activeHamburgerMenu">
+                                                <Link onClick={()=> this.toggleMobile()} to="/ColonoscopyCancerScreening"> Colonoscopy </Link>
+                                                <br/>
+                                                <Link onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
+                                                <br/>
+                                                <Link onClick={()=> this.toggleMobile()} to="/GIMotilityClinic">GI Motility Clinic </Link>
+                                                <br/>
+                                                <Link onClick={()=> this.toggleMobile()} to="/ViralHepatitisClinic">Viral Hepatitis Clinic </Link> 
+                                                <br/>
+                                                <Link onClick={()=> this.toggleMobile()} to="/CapsuleEndoscopy">Capsule Endoscopy </Link> 
+                                                <br/> 
+                                            </div>
+                                        </Fade>
+                                    </div>
+
+                                }
+                                <Link to="/Awards"> Awards </Link>
+                                <br/>
+                                <Link to="/Location"> Location </Link>
+
+
                                         {/* <div onClick={this.openDropdown('one')}> About Us </div>
                                         {this.state.one ?
                                         <div>
@@ -160,7 +220,6 @@ class TopBar extends React.Component {
                                         <br/>
                                         <Link to="/Location"> Location </Link>
                                         <br/> */}
-                                    <DropdownItem divider />
                                 </div>
                             </div>
                         </Fade>

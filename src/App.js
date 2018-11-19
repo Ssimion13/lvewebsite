@@ -41,7 +41,7 @@ class App extends Component {
     //set to 2 seconds when done, leave at 1 seconds while testing so i don't have to see that ballin animation
     setTimeout(() => {
       this.setState({doneLoading: true})
-    }, 2000);
+    }, 1000);
   }
 
 

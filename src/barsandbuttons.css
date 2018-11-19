@@ -87,6 +87,12 @@
     z-index: 100 !important;
   }
 
+  .hamburgerMenuButton {
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+  }
+
   .mobileMenu {
     width: 100vh;
     height: 100vh;
