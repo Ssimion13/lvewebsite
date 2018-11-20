@@ -241,7 +241,7 @@ p {
     padding-top: 25px;
     width: 80%;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }
 /* End Services CSS */
 
@@ -264,10 +264,15 @@ p {
 
 .sidePageVideoDiv {
   width: 95%;
+  height: 250px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
 }
 
 .sidePageVideo {
   width: 100%;
+  height: 100%;
 }
 
 /* End Side Pages CSS*/
@@ -502,6 +507,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  }
+
+  .sidePageVideoDiv {
+    height: 600px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   /* End Side Page CSS */
 }

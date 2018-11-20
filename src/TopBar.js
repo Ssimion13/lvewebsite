@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "./Images/transparentlogo.png"
 import {Link} from "react-router-dom"
-import { Dropdown, DropdownToggle, NavLink, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Dropdown, DropdownToggle, NavLink, DropdownMenu } from 'reactstrap';
 import Fade from "react-reveal/Fade";
 
 
@@ -150,76 +150,71 @@ class TopBar extends React.Component {
                         <Fade bottom>
                             <div className="mobileMenu">
                                 <div className="mobileMenuDiv">
-                                <Link onClick={()=> this.toggleMobile()} to="/"> Home </Link>
-
-                                {/*the dropdown menus, top part is what appears if not clicked */}
-                                {!this.state.hamburgerDropdown1 ?
-                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}> 
-                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors  v </Link>
-                                        {/* <div> ▼ </div> */}
-                                    </div> 
-                                : 
-
-                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
-                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors             ^ </Link>
-                                        <Fade right>
-                                            <div className="activeHamburgerMenu">
-                                                <Link onClick={()=> this.toggleMobile()} to="/DrFajardo"> Dr. Fajardo </Link>
-                                                <br/>
-                                                <Link onClick={()=> this.toggleMobile()} to="/DrCremonini">Dr. Cremonini </Link> 
-                                            </div>
-                                        </Fade>
-                                    </div>
-                                }
-
-                                {!this.state.hamburgerDropdown2 ?
-                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}> 
-                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Services             v </Link>
-                                    </div> 
-                                : 
-
-                                    <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}>
-                                        <Link onClick={()=>this.toggleMobile()} to="/AboutUs"> Services             v </Link>
-                                        <Fade right>
-                                            <div className="activeHamburgerMenu">
-                                                <Link onClick={()=> this.toggleMobile()} to="/ColonoscopyCancerScreening"> Colonoscopy </Link>
-                                                <br/>
-                                                <Link onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
-                                                <br/>
-                                                <Link onClick={()=> this.toggleMobile()} to="/GIMotilityClinic">GI Motility Clinic </Link>
-                                                <br/>
-                                                <Link onClick={()=> this.toggleMobile()} to="/ViralHepatitisClinic">Viral Hepatitis Clinic </Link> 
-                                                <br/>
-                                                <Link onClick={()=> this.toggleMobile()} to="/CapsuleEndoscopy">Capsule Endoscopy </Link> 
-                                                <br/> 
-                                            </div>
-                                        </Fade>
+                                    <div className="hamburgerMenuDropdown">
+                                        <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/"> Home </Link>
                                     </div>
 
-                                }
-                                <Link to="/Awards"> Awards </Link>
-                                <br/>
-                                <Link to="/Location"> Location </Link>
+                                    {/*the dropdown menus, top part is what appears if not clicked */}
+                                    {!this.state.hamburgerDropdown1 ?
+                                        <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
+                                            <div className="hamburgerMenuInnerDiv"> 
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors </Link>
+                                                <div className="hamburgerMenuTriangle"> ▼ </div>
+                                            </div>
+                                        </div> 
+                                    : 
 
-
-                                        {/* <div onClick={this.openDropdown('one')}> About Us </div>
-                                        {this.state.one ?
-                                        <div>
-                                            <div> Dr. Fajardo </div>
-                                            <div> Dr. Cremonini </div>
+                                        <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
+                                            <div className="hamburgerMenuInnerDiv"> 
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors </Link>
+                                                <div className="hamburgerMenuTriangle"> ▲ </div>
+                                            </div>
+                                            <Fade right>
+                                                <div className="activeHamburgerMenu">
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/DrFajardo"> Dr. Fajardo </Link>
+                                                    <br/>
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/DrCremonini">Dr. Cremonini </Link> 
+                                                </div>
+                                            </Fade>
                                         </div>
-                                        : null}
-                                        <div onClick={this.openDropdown('two')}> Services </div>
-                                        <div onClick={this.openDropdown('three')}> Awards  </div>
-                                        <div onClick={this.openDropdown('four')}> Location </div> */}
-                                        {/* <Link to="/AboutUs"> About Us </Link>
-                                        <br/>
-                                        <Link to="/Services"> Services </Link>
-                                        <br/>
-                                        <Link to="/Awards"> Awards </Link>
-                                        <br/>
-                                        <Link to="/Location"> Location </Link>
-                                        <br/> */}
+                                    }
+
+                                    {!this.state.hamburgerDropdown2 ?
+                                        <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}> 
+                                            <div className="hamburgerMenuInnerDiv"> 
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Services </Link>
+                                                <div className="hamburgerMenuTriangle"> ▼  </div>
+                                            </div>
+                                            
+                                        </div> 
+                                    : 
+
+                                        <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}>
+                                            <div className="hamburgerMenuInnerDiv"> 
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Services </Link>
+                                                <div className="hamburgerMenuTriangle"> ▲ </div>
+                                            </div>
+                                            
+                                            <Fade right>
+                                                <div className="activeHamburgerMenu">
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/ColonoscopyCancerScreening"> Colonoscopy </Link>
+                                                    <br/>
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
+                                                    <br/>
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/GIMotilityClinic">GI Motility Clinic </Link>
+                                                    <br/>
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/ViralHepatitisClinic">Viral Hepatitis Clinic </Link> 
+                                                    <br/>
+                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/CapsuleEndoscopy">Capsule Endoscopy </Link> 
+                                                    <br/> 
+                                                </div>
+                                            </Fade>
+                                        </div>
+
+                                    }
+                                    <Link className="hamburgerMenuLink" to="/Awards"> Awards </Link>
+                                    <br/>
+                                    <Link className="hamburgerMenuLink" to="/Location"> Location </Link>
                                 </div>
                             </div>
                         </Fade>
