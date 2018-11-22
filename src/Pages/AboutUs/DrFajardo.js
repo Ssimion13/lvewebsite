@@ -1,4 +1,5 @@
 import React from "react";
+import CNNNRF from "../../Images/cnnNRF.jpg"
 
 class DrFajardo extends React.Component {
     componentDidMount() {
@@ -29,7 +30,9 @@ class DrFajardo extends React.Component {
                         spinal cord injury and experimental treatment of other neuropathic gastrointestinal disorders. 
                         The results of his research have been presented at National and International meetings.
                         <br/> <br/>
-
+                    </p>
+                    <img className="sidePageImage" alt="cnnfajardo" src={CNNNRF} />
+                    <p className="doctorSectionText">
                         Dr. Fajardo has been a strong advocate for the diagnosis and treatment 
                         of Hepatitis B in the Asian Community nationwide in the US, through awareness campaigns national 
                         and international media. He has been promoter and organizer of large regional screening and 

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 // import Testimonials from "./Testimonials.js";
-import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
+// import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 // import drfajardo from "../../Images/drfajardo.png";
 import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
@@ -14,9 +14,8 @@ import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
 import FrontPageService from "./FrontPageService/"
-import ORRoom from "../../Images/sampleORroom.jpg";
-import sunrise from "../../Images/happysunrise.jpg";
-import trollpicture from "../../Images/totallyorroom.jpeg";
+import ORRoom from "../../Images/operatingroom.JPG";
+import nursestation from "../../Images/nursestation.JPG";
 //react reveal
 import Fade from "react-reveal/Fade";
 
@@ -55,34 +54,33 @@ class FrontPage extends Component {
                 </div>
                 <div className="frontPageIntroDiv">
                     <div className="centerAlignerText">
-                        <h1 className='centeredIntroTitle'>  Bringing Tomorrow, Today </h1>
+                        <h1 className='centeredIntroTitle'>  Welcome to Las Vegas Endoscopy! </h1>
 
                         <h4 className="frontPageHeadingText">
-                        "Insert one of those questionable one-liner quotes like those think tanks do that hire hundreds of people to subliminally convince people to buy something for here because Scott needs this to hold as a placeholder"
+                            When you have your procedure with us, you know you're making a baller choice. We use state-of-the-art GI techniques with the latest equipment to ensure that you have the safest procedures.
                         </h4>
                     </div>
                 </div>
 
-
-                <div className="blockBar">
-                    <h1 className="blockHeader"> Our Services </h1>
-                </div>
                 <div className="whyChooseLVECarousel">
                     <WhyChooseLVECarousel />
+                </div>
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Our Services </h1>
                 </div>
                 <div className="frontPageServicesMain">
                 <div className="frontPageServicesDiv">
                     <Fade bottom>
                         <div className="servicesButtonDiv">
-                            <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screening"} margin="40px"/>
+                            <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screenings"} margin="40px"/>
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="servicesButtonDiv">
-                            <FrontPageService media={ORRoom} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopy"} margin="40px"/>
+                            <FrontPageService media={nursestation} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopies (EGD)"} margin="40px"/>
                         </div>
                     </Fade>
-                    <Fade bottom>
+                    {/* <Fade bottom>
                         <div className="servicesButtonDiv">
                             <FrontPageService media={sunrise} heading={"GI Clinic"} linkTarget={"/GIMotilityClinic"} />
                         </div>
@@ -91,7 +89,7 @@ class FrontPage extends Component {
                         <div className="servicesButtonDiv">
                             <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"} linkTarget={"/ViralHepatitisClinic"} />
                         </div>
-                    </Fade>
+                    </Fade> */}
                 </div>
                 </div>
                 {/* <FrontPageButtonContainer /> */}
@@ -104,7 +102,7 @@ class FrontPage extends Component {
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
                 </div>
-                <div className="whyChooseLVESection"> 
+                {/* <div className="whyChooseLVESection"> 
                     <div className="whyChooseLVEThumbnailDiv">
                         <WhyChooseLVEThumbnail
                             title="More experience"
@@ -130,7 +128,7 @@ class FrontPage extends Component {
                             is consistently ranked among the top clinical centers in the nation." >
                         </WhyChooseLVEThumbnail>
                     </div>
-                </div>
+                </div> */}
                 <div className="feeSectionThumbnailDiv">
 
                     <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
@@ -145,6 +143,7 @@ class FrontPage extends Component {
                     <FeeSectionThumbnail media={microscope} opacity={"0.2"}
                         heading={"Laboratory"}
                     />
+                   
                 </div>
                 <div className="socialMedia">
                     <div className="socialMediaDiv">

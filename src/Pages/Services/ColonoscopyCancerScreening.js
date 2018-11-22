@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Button} from "reactstrap";
 import colonoscope from "../../Images/colonoscope.jpg";
+import doctorcolonoscopy from "../../Images/e1m1.JPG"
 
 function ColonoscopyCancerScreening() {
     return (
@@ -19,7 +20,8 @@ function ColonoscopyCancerScreening() {
                     detect abnormalities within the colon such as ulcerations, inflammation, strictures
                     or narrowing, polyps and neoplasm or cancer. <br/> 
                 </p>
-                <img src={colonoscope} className="colonoscope" alt="colonoscope" />
+                <img className="rotatedImage" alt="doctorcolonoscopy" src={doctorcolonoscopy} />
+                
                 <p className="sectionText">
                     A colonoscopy may be indicated to help evaluate the cause of gastroinestinal (GI) 
                     symptoms such as lower GI bleeding, abdominal pain, changes in bowel habits, diarrhea
@@ -33,7 +35,9 @@ function ColonoscopyCancerScreening() {
                     Biopsies may be taken to remove colon polyps to determine if the patient is at an increased 
                     risk of developing colon cancer. Biopsies may also be taken to check for inflammation and 
                     other abnormalities of the colon and rectum. <br/>
-
+                </p>
+                <img src={colonoscope} className="colonoscope" alt="colonoscope" />
+                <p className="sectionText">
                     The colonoscopy is usually an outpatient procedure and does not require hospital stay. 
                     The patient is allowed to return home after the procedure but is not allowed to drive home
                     himself/herself. Risks of the procedure, although rare, include GI bleeding and perforation 
