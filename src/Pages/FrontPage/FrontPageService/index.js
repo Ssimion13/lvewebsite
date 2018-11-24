@@ -17,6 +17,7 @@ class FrontPageService extends Component {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 marginTop: this.props.margin || 0,
+                imageOrientation: "fromImage",
               }
           };
       }

@@ -20,7 +20,7 @@ class FeeSectionThumbnail extends Component {
                 backgroundRepeat: "no-repeat",
               }
           };
-      }
+      }zzz
   
       // 2. bind it with fat arrows.
       mouseOver = () => {

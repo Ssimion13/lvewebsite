@@ -79,7 +79,7 @@ class WhyChooseLVECarousel extends Component {
         </CarouselItem>
       );
     });
-
+    console.log(this.props.reversed)
     return (
       <div>
       <Carousel

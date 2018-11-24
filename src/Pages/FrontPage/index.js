@@ -8,11 +8,12 @@ import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
 import microscope from "../../Images/microscope.jpg";
 import doctorlaptop from "../../Images/doctorlaptop.jpg";
 import ourwork from "../../Images/ourwork.jpg";
-import medicine from "../../Images/drugggs.jpg"
+import friendlynurse from "../../Images/friendlyNurse.png"
 // import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
+import ordoors from "../../Images/ordoors.jpg"
 import FrontPageService from "./FrontPageService/"
 import ORRoom from "../../Images/operatingroom.JPG";
 import nursestation from "../../Images/nursestation.JPG";
@@ -62,9 +63,7 @@ class FrontPage extends Component {
                     </div>
                 </div>
 
-                <div className="whyChooseLVECarousel">
-                    <WhyChooseLVECarousel />
-                </div>
+
                 <div className="blockBar">
                     <h1 className="blockHeader"> Our Services </h1>
                 </div>
@@ -99,6 +98,9 @@ class FrontPage extends Component {
 
                  {/* : null } */}
                 {/* {window.innerWidth < 500 ? */}
+                <div className="whyChooseLVECarousel">
+                    <WhyChooseLVECarousel />
+                </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
                 </div>
@@ -132,16 +134,19 @@ class FrontPage extends Component {
                 <div className="feeSectionThumbnailDiv">
 
                     <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
-                        heading={"New Patients"}
+                        heading={"Experienced Professionals"}
                     />
                     <FeeSectionThumbnail media={doctorlaptop} opacity={"0.2"}
-                        heading={"Established Patients"}
+                        heading={"Latest Technology"}
                     />
-                    <FeeSectionThumbnail media={medicine} opacity={"0.2"}
-                        heading={"Preparing For Procedure?"}
+                    <FeeSectionThumbnail media={friendlynurse} opacity={"0.2"}
+                        heading={"Friendly Staff"}
                     />
-                    <FeeSectionThumbnail media={microscope} opacity={"0.2"}
-                        heading={"Laboratory"}
+                    <FeeSectionThumbnail media={ordoors} rotate={true} opacity={"0.2"}
+                        heading={"New Facility"}
+                    />
+                    <FeeSectionThumbnail media={microscope}  opacity={"0.2"}
+                        heading={"In-House Laboratory"}
                     />
                    
                 </div>
