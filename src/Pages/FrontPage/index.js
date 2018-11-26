@@ -4,21 +4,18 @@ import {Link} from "react-router-dom";
 // import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 // import drfajardo from "../../Images/drfajardo.png";
-import FeeSectionThumbnail from "./FeeSectionThumbnail.js";
-import microscope from "../../Images/microscope.jpg";
-import doctorlaptop from "../../Images/doctorlaptop.jpg";
-import ourwork from "../../Images/ourwork.jpg";
-import friendlynurse from "../../Images/friendlyNurse.png"
+import FeeSectionThumbnail from "./FeeSection/FeeSectionThumbnail";
+
 // import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
 import VideoModal from "./VideoModal.js";
-import ordoors from "../../Images/ordoors.jpg"
 import FrontPageService from "./FrontPageService/"
 import ORRoom from "../../Images/operatingroom.JPG";
 import nursestation from "../../Images/nursestation.JPG";
 //react reveal
 import Fade from "react-reveal/Fade";
+import FeeSection from "./FeeSection";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -71,12 +68,24 @@ class FrontPage extends Component {
                 <div className="frontPageServicesDiv">
                     <Fade bottom>
                         <div className="servicesButtonDiv">
-                            <FrontPageService media={ORRoom} linkTarget={"/ColonoscopyCancerScreening"} heading={"Colonoscopy Screenings"} margin="40px"/>
+                            <FrontPageService 
+                                media={ORRoom} 
+                                linkTarget={"/ColonoscopyCancerScreening"} 
+                                heading={"Colonoscopy Screenings"} 
+                                margin="40px"
+                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="servicesButtonDiv">
-                            <FrontPageService media={nursestation} linkTarget={"/UpperEndoscopy"} heading={"Upper Endoscopies (EGD)"} margin="40px"/>
+                            <FrontPageService 
+                                media={nursestation} 
+                                linkTarget={"/UpperEndoscopy"} 
+                                heading={"Upper Endoscopies (EGD)"} 
+                                margin="40px"
+                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                />
                         </div>
                     </Fade>
                     {/* <Fade bottom>
@@ -131,25 +140,7 @@ class FrontPage extends Component {
                         </WhyChooseLVEThumbnail>
                     </div>
                 </div> */}
-                <div className="feeSectionThumbnailDiv">
-
-                    <FeeSectionThumbnail media={ourwork} opacity={"0.2"}
-                        heading={"Experienced Professionals"}
-                    />
-                    <FeeSectionThumbnail media={doctorlaptop} opacity={"0.2"}
-                        heading={"Latest Technology"}
-                    />
-                    <FeeSectionThumbnail media={friendlynurse} opacity={"0.2"}
-                        heading={"Friendly Staff"}
-                    />
-                    <FeeSectionThumbnail media={ordoors} rotate={true} opacity={"0.2"}
-                        heading={"New Facility"}
-                    />
-                    <FeeSectionThumbnail media={microscope}  opacity={"0.2"}
-                        heading={"In-House Laboratory"}
-                    />
-                   
-                </div>
+                <FeeSection />
                 <div className="socialMedia">
                     <div className="socialMediaDiv">
                         <h2 className="socialMediaTitle"> Find us on Social Media! </h2>

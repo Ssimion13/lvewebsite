@@ -30,8 +30,6 @@ class FeeSectionThumbnail extends Component {
               transitionDuration: "0.25s",
               transitionTimingFunction: "ease-out",
             }});
-
-          console.log("hello");
       }
       mouseOut() {
           this.setState({hover: false,
@@ -48,12 +46,12 @@ class FeeSectionThumbnail extends Component {
     render() {
       return (
         
-          <div className="feeSectionButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <div className="feeSectionButton fade"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
               <div className="feeSectionTextOverlay">
-                <h3><b> Something about {this.props.heading} , filler text </b></h3>
+                <h3><b> {this.props.text} </b></h3>
                 <h4> {this.props.info}</h4>
                 <Link to={this.props.linkTarget || "hi"}> 
                 <Button> Learn More </Button>

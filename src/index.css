@@ -41,6 +41,45 @@ p {
   width: 100%;
 }
 
+.fade {
+  opacity: 1;
+  -webkit-animation: fade both;
+  -webkit-animation-duration: 1.5s;
+  animation: fade both;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.leftButton {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: rgb(25,25,25);
+  border: 1px solid black;
+  color: white;
+  font-size: 30px;
+  z-index: 100;
+}
+.rightButton {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  background-color: rgb(25,25,25);
+  border: 1px solid black;
+  color: white;
+  font-size: 30px;
+  z-index: 100;
+}
+
 /* End Misc */
 
 /* ReactStrap edits and thumbnails*/

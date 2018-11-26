@@ -26,7 +26,7 @@ class FrontPageService extends Component {
       mouseOver = () => {
           this.setState({hover: true,
             styles: {
-              backgroundColor: "darkblue",
+              backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
               transitionDuration: "0.25s",
               transitionTimingFunction: "ease-out"
             }});
@@ -50,7 +50,7 @@ class FrontPageService extends Component {
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
-                  <h3><b> Something about {this.props.heading}, filler text  </b></h3>
+                  <h3><b> {this.props.heading}  </b></h3>
                   <h4> {this.props.info}</h4>
                   <Link to={this.props.linkTarget || "hi"}> 
                   <Button> Learn More </Button>
