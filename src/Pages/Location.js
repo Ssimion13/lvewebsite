@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import logo from "./../Images/logo.png"
-import Map from "./FrontPage/Map.js";
+import MapWithAMarker from "./MapWithAMarker";
+// import Map from "./FrontPage/Map.js";
 
 // import MapWithAMarker from "./MapWithAMarker";
 // //import MapWithAMarker2 from "./MapWithAMarker2";
@@ -41,7 +42,12 @@ class Location extends Component{
                 </h4>
             </div>
             <div className="carouselContainer">
-                <Map />
+                {/* <Map /> */}
+                <MapWithAMarker googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf-HYZFuFTYA1jYr6Xf5SuqB6PCx_nZVE&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `400px` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    />
             </div>
 
 

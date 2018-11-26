@@ -703,8 +703,15 @@
   }
 
   .servicesButtonDiv {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    height: 450px;
   }
+
+  .servicesButton {
+    height: 100%;
+    width: 95%;
+  }
+
 
   .drFajardoFrontPicture {
     width: 100%;
@@ -776,14 +783,15 @@
   }
 
   .frontPageServicesMain {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
+    height: 950px;
   }
 
 
   /* Fee Section CSS */
   .feeSectionThumbnailDiv {
-    height: 400px;
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: row;
