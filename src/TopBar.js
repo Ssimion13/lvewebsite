@@ -117,7 +117,7 @@ class TopBar extends React.Component {
                 {/* check the window size to determine a top bar with uh, hover stuff for a mouse or to use a hamburger menu for mobile devices... */}
                 {window.innerWidth > 800 ?
                 <div className="buttonHolder">
-                    <Dropdown  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
+                    <Dropdown className="dropdownButton"  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
                         <DropdownToggle className={linkStatus}>
                             <Link className={linkStatus}  to="/AboutUs"> About Us </Link>
                         </DropdownToggle>
@@ -126,7 +126,7 @@ class TopBar extends React.Component {
                                 <NavLink className="topBarDropdownLink" href="/DrCremonini"> Dr. Cremonini </NavLink> 
                         </DropdownMenu>
                     </Dropdown>
-                    <Dropdown onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={()=> this.toggle("two")}>
+                    <Dropdown className="dropdownButton" onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={()=> this.toggle("two")}>
                         <DropdownToggle  className={linkStatus}>
                             <Link className={linkStatus}  to="/Services"> Services </Link>
                         </DropdownToggle>
