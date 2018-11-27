@@ -4,8 +4,7 @@ import {Link} from "react-router-dom";
 // import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 // import drfajardo from "../../Images/drfajardo.png";
-import FeeSectionThumbnail from "./FeeSection/FeeSectionThumbnail";
-
+// import FeeSectionThumbnail from "./FeeSection/FeeSectionThumbnail";
 // import FrontPageButtonContainer from "./FrontPageButtonContainer";
 import { Button } from 'reactstrap';
 import lvecommercial from "../../Videos/lvecommercial.mp4";
@@ -73,7 +72,7 @@ class FrontPage extends Component {
                                 linkTarget={"/ColonoscopyCancerScreening"} 
                                 heading={"Colonoscopy Screenings"} 
                                 margin="40px"
-                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                                 />
                         </div>
                     </Fade>
@@ -84,7 +83,7 @@ class FrontPage extends Component {
                                 linkTarget={"/UpperEndoscopy"} 
                                 heading={"Upper Endoscopies (EGD)"} 
                                 margin="40px"
-                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                 />
                         </div>
                     </Fade>
@@ -113,33 +112,7 @@ class FrontPage extends Component {
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
                 </div>
-                {/* <div className="whyChooseLVESection"> 
-                    <div className="whyChooseLVEThumbnailDiv">
-                        <WhyChooseLVEThumbnail
-                            title="More experience"
-                            text="Every year, thousands of people come to Las Vegas Endoscopy for care.
-                            Our Gastroenterologists are experienced
-                            specialists in treating rare and complex gastrointestinal conditions." >
-                        </WhyChooseLVEThumbnail>
-                        <WhyChooseLVEThumbnail
-                            title="The right answers"
-                            text="Every year, thousands of people come to Las Vegas Endoscopy for care.
-                            Our Gastroenterologists are experienced
-                            specialists in treating rare and complex gastrointestinal conditions." >
-                        </WhyChooseLVEThumbnail>
-                        <WhyChooseLVEThumbnail
-                            title="Seamless Care"
-                            text="At Las Vegas Endoscopy, every aspect of your care is coordinated and teams of experts work together to provide 
-                            exactly the care you need. What might take months elsewhere can often be done in days here." >
-                        </WhyChooseLVEThumbnail>
-                        <WhyChooseLVEThumbnail
-                            title="Unparalleled expertise"
-                            text="Our Doctors at Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
-                            In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
-                            is consistently ranked among the top clinical centers in the nation." >
-                        </WhyChooseLVEThumbnail>
-                    </div>
-                </div> */}
+
                 <FeeSection />
                 <div className="socialMedia">
                     <div className="socialMediaDiv">

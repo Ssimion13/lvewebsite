@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  // CarouselControl,
-  // CarouselIndicators,
+  CarouselControl,
+  CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
 import DarkSide from "../../Images/darkside.jpg"
-import FancyPoseFajardo from "../../Images/fancyposefajardo.jpg"
-import DoctorLaptop from "../../Images/doctorlaptop.jpg"
-
+// import FancyPoseFajardo from "../../Images/fancyposefajardo.jpg"
+// import DoctorLaptop from "../../Images/doctorlaptop.jpg"
+import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
+import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
+import procedure from "../../Images/procedure.png"
 
 const items = [
   {
-    src: DoctorLaptop,
-    altText: 'Slide 1',
-    caption: 'I need real pictures'
-  },
-  {
     src: DarkSide,
-    caption: `There's not much point to trying to finetune this`
+    caption: ""
   },
   {
-    src: FancyPoseFajardo,
-    caption: `No point to finetune without real pictures to edit`
+    src: cremoniniScrubs,
+    caption: ""
+  },
+  {
+    src: lvgColonWarning,
+    caption: ""
+  },
+  {
+    src: procedure,
+    caption: ""
   }
 ];
 
@@ -79,18 +84,18 @@ class WhyChooseLVECarousel extends Component {
         </CarouselItem>
       );
     });
-    console.log(this.props.reversed)
     return (
       <div>
       <Carousel
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        ride = {1000}
       >
-        {/* <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} /> */}
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
-        {/* <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} /> */}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
       </Carousel>
       </div>
     );

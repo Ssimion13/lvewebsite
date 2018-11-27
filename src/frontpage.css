@@ -125,7 +125,7 @@
   
   .feeSectionButton::before {
     content: "";
-    background-color: rgb(48, 48, 48);
+    background-color: linear-gradient(to top right, rgb(48,48,48), black);
     opacity: 0.3;
     top: 0;
     left: 0;
@@ -634,7 +634,7 @@
 
 .servicesButton::before {
   content: "";
-  background-color: rgb(48, 48, 48);
+  background-color: linear-gradient(to top right, rgb(48,48,48), black);
   opacity: 0.3;
   top: 0;
   left: 0;
@@ -785,7 +785,7 @@
     height: 75%;
   }
   .whyChooseLVECarouselImage {
-    height: 600px !important; 
+    height: 650px !important; 
   }
 
 
@@ -813,7 +813,7 @@
     padding-top: 20px;
   }
   .feeSectionButton {
-    width: 20%;
+    width: 30%;
     height: 100%;
   }
   .feeSectionTextOverlay {
@@ -822,10 +822,10 @@
   }
   .socialMediaDiv {
     width: 70%;
-    height: 450px;
+    height: 550px;
   }
   .socialMediaTitle {
-    font-size: 45px;
+    font-size: 55px;
   }
 
 

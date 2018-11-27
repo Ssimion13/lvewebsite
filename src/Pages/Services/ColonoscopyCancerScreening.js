@@ -20,7 +20,7 @@ function ColonoscopyCancerScreening() {
                     detect abnormalities within the colon such as ulcerations, inflammation, strictures
                     or narrowing, polyps and neoplasm or cancer. <br/> 
                 </p>
-                <img className="rotatedImage" alt="doctorcolonoscopy" src={doctorcolonoscopy} />
+                <img className="rotatedImage sectionPicture" alt="doctorcolonoscopy" src={doctorcolonoscopy} />
                 
                 <p className="sectionText">
                     A colonoscopy may be indicated to help evaluate the cause of gastroinestinal (GI) 

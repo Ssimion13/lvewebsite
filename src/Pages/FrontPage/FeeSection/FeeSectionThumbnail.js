@@ -26,7 +26,7 @@ class FeeSectionThumbnail extends Component {
       mouseOver = () => {
           this.setState({hover: true,
             styles: {
-              backgroundColor: "darkblue",
+              backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
               transitionDuration: "0.25s",
               transitionTimingFunction: "ease-out",
             }});
@@ -51,11 +51,18 @@ class FeeSectionThumbnail extends Component {
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
               <div className="feeSectionTextOverlay">
+                {window.innerWidth > 800 ?
                 <h3><b> {this.props.text} </b></h3>
-                <h4> {this.props.info}</h4>
-                <Link to={this.props.linkTarget || "hi"}> 
-                <Button> Learn More </Button>
-                </Link>
+                : 
+                <p><b> {this.props.text} </b></p>
+                }
+                <h5> {this.props.info}</h5>
+                {this.props.link !== "/error" ?
+                  <Link to={this.props.linkTarget || "error"}> 
+                  <Button> Learn More </Button>
+                  </Link>
+                  : null
+                }
               </div>
             </div>) : 
             <div className="feeSectionImageOverlay overlay">

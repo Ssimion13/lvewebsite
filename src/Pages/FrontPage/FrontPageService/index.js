@@ -50,17 +50,28 @@ class FrontPageService extends Component {
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
-                  <h3><b> {this.props.heading}  </b></h3>
+                  {window.innerWidth > 800 ?
+                    <h1> <b> {this.props.heading} </b> </h1>
+                    :
+                    <h3> <b> {this.props.heading} </b></h3>
+                  }
                   <h4> {this.props.info}</h4>
-                  <Link to={this.props.linkTarget || "hi"}> 
+                  <Link to={this.props.linkTarget}> 
                   <Button> Learn More </Button>
                   </Link>
                 </div>
               </div>) : 
             <div className="feeSectionImageOverlay overlay">
-              <h3> <b> {this.props.heading} </b> </h3>
+            {window.innerWidth > 800 ?
+              <h1> <b> {this.props.heading} </b> </h1>
+              :
+              <h4> <b> {this.props.heading} </b></h4>
+            }
+            {window.innerWidth > 800 ?
               <h4> {this.props.frontText} </h4>
-              
+              :
+              <h6> {this.props.frontText} </h6>
+            }
             </div>}  
             
           </div>

@@ -42,3 +42,32 @@
 
         {/* : null } */}
     {/* {window.innerWidth < 500 ? */}
+
+
+                    {/* <div className="whyChooseLVESection"> 
+                    <div className="whyChooseLVEThumbnailDiv">
+                        <WhyChooseLVEThumbnail
+                            title="More experience"
+                            text="Every year, thousands of people come to Las Vegas Endoscopy for care.
+                            Our Gastroenterologists are experienced
+                            specialists in treating rare and complex gastrointestinal conditions." >
+                        </WhyChooseLVEThumbnail>
+                        <WhyChooseLVEThumbnail
+                            title="The right answers"
+                            text="Every year, thousands of people come to Las Vegas Endoscopy for care.
+                            Our Gastroenterologists are experienced
+                            specialists in treating rare and complex gastrointestinal conditions." >
+                        </WhyChooseLVEThumbnail>
+                        <WhyChooseLVEThumbnail
+                            title="Seamless Care"
+                            text="At Las Vegas Endoscopy, every aspect of your care is coordinated and teams of experts work together to provide 
+                            exactly the care you need. What might take months elsewhere can often be done in days here." >
+                        </WhyChooseLVEThumbnail>
+                        <WhyChooseLVEThumbnail
+                            title="Unparalleled expertise"
+                            text="Our Doctors at Las Vegas Endoscopy are Mayo Clinic and Harvard Medical School trained.
+                            In the U.S. News & World Report rankings of top hospitals, Las Vegas Endoscopy 
+                            is consistently ranked among the top clinical centers in the nation." >
+                        </WhyChooseLVEThumbnail>
+                    </div>
+                </div> */}

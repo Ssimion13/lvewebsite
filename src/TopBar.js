@@ -114,7 +114,8 @@ class TopBar extends React.Component {
                 <Link to="/" className="logoHolder">    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
-                {window.innerWidth > 500 ?
+                {/* check the window size to determine a top bar with uh, hover stuff for a mouse or to use a hamburger menu for mobile devices... */}
+                {window.innerWidth > 800 ?
                 <div className="buttonHolder">
                     <Dropdown  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
                         <DropdownToggle className={linkStatus}>
@@ -182,7 +183,7 @@ class TopBar extends React.Component {
                                     {!this.state.hamburgerDropdown2 ?
                                         <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}> 
                                             <div className="hamburgerMenuInnerDiv"> 
-                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Services </Link>
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/Services"> Services </Link>
                                                 <div className="hamburgerMenuTriangle"> ▼  </div>
                                             </div>
                                             
@@ -191,8 +192,8 @@ class TopBar extends React.Component {
 
                                         <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown2")}>
                                             <div className="hamburgerMenuInnerDiv"> 
-                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Services </Link>
-                                                <div className="hamburgerMenuTriangle"> ▲ </div>
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/Services"> Services </Link>
+                                                <div className="hamburgerMenuTriangle"> ▲   </div>
                                             </div>
                                             
                                             <Fade right>
@@ -212,9 +213,9 @@ class TopBar extends React.Component {
                                         </div>
 
                                     }
-                                    <Link className="hamburgerMenuLink" to="/Awards"> Awards </Link>
+                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/Awards"> Awards </Link>
                                     <br/>
-                                    <Link className="hamburgerMenuLink" to="/Location"> Location </Link>
+                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/Location"> Location </Link>
                                 </div>
                             </div>
                         </Fade>
