@@ -30,7 +30,7 @@ class TopBar extends React.Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 450;
+            const isTop = window.scrollY < 450 && !this.state.mobileMenuOpen;
             if (isTop) {
                 this.setState({ transparency: true })
             } else {
@@ -61,6 +61,7 @@ class TopBar extends React.Component {
     }
 
     toggleMobile () {
+        window.scrollTo(0, 0)
         if(this.state.transparency){
             this.setState(prevState => ({
                 mobileMenuOpen: !prevState.mobileMenuOpen,
@@ -71,7 +72,7 @@ class TopBar extends React.Component {
             if(window.scrollY < 450){
                 this.setState(prevState => ({
                     mobileMenuOpen: !prevState.mobileMenuOpen,
-                    transparency: true
+                    transparency: false
                 }))
             } else {
                 this.setState(prevState => ({

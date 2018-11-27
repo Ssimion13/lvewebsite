@@ -90,7 +90,6 @@ class WhyChooseLVECarousel extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
-        ride = {1000}
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
