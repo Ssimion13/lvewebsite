@@ -20,7 +20,7 @@ const items = [
     {
         number: 2,
         heading: "Latest Technology",
-        text: "Our cutting edge scopes and tools ensure that nothing will be missed. ?",
+        text: "Our cutting edge scopes and tools ensure that nothing will be missed.",
         img: procedure,
         link: "/error"
     },
