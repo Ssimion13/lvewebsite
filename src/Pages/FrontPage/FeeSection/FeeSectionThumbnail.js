@@ -46,7 +46,7 @@ class FeeSectionThumbnail extends Component {
     render() {
       return (
         
-          <div className="feeSectionButton fade"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <button className="feeSectionButton fade"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
@@ -69,7 +69,7 @@ class FeeSectionThumbnail extends Component {
               <h3 className="feeSectionButtonHeadings"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
             </div>}  
-          </div>
+          </button>
       );
     }
   }

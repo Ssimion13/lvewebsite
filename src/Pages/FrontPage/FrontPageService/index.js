@@ -46,7 +46,7 @@ class FrontPageService extends Component {
     render() {
       return (
         
-          <div className="servicesButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <button className="servicesButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
@@ -74,7 +74,7 @@ class FrontPageService extends Component {
             }
             </div>}  
             
-          </div>
+          </button>
       );
     }
   }

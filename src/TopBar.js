@@ -26,6 +26,7 @@ class TopBar extends React.Component {
         this.turnOffMobile = this.toggleMobile.bind(this);
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.backToTop = this.backToTop.bind(this);
       }
 
     componentDidMount() {
@@ -39,7 +40,9 @@ class TopBar extends React.Component {
         });
 
     }
-
+    backToTop() {
+        window.scrollTo(0, 0)
+    }
 
     toggle(checker) {
         if(checker === "one"){
@@ -61,25 +64,25 @@ class TopBar extends React.Component {
     }
 
     toggleMobile () {
-        window.scrollTo(0, 0)
-        if(this.state.transparency){
-            this.setState(prevState => ({
-                mobileMenuOpen: !prevState.mobileMenuOpen,
-                transparency: false
-            }))
-        }
-        if(!this.state.transparency){
-            if(window.scrollY < 450){
-                this.setState(prevState => ({
-                    mobileMenuOpen: !prevState.mobileMenuOpen,
-                    transparency: false
-                }))
-            } else {
-                this.setState(prevState => ({
-                    mobileMenuOpen: !prevState.mobileMenuOpen
-                }))
-            }
-        }
+        // window.scrollTo(0, 0)
+        // if(this.state.transparency){
+        //     this.setState(prevState => ({
+        //         mobileMenuOpen: !prevState.mobileMenuOpen,
+        //         transparency: false
+        //     }))
+        // }
+        // if(!this.state.transparency){
+        //     if(window.scrollY < 450){
+        //         this.setState(prevState => ({
+        //             mobileMenuOpen: !prevState.mobileMenuOpen,
+        //             transparency: false
+        //         }))
+        //     } else {
+        this.setState(prevState => ({
+            mobileMenuOpen: !prevState.mobileMenuOpen
+        }))
+        //     }
+        // }
     }
     turnOffMobile () {
         this.setState({
@@ -108,19 +111,19 @@ class TopBar extends React.Component {
 
     render(){
     
-        const navbarStatus = this.state.transparency && window.location.pathname === "/" ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
-        const linkStatus = this.state.transparency && window.location.pathname === "/" ? "topbarLinks" : "topbarLinksOpaque"
+        // const navbarStatus = this.state.transparency && window.location.pathname === "/" ? "topbarTransparent topbarMain" : "topbarOpaque topbarMain"
+        // const linkStatus = this.state.transparency && window.location.pathname === "/" ? "topbarLinks" : "topbarLinksOpaque"
         return (
-            <div className={navbarStatus}>
-                <Link to="/" className="logoHolder">    
+            <div className="topbarOpaque topbarMain">
+                <Link to="/" className="logoHolder" onClick={this.backToTop}>    
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
                 {/* check the window size to determine a top bar with uh, hover stuff for a mouse or to use a hamburger menu for mobile devices... */}
                 {window.innerWidth > 800 ?
                 <div className="buttonHolder">
                     <Dropdown className="dropdownButton"  onMouseOver={()=> this.onMouseEnter("one")} onMouseLeave={()=> this.onMouseLeave("one")} isOpen={this.state.dropdownOpen1} toggle={()=> this.toggle("one")}>
-                        <DropdownToggle className={linkStatus}>
-                            <Link className={linkStatus}  to="/AboutUs"> About Us </Link>
+                        <DropdownToggle className="topbarLinksOpaque">
+                            <Link className="topbarLinksOpaque"  to="/AboutUs"> About Us </Link>
                         </DropdownToggle>
                         <DropdownMenu className="topBarDropdownMenu">
                                 <NavLink className="topBarDropdownLink" href="/DrFajardo"> Dr. Fajardo </NavLink>  
@@ -128,8 +131,8 @@ class TopBar extends React.Component {
                         </DropdownMenu>
                     </Dropdown>
                     <Dropdown className="dropdownButton" onMouseOver={()=> this.onMouseEnter("two")} onMouseLeave={()=> this.onMouseLeave("two")} isOpen={this.state.dropdownOpen2} toggle={()=> this.toggle("two")}>
-                        <DropdownToggle  className={linkStatus}>
-                            <Link className={linkStatus}  to="/Services"> Services </Link>
+                        <DropdownToggle  className="topbarLinksOpaque">
+                            <Link className="topbarLinksOpaque"  to="/Services"> Services </Link>
                         </DropdownToggle>
                         <DropdownMenu className="topBarDropdownMenu">
                             <NavLink className="topBarDropdownLink" href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>
@@ -139,14 +142,14 @@ class TopBar extends React.Component {
                             <NavLink className="topBarDropdownLink" href="/CapsuleEndoscopy"> Capsule Endoscopy (SmartPill) </NavLink>
                         </DropdownMenu>
                     </Dropdown>
-                    <Link className={linkStatus} to="/Awards"> Awards </Link>
-                    <Link className={linkStatus} to="/Location"> Location </Link>   
+                    <Link className="topbarLinksOpaque" to="/Awards"> Awards </Link>
+                    <Link className="topbarLinksOpaque" to="/Location"> Location </Link>   
                 </div>
                 : 
                  <div >
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggleMobile}>
                         <DropdownToggle className="hamburgerButton" >
-                            ≡
+                            <div> ≡ </div>
                         </DropdownToggle>
                         {this.state.mobileMenuOpen ? 
                         <Fade bottom>

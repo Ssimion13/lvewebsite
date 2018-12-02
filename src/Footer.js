@@ -14,9 +14,9 @@ const TopBar = function(){
                         <img className="footerLogo" alt="logo" src={logo} />
                     </Link>
                 </div>
-                <div className="footerDiv">
-                    <h5 className="centeredText"> Made by Simion Web Services </h5>
-                </div>
+                {/* <div className="footerDiv">
+                    <h5 className="centeredText"> Made by Simion  </h5>
+                </div> */}
                 <div className="footerThumbnailHolder">
                     <a href="https://www.facebook.com/lvgastro/" className="footerThumbnailDiv facebook">
                         <FontAwesomeIcon icon={['fab', 'facebook']} size={icons} className="linkThumbnail"/>
