@@ -142,8 +142,12 @@ class TopBar extends React.Component {
                             <NavLink className="topBarDropdownLink" href="/CapsuleEndoscopy"> Capsule Endoscopy (SmartPill) </NavLink>
                         </DropdownMenu>
                     </Dropdown>
-                    <Link className="topbarLinksOpaque" to="/Awards"> Awards </Link>
-                    <Link className="topbarLinksOpaque" to="/Location"> Location </Link>   
+                    <div className="topbarLinksOpaque">
+                        <Link className="topbarLinksOpaque"to="/Awards"> Awards </Link>
+                    </div>
+                    <div className="topbarLinksOpaque">
+                        <Link className="topbarLinksOpaque" to="/Location"> Location </Link>   
+                    </div>
                 </div>
                 : 
                  <div >
@@ -220,6 +224,8 @@ class TopBar extends React.Component {
                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/Awards"> Awards </Link>
                                     <br/>
                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/Location"> Location </Link>
+                                    <br/>
+                                    <a className="hamburgerMenuLink" href="https://www.google.com"> Las Vegas Gastroenterology </a>
                                 </div>
                             </div>
                         </Fade>

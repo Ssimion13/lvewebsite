@@ -1,3 +1,12 @@
+/* buttons */
+.btn-secondary {
+  background-color: rgb(25,25,25) !important;
+  border-color: black !important;
+}
+
+/* end buttons */
+
+
 /* Topbar CSS */
 .logoHolder {
     display: flex;
@@ -118,7 +127,7 @@
   }
 
   .mobileMenu {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(25,25,25);
     position: fixed;
@@ -131,7 +140,7 @@
   .mobileMenuDiv {
     /* color: white; */
     background-color: rgb(25,25,25);
-    width: 50%;
+    width: 100%;
     height: 50%;
     font-size: 30px;
   }
@@ -234,16 +243,16 @@
         color: white !important;
         background-color: transparent !important;
         border: none !important;
-        font-family: 'Roboto', sans-serif !important;
+        font-family: 'Gill Sans MT', sans-serif !important;
     }
-
-
     .topbarLinksOpaque{
       font-size: 22px !important;
       color: white !important;
       background-color: transparent !important;
       border: none !important;
-      font-family: 'Roboto', sans-serif !important;
+      font-family: 'Gill Sans MT', sans-serif !important;
+      font-weight: bolder;
+
     }
     .topbarLinks:hover{
       opacity: 0.50;

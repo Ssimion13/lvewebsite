@@ -36,7 +36,6 @@ class FrontPage extends Component {
         const icons = window.innerWidth > 800 ? "5x" : "2x";
         return(
             <div className="frontPage">
-
                 <div className="frontPageVideo">
                     <video className="background-video" muted loop autoPlay >
                         <source src={lvecommercial} type="video/mp4" />

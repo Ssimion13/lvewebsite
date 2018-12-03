@@ -302,28 +302,7 @@
   .frontPageButtonText{
     color: white !important;
   }
-  
-  .whyChooseLVEThumbnailTop {
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .whyChooseLVEThumbnailDiv {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    padding-bottom: 20px;
-    height: auto;
-    background-color: white;
-  }
-  
-  .frontPageButtonIcons {
-    width: 40px;
-  }
+
   .oddButtonIcon {
     width: 50px;
     height: 50px;
@@ -342,17 +321,6 @@
     margin-top: 10px;
     width: 30%;
     border-bottom: 3px solid #3967c1;
-  }
-  
-  .whyChooseLVEThumbnail {
-    height: 250px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border-bottom: 1px solid #3967c1;
   }
   
   .paddedTitle {
@@ -658,10 +626,10 @@
   @media (min-width: 650px){
 
     .background-video {
-      height: 100vh;
+      height: 85vh;
     }
     .frontPageVideo {
-      height: 100vh;
+      height: 85vh;
     }
     .videoButtonDiv {
       transform: translateY(50px) !important;
@@ -669,10 +637,6 @@
 
     .drFajardoFrontPicture {
       width: 50%;
-    }
-    
-    .whyChooseLVEThumbnailDiv {
-      width: 60%;
     }
   }
 
@@ -711,13 +675,11 @@
     height: 600px;
     flex-direction: column;
   }
-  .background-video {
-    height: 100vh;
-  }
 
   .servicesButtonDiv {
     margin-bottom: 30px;
-    height: 450px;
+    height: 350px;
+    width: 65%;
   }
 
   .servicesButton {
@@ -768,23 +730,6 @@
     height: 100%;
   }
 
-  .whyChooseLVESection {}
-
-  .whyChooseLVEThumbnailDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 450px;
-    width: 100%;
-  }
-
-  .whyChooseLVEThumbnail {
-    width: 20%;
-    height: 100%;
-  }
-  .whyChooseLVEThumbnailBottom {
-    height: 75%;
-  }
   .whyChooseLVECarouselImage {
     height: 650px !important; 
   }
@@ -841,9 +786,24 @@
   }
 
   @media (min-width: 1000px){
-    .whyChooseLVEThumbnailTop{
-      height: 45%;
-    }
   }
+
+
+  /* for Iphone X, who the hell designed the dimensions for this monstrosity? */
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .background-video {
+          height: 65vh;
+        }
+
+        .videoButtonDiv {
+          transform: translateY(-95px) !important;
+        }
+        .mobileMenu {
+          width: 90vh;
+        }
+     }
 
 
