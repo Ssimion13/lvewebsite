@@ -9,12 +9,13 @@ class CapsuleEndoscopy extends React.Component {
     render(){
         return (
             <div className="sidePageDiv">
-                <div className="sidePageVideoDiv">
-                    <iframe title="LVE Capsule Endoscopy" width="560" height="315" className="sidePageVideo" src="https://www.youtube.com/embed/WA2xHfUR5LY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Capsule Endoscopy </h1>
                 </div>
+                <div className="sidePageVideoDiv">
+                    <iframe title="LVE Capsule Endoscopy" width="560" height="315" className="sidePageVideo" src="https://www.youtube.com/embed/WA2xHfUR5LY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+
                 <p className="sectionText"> 
                     Capsule endoscopy is an outpatient procedure that involves visualization of the small 
                     intestine with the use of a wireless capsule equipped with a tiny camera that takes 

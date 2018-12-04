@@ -137,9 +137,11 @@ class TopBar extends React.Component {
                         <DropdownMenu className="topBarDropdownMenu">
                             <NavLink className="topBarDropdownLink" href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>
                             <NavLink className="topBarDropdownLink" href="/UpperEndoscopy"> Upper Endoscopy </NavLink>
+                            {/* Pulling these out for use in the LVG website
                             <NavLink className="topBarDropdownLink" href="/GIMotilityClinic"> GI Motility Clinic </NavLink>
                             <NavLink className="topBarDropdownLink" href="/ViralHepatitisClinic"> Viral Hepatitis Clinic  </NavLink>
-                            <NavLink className="topBarDropdownLink" href="/CapsuleEndoscopy"> Capsule Endoscopy (SmartPill) </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/CapsuleEndoscopy"> Capsule Endoscopy (SmartPill) </NavLink> 
+                            */}
                         </DropdownMenu>
                     </Dropdown>
                     <div className="topbarLinksOpaque">
@@ -210,12 +212,15 @@ class TopBar extends React.Component {
                                                     <br/>
                                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
                                                     <br/>
+
+                                                    {/* pulling these out for use in the LVG website
                                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/GIMotilityClinic">GI Motility Clinic </Link>
                                                     <br/>
                                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/ViralHepatitisClinic">Viral Hepatitis Clinic </Link> 
                                                     <br/>
                                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/CapsuleEndoscopy">Capsule Endoscopy </Link> 
-                                                    <br/> 
+                                                    <br/>
+                                                    */} 
                                                 </div>
                                             </Fade>
                                         </div>

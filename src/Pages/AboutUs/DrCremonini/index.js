@@ -1,5 +1,5 @@
 import React from "react";
-import drcremonini from "../../Images/drcremonini.jpg";
+import drcremonini from "../../../Images/drcremonini.jpg";
 
 class DrCremonini extends React.Component {
 
@@ -9,6 +9,9 @@ class DrCremonini extends React.Component {
     render(){
         return(
             <div className="informativePage"> 
+                <div className="blockBar">
+                    <h1 className="blockHeader"> Dr. Filippo Cremonini </h1>
+                </div>
                 <div className="doctorSection">
                     <img src={drcremonini} className="doctorInfo" alt="drCremonini" />
                     <p className="doctorSectionText">

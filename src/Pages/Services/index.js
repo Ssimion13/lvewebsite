@@ -9,7 +9,7 @@ function Services(){
             <div className="blockBar">
                 <h1 className="blockHeader"> Services </h1>
             </div>
-            <div className="serviceDiv">
+            <div className="serviceIndexDiv">
                 <h2> Colonoscopy and Colon Cancer Screening Services </h2>
                 <p className="serviceDescriptionText"> A colonoscopy is an exam of the entire colon and the rectum with a colonoscope,
                     a thin flexible tube with a small camera at the end. This painless procedure
@@ -20,7 +20,7 @@ function Services(){
                     <Button> Click Here </Button>
                 </Link>
             </div>
-            <div className="serviceDiv">
+            <div className="serviceIndexDiv">
                 <h2> Upper Endoscopy - EGD </h2>
                 <p className="serviceDescriptionText">
                     An upper endoscopy, also referred to as an esophagogastroduodenoscopy, 
@@ -36,6 +36,10 @@ function Services(){
                     <Button> Click Here </Button>
                 </Link>
             </div>
+            
+            {/*
+                does he want me to put these in on LVE too? I have no clue
+
             <div className="serviceDiv">
                 <h2> Capsule Endoscopy </h2>
                 <p className="serviceDescriptionText">
@@ -76,8 +80,9 @@ function Services(){
                 </p>
                 <Link to="/ViralHepatitisClinic"> 
                     <Button> Click Here </Button>
-                </Link>
+                </Link> 
             </div>
+            */}
         </div>
     )
 }

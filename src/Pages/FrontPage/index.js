@@ -28,6 +28,7 @@ class FrontPage extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
+    
 
 
     render(){
@@ -53,7 +54,7 @@ class FrontPage extends Component {
                         <h1 className='centeredIntroTitle'>  Welcome to Las Vegas Endoscopy! </h1>
 
                         <h4 className="frontPageHeadingText">
-                            When you have your procedure with us, you know you're making a baller choice. We use state-of-the-art GI techniques with the latest equipment to ensure that you have the safest procedures.
+                            Here at Las Vegas Endoscopy, we take pride in our work and our commitment to the community. We use state-of-the-art GI techniques, the newest technology, and top-tier staff to ensure the best experience possible for our patients.
                         </h4>
                     </div>
                 </div>
@@ -82,7 +83,7 @@ class FrontPage extends Component {
                                 linkTarget={"/UpperEndoscopy"} 
                                 heading={"Upper Endoscopies (EGD)"} 
                                 margin="40px"
-                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                                 />
                         </div>
                     </Fade>

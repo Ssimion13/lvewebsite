@@ -60,17 +60,18 @@ class FrontPageService extends Component {
                   <Button> Learn More </Button>
                   </Link>
                 </div>
-              </div>) : 
+              </div>
+              ) : 
             <div className="feeSectionImageOverlay overlay">
             {window.innerWidth > 800 ?
-              <h1> <b> {this.props.heading} </b> </h1>
+              <h1 className="buttonHeading"> <b> {this.props.heading} </b> </h1>
               :
-              <h4> <b> {this.props.heading} </b></h4>
+              <h4 className="buttonHeading"> <b> {this.props.heading} </b></h4>
             }
             {window.innerWidth > 800 ?
-              <h4> {this.props.frontText} </h4>
+              <h4 className="buttonHeading"> {this.props.frontText} </h4>
               :
-              <h6> {this.props.frontText} </h6>
+              <h6 className="buttonHeading"> {this.props.frontText} </h6>
             }
             </div>}  
             

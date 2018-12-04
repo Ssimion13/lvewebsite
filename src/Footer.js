@@ -6,11 +6,14 @@ import {Link} from "react-router-dom";
 
 
 const TopBar = function(){
+    function backToTop() {
+        window.scrollTo(0, 0)
+    }
     const icons = window.innerWidth > 800 ? "2x" : "1x";
         return (
             <div className="footerMain">
                 <div className="footerDiv">
-                    <Link to="/" className="footerLogo">
+                    <Link to="/" className="footerLogo" onClick={backToTop()}>
                         <img className="footerLogo" alt="logo" src={logo} />
                     </Link>
                 </div>

@@ -66,7 +66,7 @@ class FeeSectionThumbnail extends Component {
               </div>
             </div>) : 
             <div className="feeSectionImageOverlay overlay">
-              <h3 className="feeSectionButtonHeadings"> <b> {this.props.heading} </b> </h3>
+              <h3 className="buttonHeading"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
             </div>}  
           </button>

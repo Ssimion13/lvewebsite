@@ -52,7 +52,7 @@
     color: white !important;
     background-color: transparent !important;
     border: none !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Gill Sans MT" !important;
 }
 
   .hamburgerMenuDropdown {
@@ -82,7 +82,7 @@
     color: white !important;
     background-color: transparent !important;
     border: none !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Gill Sans MT', sans-serif !important;
   }
   .topbarLinks:hover{
     opacity: 0.50;
@@ -273,6 +273,7 @@
     
     .logo {
         width: 95%;
+        height: 160px;
     }
     /* end topbar css */
 }

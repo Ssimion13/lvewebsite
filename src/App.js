@@ -18,8 +18,8 @@ import EsophagealManometry from "./Pages/Services/GIMotilityClinic/EsophagealMan
 import EsophagealPH from "./Pages/Services/GIMotilityClinic/EsophagealPH.js";
 import HPyloriBreathTest from "./Pages/Services/GIMotilityClinic/HPyloriBreathTest.js";
 import HydrogenBreathTest from "./Pages/Services/GIMotilityClinic/HydrogenBreathTest.js";
-import DrFajardo from "./Pages/AboutUs/DrFajardo.js";
-import DrCremonini from "./Pages/AboutUs/DrCremonini.js";
+import DrFajardo from "./Pages/AboutUs/DrFajardo";
+import DrCremonini from "./Pages/AboutUs/DrCremonini";
 import Footer from "./Footer.js"
 import logo from "./Images/transparentlogo.png";
 

@@ -1,7 +1,8 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Gill Sans MT', sans-serif !important;
   /* font-family: 'Work Sans', sans-serif; */
   font-weight: 300;
+  box-sizing: border-box
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,8 +165,26 @@ p {
   margin-top: 100px;
 }
 
+.groupPhoto {
+  width: 80%; 
+  height: 50%;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.aboutUsPicture {
+  height: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+}
+
 .aboutUs {
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidePageContent {
@@ -213,6 +232,15 @@ p {
   flex-direction:  column;
   color: black;
   border-top: 1px solid #d0dada;
+}
+
+.doctorCarousel {
+  height: 500px;
+  width: 90%;
+}
+.doctorCarouselImage {
+  height: 500px;
+  width: 100% !important;
 }
 
 .doctorPicture {
@@ -327,7 +355,7 @@ p {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 90px;
+    margin-top: 130px;
   }
 .serviceDescriptionText {
   font-size: 20px;
@@ -344,8 +372,8 @@ p {
 }
 
 .sidePageVideoDiv {
-  width: 95%;
-  height: 250px;
+  width: 100%;
+  height: 50vh;
   margin-bottom: 20px;
   margin-top: 10px;
 
@@ -448,7 +476,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
+  padding-top: 140px;
 }
 .contactLogo {
   height: 50%;
@@ -559,15 +587,22 @@ p {
     /* end footer */
 
 
-
-/*end media query */
-
   /* About Us CSS */
   .doctorPicture {
       height: 300px;
       width: 250px;
   }
+  .groupPhoto {
+    width: 50%;
+    height: 50vh;
+  }
+  .doctorCarousel {
+    width: 550px;
+  }
 
+  .aboutUsPicture {
+    width: 50%;
+  }
   .aboutDoctorSection {
       flex-direction: row;
   }
@@ -591,9 +626,14 @@ p {
   }
 
   .sidePageVideoDiv {
-    height: 600px;
+    height: 60vh;
     margin-bottom: 20px;
     margin-top: 10px;
+    width: 80%;
+  }
+
+  .sectionText {
+    font-size: 22px;
   }
   /* End Side Page CSS */
 }
