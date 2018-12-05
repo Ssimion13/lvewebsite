@@ -37,7 +37,7 @@ class FrontPage extends Component {
         const icons = window.innerWidth > 800 ? "5x" : "2x";
         return(
             <div className="frontPage">
-                <div className="frontPageVideo">
+                {/* <div className="frontPageVideo">
                     <video className="background-video" muted loop autoPlay >
                         <source src={lvecommercial} type="video/mp4" />
                         Your browser does not support the video tag.
@@ -48,6 +48,9 @@ class FrontPage extends Component {
                         </Button>
                         <VideoModal />
                     </div>
+                </div> */}
+                <div className="frontPageVideo">
+                    <iframe title="LVE Capsule Endoscopy" width="560" height="315" className="sidePageVideo" src="https://www.youtube.com/embed/R6Icr1I7KvI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className="frontPageIntroDiv">
                     <div className="centerAlignerText">

@@ -6,9 +6,9 @@ import {
   CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
-import fajardo1 from "../../../Images/LVG/LVG 11.jpg";
-import fajardo2 from "../../../Images/LVG/LVG 14.jpg";
-import fajardo3 from "../../../Images/LVG/LVG 34.jpg";
+import fajardo1 from "../../../Images/LVG 11.jpg";
+import fajardo2 from "../../../Images/LVG 14.jpg";
+import fajardo3 from "../../../Images/LVG 34.jpg";
 
 const items = [
   {

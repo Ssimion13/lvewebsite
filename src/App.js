@@ -33,7 +33,7 @@ class App extends Component {
     this.timer = this.timer.bind(this);
   }
   
-  componentDidMount(){
+  componentWillMount(){
     this.timer();
   }
 
@@ -43,6 +43,8 @@ class App extends Component {
       this.setState({doneLoading: true})
     }, 2000);
   }
+
+  
 
 
   render() {

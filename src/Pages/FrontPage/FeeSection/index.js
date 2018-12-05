@@ -41,7 +41,7 @@ const items = [
     {
         number: 5,
         heading: "In House Laboratory",
-        text: "Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and return",
+        text: "Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and get the results you need.",
         img: microscope,
         link: "/error"
     }
