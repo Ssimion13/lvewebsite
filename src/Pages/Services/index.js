@@ -1,6 +1,7 @@
 import React from "react";
 import {Button} from "reactstrap";
 import {Link} from 'react-router-dom';
+import e1m1 from "../../Images/e1m1.JPG"
 
 function Services(){
     
@@ -11,6 +12,7 @@ function Services(){
             </div>
             <div className="serviceIndexDiv">
                 <h2> Colonoscopy and Colon Cancer Screening Services </h2>
+                <img src={e1m1} className="serviceDescriptionImage" />
                 <p className="serviceDescriptionText"> A colonoscopy is an exam of the entire colon and the rectum with a colonoscope,
                     a thin flexible tube with a small camera at the end. This painless procedure
                     can detect abnormalities within the colon such as ulcerations, inflammation,

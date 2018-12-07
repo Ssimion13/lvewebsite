@@ -8,6 +8,7 @@ class FrontPageService extends Component {
           // 1. bind your functions in the constructor.
           this.mouseOver = this.mouseOver.bind(this);
           this.mouseOut = this.mouseOut.bind(this);
+          this.mouseClick = this.mouseClick.bind(this);
           this.state = {
               hover: false,
               check: true,
@@ -42,11 +43,32 @@ class FrontPageService extends Component {
           }
         );
       }
+
+      mouseClick(){
+        if(!this.state.hover){
+          this.setState({hover: true,
+            styles: {
+              backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
+              transitionDuration: "0.25s",
+              transitionTimingFunction: "ease-out"
+            }}
+          );
+        } else {
+          this.setState({hover: false,
+            styles: {
+              background: `URL(${this.props.media})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }
+          });
+        }
+      }
   
     render() {
       return (
         
-          <button className="servicesButton"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+        <div className="servicesButton"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver} onMouseLeave={this.mouseOut}>
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
@@ -75,7 +97,7 @@ class FrontPageService extends Component {
             }
             </div>}  
             
-          </button>
+          </div>
       );
     }
   }

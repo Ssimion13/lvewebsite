@@ -203,6 +203,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .doctorSection {
@@ -214,7 +215,7 @@ p {
 }
 
 .doctorThumbnail {
-  width: 220px;
+  width: 75%;
   margin: 17px;
   border: 1px solid #d0dada;
   display: inline-block;
@@ -325,6 +326,18 @@ p {
     align-items: center;
     margin-top: 100px;
   }
+  .serviceIndexDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
   .serviceDiv {
     width: 90%;
     margin-bottom: 15px;
@@ -357,12 +370,17 @@ p {
     padding-right: 10px;
     margin-top: 130px;
   }
-.serviceDescriptionText {
-  font-size: 20px;
-  text-indent: 50px;
-  border-bottom: 1px solid black;
-  padding-bottom: 30px;
-}
+
+  .serviceDescriptionText {
+    font-size: 20px;
+    padding-bottom: 30px;
+    width: 90%;
+  }
+  .serviceDescriptionImage {
+    /* well this is really only for one image */
+    transform: rotate(90deg);
+    height: 300px;
+  }
 
 .sidePageImage {
   width: 90%;
@@ -530,6 +548,7 @@ p {
 
   .aboutDoctorSection {
     flex-direction: row;
+    width: auto;
   }
   .centeredIntroTitle {
     text-align: center;
@@ -537,6 +556,8 @@ p {
     font: normal normal normal 65px/1.4em proxima-n-w01-reg,sans-serif;
     font-weight: bold;
   }
+
+
 
     /* testimonials */
 
@@ -617,7 +638,9 @@ p {
   width: 40%;
   height: 350px;
   }
-
+  .serviceDescriptionText {
+    width: 45%;
+  }
   .sidePageContent {
   display: flex;
   flex-direction: column;

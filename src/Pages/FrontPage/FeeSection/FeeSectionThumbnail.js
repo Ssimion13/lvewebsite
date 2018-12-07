@@ -10,6 +10,7 @@ class FeeSectionThumbnail extends Component {
           // 1. bind your functions in the constructor.
           this.mouseOver = this.mouseOver.bind(this);
           this.mouseOut = this.mouseOut.bind(this);
+          this.mouseClick = this.mouseClick.bind(this);
           this.state = {
               hover: false,
               check: true,
@@ -42,11 +43,31 @@ class FeeSectionThumbnail extends Component {
           }
         );
       }
+      mouseClick(){
+        if(!this.state.hover){
+          this.setState({hover: true,
+            styles: {
+              backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
+              transitionDuration: "0.25s",
+              transitionTimingFunction: "ease-out"
+            }}
+          );
+        } else {
+          this.setState({hover: false,
+            styles: {
+              background: `URL(${this.props.media})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }
+          });
+        }
+      }
   
     render() {
       return (
         
-          <button className="feeSectionButton fade"  style={this.state.styles} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <div className="feeSectionButton fade"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
             {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
@@ -69,7 +90,7 @@ class FeeSectionThumbnail extends Component {
               <h3 className="buttonHeading"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
             </div>}  
-          </button>
+          </div>
       );
     }
   }

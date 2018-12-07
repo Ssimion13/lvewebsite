@@ -1,14 +1,14 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 // import Testimonials from "./Testimonials.js";
 // import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
 // import drfajardo from "../../Images/drfajardo.png";
 // import FeeSectionThumbnail from "./FeeSection/FeeSectionThumbnail";
 // import FrontPageButtonContainer from "./FrontPageButtonContainer";
-import { Button } from 'reactstrap';
-import lvecommercial from "../../Videos/lvecommercial.mp4";
-import VideoModal from "./VideoModal.js";
+// import { Button } from 'reactstrap';
+// import lvecommercial from "../../Videos/lvecommercial.mp4";
+// import VideoModal from "./VideoModal.js";
 import FrontPageService from "./FrontPageService/"
 import ORRoom from "../../Images/operatingroom.JPG";
 import nursestation from "../../Images/nursestation.JPG";
@@ -75,7 +75,7 @@ class FrontPage extends Component {
                                 linkTarget={"/ColonoscopyCancerScreening"} 
                                 heading={"Colonoscopy Screenings"} 
                                 margin="40px"
-                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                                info="With the new "
                                 />
                         </div>
                     </Fade>
@@ -117,6 +117,7 @@ class FrontPage extends Component {
                 </div>
 
                 <FeeSection />
+                
                 <div className="socialMedia">
                     <div className="socialMediaDiv">
                         <h2 className="socialMediaTitle"> Find us on Social Media! </h2>

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import drfajardo from "../../Images/drfajardo.jpg";
 import drcremonini from "../../Images/drcremonini.jpg";
-import groupphoto from "../../Images/LVG/LVG 1.jpg"
+import groupphoto from "../../Images/LVG 1.jpg"
 
 class AboutUs extends React.Component {
     componentDidMount() {

@@ -82,6 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor:pointer;
   }
   .frontPageAttraction:before {
     width: 100%;
@@ -96,6 +97,7 @@
     right: 0;
     position: absolute;
     z-index: -1; 
+    cursor:pointer
   }
   .frontTitle {
     font-size: 35px;
@@ -125,6 +127,7 @@
     justify-content: center;
     text-align: center;
     box-shadow: 5px 5px 5px grey;
+    cursor:pointer
   }
   
   .feeSectionButton::before {
@@ -137,6 +140,7 @@
     right: 0;
     position: absolute;
     z-index: -1;   
+    cursor:pointer
   }
 
   .feeSectionTextOverlay {
@@ -198,6 +202,10 @@
   .carousel-item-active {
     height: 100% !important;
     width: 100% !important;
+  }
+  .carousel-inner {
+    /*IPHONES AND SAFARI WHY */
+    height: 100% !important;
   }
   .custom-tag {
     height: 100% !important;
@@ -685,8 +693,8 @@
 
   .servicesButtonDiv {
     margin-bottom: 30px;
-    height: 350px;
-    width: 65%;
+    height: 50%;
+    width: 100%;
   }
 
   .servicesButton {

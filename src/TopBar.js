@@ -64,7 +64,7 @@ class TopBar extends React.Component {
     }
 
     toggleMobile () {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
         // if(this.state.transparency){
         //     this.setState(prevState => ({
         //         mobileMenuOpen: !prevState.mobileMenuOpen,
