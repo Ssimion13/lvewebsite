@@ -18,6 +18,7 @@ import EsophagealManometry from "./Pages/Services/GIMotilityClinic/EsophagealMan
 import EsophagealPH from "./Pages/Services/GIMotilityClinic/EsophagealPH.js";
 import HPyloriBreathTest from "./Pages/Services/GIMotilityClinic/HPyloriBreathTest.js";
 import HydrogenBreathTest from "./Pages/Services/GIMotilityClinic/HydrogenBreathTest.js";
+import Laboratory from "./Pages/Services/Laboratory.js";
 import DrFajardo from "./Pages/AboutUs/DrFajardo";
 import DrCremonini from "./Pages/AboutUs/DrCremonini";
 import Footer from "./Footer.js"
@@ -72,6 +73,7 @@ class App extends Component {
             <Route path="/HydrogenBreathTest" component={HydrogenBreathTest} />
             <Route path="/DrFajardo" component={DrFajardo} />
             <Route path="/DrCremonini" component={DrCremonini} />
+            <Route path="/Laboratory" component={Laboratory} />
         </Switch>
         <Footer />
         {window.innerWidth < 500 ?

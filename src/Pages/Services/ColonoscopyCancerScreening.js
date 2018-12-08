@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Button} from "reactstrap";
 import colonoscope from "../../Images/colonoscope.jpg";
-import doctorcolonoscopy from "../../Images/e1m1.JPG"
+import doctorcolonoscopy from "../../Images/procedure.png"
 
 class ColonoscopyCancerScreening extends React.Component {
     componentDidMount() {
@@ -25,7 +25,7 @@ class ColonoscopyCancerScreening extends React.Component {
                         detect abnormalities within the colon such as ulcerations, inflammation, strictures
                         or narrowing, polyps and neoplasm or cancer. <br/> 
                     </p>
-                    <img className="rotatedImage sectionPicture" alt="doctorcolonoscopy" src={doctorcolonoscopy} />
+                    <img className="sectionPicture" alt="doctorcolonoscopy" src={doctorcolonoscopy} />
                     
                     <p className="sectionText">
                         A colonoscopy may be indicated to help evaluate the cause of gastroinestinal (GI) 

@@ -27,7 +27,7 @@ const items = [
     {
         number: 3,
         heading: "Friendly Staff",
-        text: "Our  well trained nurses and staff will ensure that you have a comfortable experience when you come for your procedure. ",
+        text: "Our well trained nurses and assisting staff will ensure that you have a comfortable experience when you come for your procedure. ",
         img: friendlynurse,
         link: "/error"
     },
@@ -43,7 +43,7 @@ const items = [
         heading: "In House Laboratory",
         text: "Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and get the results you need.",
         img: microscope,
-        link: "/error"
+        link: "/Laboratory"
     }
   ];
 

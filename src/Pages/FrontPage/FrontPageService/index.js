@@ -49,7 +49,7 @@ class FrontPageService extends Component {
           this.setState({hover: true,
             styles: {
               backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
-              transitionDuration: "0.25s",
+              transitionDuration: "0.45s",
               transitionTimingFunction: "ease-out"
             }}
           );
@@ -73,9 +73,9 @@ class FrontPageService extends Component {
               <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
                   {window.innerWidth > 800 ?
-                    <h1> <b> {this.props.heading} </b> </h1>
+                    <h3 className="feeSectionHeading"> <b> {this.props.heading} </b> </h3>
                     :
-                    <h3> <b> {this.props.heading} </b></h3>
+                    <h3 className="feeSectionHeading"> <b> {this.props.heading} </b></h3>
                   }
                   <h4> {this.props.info}</h4>
                   <Link to={this.props.linkTarget}> 

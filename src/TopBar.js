@@ -137,6 +137,7 @@ class TopBar extends React.Component {
                         <DropdownMenu className="topBarDropdownMenu">
                             <NavLink className="topBarDropdownLink" href="/ColonoscopyCancerScreening"> Colonoscopy </NavLink>
                             <NavLink className="topBarDropdownLink" href="/UpperEndoscopy"> Upper Endoscopy </NavLink>
+                            <NavLink className="topBarDropdownLink" href="/Laboratory"> Laboratory </NavLink>
                             {/* Pulling these out for use in the LVG website
                             <NavLink className="topBarDropdownLink" href="/GIMotilityClinic"> GI Motility Clinic </NavLink>
                             <NavLink className="topBarDropdownLink" href="/ViralHepatitisClinic"> Viral Hepatitis Clinic  </NavLink>

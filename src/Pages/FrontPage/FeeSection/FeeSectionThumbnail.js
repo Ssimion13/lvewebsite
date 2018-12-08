@@ -48,7 +48,7 @@ class FeeSectionThumbnail extends Component {
           this.setState({hover: true,
             styles: {
               backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
-              transitionDuration: "0.25s",
+              transitionDuration: "0.45s",
               transitionTimingFunction: "ease-out"
             }}
           );
@@ -79,7 +79,7 @@ class FeeSectionThumbnail extends Component {
                 }
                 <h5> {this.props.info}</h5>
                 {this.props.link !== "/error" ?
-                  <Link to={this.props.linkTarget || "error"}> 
+                  <Link to={this.props.link || "error"}> 
                   <Button> Learn More </Button>
                   </Link>
                   : null

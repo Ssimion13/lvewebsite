@@ -75,7 +75,7 @@ class FrontPage extends Component {
                                 linkTarget={"/ColonoscopyCancerScreening"} 
                                 heading={"Colonoscopy Screenings"} 
                                 margin="40px"
-                                info="With the new "
+                                info="With cutting edge colonoscopes in hand, our doctors ensure the health of your colon."
                                 />
                         </div>
                     </Fade>
@@ -86,7 +86,7 @@ class FrontPage extends Component {
                                 linkTarget={"/UpperEndoscopy"} 
                                 heading={"Upper Endoscopies (EGD)"} 
                                 margin="40px"
-                                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                info="An endoscopy with us is convenient and easy and Scott has no idea how to write these things"
                                 />
                         </div>
                     </Fade>
