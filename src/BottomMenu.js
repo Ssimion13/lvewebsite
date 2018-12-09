@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Link} from "react-router-dom";
 
 
-const Footer = function(){
+const BottomMenu = function(){
     function backToTop() {
         window.scrollTo(0, 0)
     }
@@ -39,4 +39,4 @@ const Footer = function(){
         )
 }
 
-export default Footer;
+export default BottomMenu

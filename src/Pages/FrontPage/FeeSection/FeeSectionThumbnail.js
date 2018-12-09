@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import {Button} from "reactstrap";
-
+import Flip from 'react-reveal/Flip';
 
 
 class FeeSectionThumbnail extends Component {
@@ -68,27 +68,31 @@ class FeeSectionThumbnail extends Component {
       return (
         
           <div className="feeSectionButton fade"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
-            {/* <img className="ImageGrid" src={this.props.media}/> */}
             {this.state.hover ? (
-              <div className="feeSectionImageOverlay" > 
-              <div className="feeSectionTextOverlay">
-                {window.innerWidth > 800 ?
-                <h3><b> {this.props.text} </b></h3>
-                : 
-                <p><b> {this.props.text} </b></p>
-                }
-                <h5> {this.props.info}</h5>
-                {this.props.link !== "/error" ?
-                  <Link to={this.props.link || "error"}> 
-                  <Button> Learn More </Button>
-                  </Link>
-                  : null
-                }
+              <Flip top>
+                <div className="feeSectionImageOverlay" > 
+                <div className="feeSectionTextOverlay">
+                  {window.innerWidth > 800 ?
+                  <h3><b> {this.props.text} </b></h3>
+                  : 
+                  <p><b> {this.props.text} </b></p>
+                  }
+                  <h5> {this.props.info}</h5>
+                  {this.props.link !== "/error" ?
+                    <Link to={this.props.link || "error"}> 
+                    <Button> Learn More </Button>
+                    </Link>
+                    : null
+                  }
+                </div>
               </div>
-            </div>) : 
+            </Flip>
+            ) : 
             <div className="feeSectionImageOverlay overlay">
+              <Flip top>
               <h3 className="buttonHeading"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
+              </Flip>
             </div>}  
           </div>
       );

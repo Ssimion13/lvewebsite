@@ -26,7 +26,7 @@ function Services(){
                 </div>
                 <div className="serviceIndexDiv">
                     <h2> Upper Endoscopy - EGD </h2>
-                    <img src={e1m1} alt="endoscopyprocedure" className="serviceDescriptionImage sideways" />
+                    <img src={e1m1} alt="endoscopyprocedure" className="specialImage sideways" />
                     <p className="serviceDescriptionText">
                         An upper endoscopy, also referred to as an esophagogastroduodenoscopy, 
                         or EGD, is a painless examination of the esophagus, stomach and the 
@@ -42,53 +42,6 @@ function Services(){
                     </Link>
                 </div>
             </div>
-            
-            {/*
-                does he want me to put these in on LVE too? I have no clue
-
-            <div className="serviceDiv">
-                <h2> Capsule Endoscopy </h2>
-                <p className="serviceDescriptionText">
-                    Capsule endoscopy is an outpatient procedure that involves visualization 
-                    of the small intestine with the use of a wireless capsule equipped with a 
-                    tiny camera that takes thousands of pictures for later evaluation by the 
-                    gastroenterologist. The procedure, which typically takes approximately 8 hours,
-                    is able to detect abnormalities in the small bowel that the conventional 
-                    endoscope and colonoscope is unable to reach.
-                </p>
-                <Link to="/CapsuleEndoscopy"> 
-                    <Button> Click Here </Button>
-                </Link>
-            </div>
-            <div className="serviceDiv">
-                <h2> GI Motility Clinic </h2>
-                <p className="serviceDescriptionText">
-                    Dr. Fajardo and Dr. Cremonini have both undergone specialized training in GI Motility
-                    and Neurogastroenterology Disorders. Las Vegas Gastroenterology provides state-of-the-art 
-                    technology that has the ability to perform certain specialized diagnostic procedures 
-                    for gastrointestinal motility disorders. These procedures help doctors obtain further 
-                    understanding of your diagnosis so you can begin your appropriate treatment.
-                </p>
-                <Link to="/GIMotilityClinic"> 
-                    <Button> Click Here </Button>
-                </Link>
-            </div>
-            <div className="serviceDiv">
-                <h2> Viral Hepatitis Clinic </h2>
-                <p className="serviceDescriptionText">
-                    Las Vegas Gastroenterology provides care for patients infected with viral 
-                    hepatitis B and C. With comprehensive, in-depth training and years of 
-                    experience in the field of hepatology, our physicians are able to diagnose, 
-                    treat and manage patients who have been infected with the potentially deadly
-                    disease. Left untreated, viral hepatitis can lead to liver cirrhosis and liver 
-                    cancer, as well as other complications that can seriously decrease a person’s
-                    quality of life. so you can begin your appropriate treatment.
-                </p>
-                <Link to="/ViralHepatitisClinic"> 
-                    <Button> Click Here </Button>
-                </Link> 
-            </div>
-            */}
         </div>
     )
 }

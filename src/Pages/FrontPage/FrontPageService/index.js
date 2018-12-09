@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import { Button } from 'reactstrap';
+import Flip from 'react-reveal/Flip';
 
 class FrontPageService extends Component {
     constructor(props) {
@@ -71,29 +72,41 @@ class FrontPageService extends Component {
         <div className="servicesButton"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver} onMouseLeave={this.mouseOut}>
             {this.state.hover ? (
               <div className="feeSectionImageOverlay" > 
-                <div className="feeSectionTextOverlay">
-                  {window.innerWidth > 800 ?
-                    <h3 className="feeSectionHeading"> <b> {this.props.heading} </b> </h3>
-                    :
-                    <h3 className="feeSectionHeading"> <b> {this.props.heading} </b></h3>
-                  }
-                  <h4> {this.props.info}</h4>
-                  <Link to={this.props.linkTarget}> 
-                  <Button> Learn More </Button>
-                  </Link>
-                </div>
+                <Flip top>
+                  <div className="feeSectionTextOverlay">
+                    {window.innerWidth > 800 ?
+                      <h3 className="feeSectionHeading"> <b> {this.props.heading} </b> </h3>
+                      :
+                      <h3 className="feeSectionHeading"> <b> {this.props.heading} </b></h3>
+                    }
+                    <h4> {this.props.info}</h4>
+                    <Link to={this.props.linkTarget}> 
+                    <Button> Learn More </Button>
+                    </Link>
+                  </div>
+                </Flip>
               </div>
               ) : 
             <div className="feeSectionImageOverlay overlay">
+            
             {window.innerWidth > 800 ?
-              <h1 className="buttonHeading"> <b> {this.props.heading} </b> </h1>
-              :
-              <h4 className="buttonHeading"> <b> {this.props.heading} </b></h4>
+              <Flip top>
+                <h1 className="buttonHeading"> <b> {this.props.heading} </b> </h1>
+              </Flip>
+                :
+              <Flip top>
+                <h4 className="buttonHeading"> <b> {this.props.heading} </b></h4>
+              </Flip>
             }
+            
             {window.innerWidth > 800 ?
-              <h4 className="buttonHeading"> {this.props.frontText} </h4>
+              <Flip top>
+                <h4 className="buttonHeading"> {this.props.frontText} </h4>
+              </Flip>
               :
-              <h6 className="buttonHeading"> {this.props.frontText} </h6>
+              <Flip top>
+                <h6 className="buttonHeading"> {this.props.frontText} </h6>
+              </Flip>
             }
             </div>}  
             

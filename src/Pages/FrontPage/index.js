@@ -1,21 +1,11 @@
 import React, {Component} from "react";
-// import {Link} from "react-router-dom";
-// import Testimonials from "./Testimonials.js";
-// import WhyChooseLVEThumbnail from "./WhyChooseLVEThumbnail.js"
 import WhyChooseLVECarousel from "./WhyChooseLVECarousel";
-// import drfajardo from "../../Images/drfajardo.png";
-// import FeeSectionThumbnail from "./FeeSection/FeeSectionThumbnail";
-// import FrontPageButtonContainer from "./FrontPageButtonContainer";
-// import { Button } from 'reactstrap';
-// import lvecommercial from "../../Videos/lvecommercial.mp4";
-// import VideoModal from "./VideoModal.js";
 import FrontPageService from "./FrontPageService/"
 import ORRoom from "../../Images/operatingroom.JPG";
 import nursestation from "../../Images/nursestation.JPG";
-//react reveal
 import Fade from "react-reveal/Fade";
 import FeeSection from "./FeeSection";
-
+import microscope from "../../Images/microscope.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -28,27 +18,11 @@ class FrontPage extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
-    
-
-
     render(){
-        
         //this variable determines the size of icons based on window size.
         const icons = window.innerWidth > 800 ? "5x" : "2x";
         return(
             <div className="frontPage">
-                {/* <div className="frontPageVideo">
-                    <video className="background-video" muted loop autoPlay >
-                        <source src={lvecommercial} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="videoButtonDiv">
-                        <Button className="videoButton"> 
-                            <Link to="/Location" className="videoButtonText" > Location </Link>
-                        </Button>
-                        <VideoModal />
-                    </div>
-                </div> */}
                 <div className="frontPageVideo">
                     <iframe title="LVE Capsule Endoscopy" width="560" height="315" className="sidePageVideo" src="https://www.youtube.com/embed/R6Icr1I7KvI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
@@ -59,9 +33,9 @@ class FrontPage extends Component {
                         <h4 className="frontPageHeadingText">
                             Here at Las Vegas Endoscopy, we take pride in our work and our commitment to the community. We use state-of-the-art GI techniques, the newest technology, and top-tier staff to ensure the best experience possible for our patients.
                         </h4>
+                        <h4 className="frontPageHeadingText"> Call us today! (816) 232-2333 </h4>
                     </div>
                 </div>
-
 
                 <div className="blockBar">
                     <h1 className="blockHeader"> Our Services </h1>
@@ -87,37 +61,29 @@ class FrontPage extends Component {
                                 heading={"Upper Endoscopies (EGD)"} 
                                 margin="40px"
                                 info="An endoscopy with us is convenient and easy and Scott has no idea how to write these things"
-                                />
-                        </div>
-                    </Fade>
-                    {/* <Fade bottom>
-                        <div className="servicesButtonDiv">
-                            <FrontPageService media={sunrise} heading={"GI Clinic"} linkTarget={"/GIMotilityClinic"} />
+                            />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="servicesButtonDiv">
-                            <FrontPageService media={trollpicture} heading={"Hepatitis Clinic"} linkTarget={"/ViralHepatitisClinic"} />
+                            <FrontPageService 
+                                media={microscope} 
+                                linkTarget={"/Laboratory"} 
+                                heading={"In House Laboratory"} 
+                                margin="40px"
+                                info="Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and get the results you need."
+                            />
                         </div>
-                    </Fade> */}
+                    </Fade>
                 </div>
                 </div>
-                {/* <FrontPageButtonContainer /> */}
-                {/* <Testimonials /> */}
-                {/* I'm not sure whether I need this part or not. */}
-                {/* {window.innerWidth > 500 ? */}
-
-                 {/* : null } */}
-                {/* {window.innerWidth < 500 ? */}
                 <div className="whyChooseLVECarousel">
                     <WhyChooseLVECarousel />
                 </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
                 </div>
-
                 <FeeSection />
-                
                 <div className="socialMedia">
                     <div className="socialMediaDiv">
                         <h2 className="socialMediaTitle"> Find us on Social Media! </h2>
@@ -137,8 +103,6 @@ class FrontPage extends Component {
                         </div>
                     </div>
                 </div>
-                {/* : null } */}
-                
             </div>
         )
     }

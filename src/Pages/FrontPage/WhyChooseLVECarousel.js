@@ -6,21 +6,20 @@ import {
   CarouselIndicators,
   // CarouselCaption
 } from 'reactstrap';
-import DarkSide from "../../Images/darkside.jpg"
 // import FancyPoseFajardo from "../../Images/fancyposefajardo.jpg"
 // import DoctorLaptop from "../../Images/doctorlaptop.jpg"
 import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
 import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
+import doctorinor2 from "../../Images/doctorinor2.JPG"
 import procedure from "../../Images/procedure.png"
 
 const items = [
   {
-    src: DarkSide,
+    src: cremoniniScrubs,
     caption: ""
   },
   {
-    src: cremoniniScrubs,
-    caption: ""
+    src: doctorinor2
   },
   {
     src: lvgColonWarning,

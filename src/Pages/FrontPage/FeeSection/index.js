@@ -1,9 +1,7 @@
 import React, {Component} from "react";
-// import {Link} from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import FeeSectionThumbnail from "./FeeSectionThumbnail";
 import ordoors from "../../../Images/ordoors.jpg"
-import microscope from "../../../Images/microscope.jpg";
 import procedure from "../../../Images/procedure.png";
 import ourwork from "../../../Images/ourwork.jpg";
 import friendlynurse from "../../../Images/friendlyNurse.png"
@@ -38,13 +36,6 @@ const items = [
         img: ordoors,
         link: "/error"
     },
-    {
-        number: 5,
-        heading: "In House Laboratory",
-        text: "Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and get the results you need.",
-        img: microscope,
-        link: "/Laboratory"
-    }
   ];
 
 
@@ -103,7 +94,7 @@ class FeeSection extends Component {
                 <button className="leftButton" onClick={()=>{this.currentSectionCheck("-")}}> ◀ </button>
             </Fade>
             : null }
-            {this.state.lastSection !== 6 && window.innerWidth > 600   ?
+            {this.state.lastSection !== 5 && window.innerWidth > 600   ?
             <Fade right> 
                 <button  className="rightButton" onClick={()=>{this.currentSectionCheck("+")}}> ▶ </button> 
             </Fade>
@@ -118,7 +109,7 @@ class FeeSection extends Component {
 
             {renderedSections}
 
-            {this.state.lastSection !== 6 && window.innerWidth < 600   ?
+            {this.state.lastSection !== 5 && window.innerWidth < 600   ?
             <Fade bottom> 
                 <button  className="bottomButton" onClick={()=>{this.currentSectionCheck("+")}}> ▼ </button> 
             </Fade>
