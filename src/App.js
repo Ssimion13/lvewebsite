@@ -23,6 +23,7 @@ import DrFajardo from "./Pages/AboutUs/DrFajardo";
 import DrCremonini from "./Pages/AboutUs/DrCremonini";
 import Footer from "./Footer.js"
 import logo from "./Images/transparentlogo.png";
+import BottomMenu from "./BottomMenu.js";
 
 class App extends Component {
   constructor(){
@@ -75,6 +76,7 @@ class App extends Component {
             <Route path="/DrCremonini" component={DrCremonini} />
             <Route path="/Laboratory" component={Laboratory} />
         </Switch>
+        <BottomMenu />
         <Footer />
         {window.innerWidth < 500 ?
         <BottomButtons />

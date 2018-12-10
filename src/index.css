@@ -569,6 +569,52 @@ p {
 
 /* end Loading Screen */
 
+/* Bottom Menu */
+
+.bottomMenu {
+  height: 500px;
+  background-color: rgb(25,25,25);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.bottomMenuMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomMenuHeading {
+  color: white !important;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.bottomMenuItem {
+  padding-left: 20px;
+  color: white !important;
+  margin-top: 20px;
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.bottomMenuItem:hover {
+  background-color: rgb(60,60,60);
+  transition: background-color 0.8s;
+  text-decoration: none
+}
+
+.bottomMenuItemInner {
+  padding-left: 35px;
+  color: white !important;
+}
+.bottomMenuItemInner:hover {
+  background-color: rgb(60,60,60);
+  transition: background-color 0.8s;
+  text-decoration: none;
+}
+/* End Bottom Menu */
+
+
 @media (min-width: 850px){
 
   .aboutDoctorSection {
@@ -695,4 +741,28 @@ p {
     width: 75%;
   }
   /* End Side Page CSS */
+
+  /*Bottom Menu CSS */
+
+.bottomMenuMain {
+  align-items: center;
+}
+
+.bottomMenuHeading {
+  width: 30%;
+}
+.bottomMenuItem {
+  width: 30%;
+}
+
+.bottomMenuItemInner {
+  width: 30%;
+  padding-left: 35px;
+  color: white !important;
+}
+
+
+
+
+  /* End Bottom Menu CSS */
 }

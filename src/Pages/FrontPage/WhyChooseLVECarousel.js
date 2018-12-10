@@ -12,6 +12,7 @@ import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
 import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
 import doctorinor2 from "../../Images/doctorinor2.JPG"
 import procedure from "../../Images/procedure.png"
+import lvg11 from "../../Images/LVG 11.jpg"
 
 const items = [
   {
@@ -27,6 +28,10 @@ const items = [
   },
   {
     src: procedure,
+    caption: ""
+  },
+  {
+    src: lvg11,
     caption: ""
   }
 ];
