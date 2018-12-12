@@ -18,7 +18,7 @@ class FrontPageService extends Component {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                marginTop: this.props.margin || 0,
+                marginTop:  0,
                 imageOrientation: "fromImage",
               }
           };
@@ -69,9 +69,9 @@ class FrontPageService extends Component {
     render() {
       return (
         
-        <div className="servicesButton"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver} onMouseLeave={this.mouseOut}>
-            {this.state.hover ? (
-              <div className="feeSectionImageOverlay" > 
+        <div className="servicesButton"  style={this.state.styles} onClick={this.mouseClick} >
+
+              <div className={this.state.hover ? "feeSectionImageOverlay overlay " : "hide feeSectionImageOverlay overlay"} > 
                 <Flip top>
                   <div className="feeSectionTextOverlay">
                     {window.innerWidth > 800 ?
@@ -79,15 +79,18 @@ class FrontPageService extends Component {
                       :
                       <h3 className="feeSectionHeading"> <b> {this.props.heading} </b></h3>
                     }
-                    <h4> {this.props.info}</h4>
-                    <Link to={this.props.linkTarget}> 
+                    <h4 className="frontPageButtonInfo"> {this.props.info}</h4>
+                    {this.props.linkTarget && this.state.hover ? 
+                    <Link to={this.props.linkTarget}>  
                     <Button> Learn More </Button>
                     </Link>
+                    : null 
+                    }
                   </div>
                 </Flip>
               </div>
-              ) : 
-            <div className="feeSectionImageOverlay overlay">
+              
+            <div className={!this.state.hover ? "feeSectionImageOverlay overlay " : "hide feeSectionImageOverlay overlay"}>
             
             {window.innerWidth > 800 ?
               <Flip top>
@@ -108,7 +111,7 @@ class FrontPageService extends Component {
                 <h6 className="buttonHeading"> {this.props.frontText} </h6>
               </Flip>
             }
-            </div>}  
+            </div>
             
           </div>
       );

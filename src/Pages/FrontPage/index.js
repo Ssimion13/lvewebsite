@@ -49,7 +49,7 @@ class FrontPage extends Component {
                                 linkTarget={"/ColonoscopyCancerScreening"} 
                                 heading={"Colonoscopy Screenings"} 
                                 margin="40px"
-                                info="With cutting edge colonoscopes in hand, our doctors ensure the health of your colon."
+                                info="With the newest colonoscopes in hand, our doctors ensure the health of your colon."
                                 />
                         </div>
                     </Fade>
@@ -60,25 +60,27 @@ class FrontPage extends Component {
                                 linkTarget={"/UpperEndoscopy"} 
                                 heading={"Upper Endoscopies (EGD)"} 
                                 margin="40px"
-                                info="An endoscopy with us is convenient and easy and Scott has no idea how to write these things"
+                                info="An endoscopy with us is convenient and easy."
                             />
                         </div>
                     </Fade>
-                    <Fade bottom>
-                        <div className="servicesButtonDiv">
+                    {/* <Fade bottom>
+                        {/* <div className="servicesButtonDiv">
                             <FrontPageService 
                                 media={microscope} 
-                                linkTarget={"/Laboratory"} 
+                                // linkTarget={"/Laboratory"} 
                                 heading={"In House Laboratory"} 
                                 margin="40px"
                                 info="Our surgical center is supported by an in-house laboratory, allowing us to quickly analyze and get the results you need."
                             />
-                        </div>
-                    </Fade>
+                        </div> 
+                    </Fade> */}
                 </div>
                 </div>
-                <div className="whyChooseLVECarousel">
-                    <WhyChooseLVECarousel />
+                <div className='whyChooseLVECarouselHolder'> 
+                    <div className="whyChooseLVECarousel">
+                        <WhyChooseLVECarousel />
+                    </div>
                 </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>

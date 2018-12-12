@@ -32,6 +32,9 @@ p {
 .backButton {
   padding-bottom: 20px;
 }
+.hide {
+  display: none !important;
+}
 .sideways {
   transform: rotate(90deg);
 }
@@ -333,7 +336,7 @@ p {
   .servicesBackground {
     background: url("./Images/background.jpg");
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
   }
   .servicesMain {
     display: flex;
@@ -440,7 +443,7 @@ p {
 .centeredIntroTitle {
   text-align: center;
   margin-bottom: 15px;
-  font: normal normal normal 25px/1.4em ,sans-serif;
+  font-size: 35px;
   font-weight: bold;
 }
 .centeredText {

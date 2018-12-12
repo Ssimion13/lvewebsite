@@ -75,7 +75,7 @@ class FeeSectionThumbnail extends Component {
                   {window.innerWidth > 800 ?
                   <h3><b> {this.props.text} </b></h3>
                   : 
-                  <p><b> {this.props.text} </b></p>
+                  <p className="feeSectionText" ><b> {this.props.text} </b></p>
                   }
                   <h5> {this.props.info}</h5>
                   {this.props.link !== "/error" ?

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("./Images/background.jpg");
+    background-color: rgb(25,25,25);
     background-position: center;
     background-repeat: repeat;
   }
@@ -140,13 +140,18 @@
     right: 0;
     position: absolute;
     z-index: -1;   
-    cursor:pointer
+    cursor:pointer;
+    margin-bottom: 15px;
   }
 
   .feeSectionTextOverlay {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .feeSectionText {
+    width: 50%;
+    font-size: 20px;
   }
   
   
@@ -159,6 +164,8 @@
     color: white;
     margin-top: 25px;
     margin-bottom: 25px;
+    background: url("./Images/background.jpg");
+
   }
   
   .frontPageIntroSection {
@@ -187,6 +194,9 @@
     width: 100%;
     
   }
+  .frontPageButtonInfo {
+    width: 80%;
+  }
   
   .frontPageMap {
     width: 100% !important;
@@ -197,6 +207,13 @@
     width: 100% !important;
     height: 350px !important;
 
+  }
+  .whyChooseLVECarouselHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(25,25,25);
   }
   
   .carousel-item-active {
@@ -445,6 +462,7 @@
     width: 100%;
     padding-top: 20px;
   }
+
   
   /* end FrontCarousel CSS */
 
@@ -577,6 +595,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  padding-top: 20px;
 }
 
 .frontPageService {
@@ -597,7 +616,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
-
+  margin-bottom: 30px;
 }
 
 .servicesButton {
@@ -607,7 +626,6 @@
   font-family: 'Gill Sans MT', sans-serif !important;
   z-index: 1;
   position: relative;
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -625,6 +643,7 @@
   right: 0;
   position: absolute;
   z-index: -1;   
+  margin-bottom: 15px;
 }
 
 .topService {
@@ -700,7 +719,7 @@
 
   .servicesButton {
     height: 100%;
-    width: 75%;
+    width: 85%;
   }
 
 
@@ -723,8 +742,12 @@
   }
 
   .whyChooseLVECarousel {
-    width: 100% !important;
-    /* height: 400px !important; */
+    width: 75% !important;
+    display: inline;
+  }
+  
+  .whyChooseLVECarouselHolder {
+    height: 650px;
   }
 
   .carousel-caption {
@@ -747,7 +770,8 @@
   }
 
   .whyChooseLVECarouselImage {
-    height: 650px !important; 
+    height: 90vh !important; 
+    width: 75vw !important;
   }
 
 
@@ -759,7 +783,7 @@
   .frontPageServicesMain {
     padding-top: 60px;
     padding-bottom: 30px;
-    height: 950px;
+    height: 1100px;
   }
 
 
@@ -780,8 +804,11 @@
   }
   .feeSectionTextOverlay {
     width: 50%;
-
   }
+  .feeSectionText {
+    width: 100%;
+  }
+
   .socialMediaDiv {
     width: 70%;
     height: 550px;
