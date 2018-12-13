@@ -356,6 +356,18 @@ p {
     padding-top: 20px;
     background-color: white;
   }
+  .serviceIndexTopVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+  }
   .serviceDivHeading {
     
   }

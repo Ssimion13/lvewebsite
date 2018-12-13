@@ -73,7 +73,7 @@ class FeeSectionThumbnail extends Component {
                 <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
                   {window.innerWidth > 800 ?
-                  <h3><b> {this.props.text} </b></h3>
+                  <h3 className="feeSectionText"><b> {this.props.text} </b></h3>
                   : 
                   <p className="feeSectionText" ><b> {this.props.text} </b></p>
                   }

@@ -3,6 +3,7 @@ import {Button} from "reactstrap";
 import {Link} from 'react-router-dom';
 import e1m1 from "../../Images/e1m1.JPG"
 import procedure from "../../Images/procedure.png"
+import video from "../../Videos/compiledvideo.mp4"
 
 function Services(){
     
@@ -11,6 +12,16 @@ function Services(){
             <div className="servicesMain"> 
                 <div className="blockBar">
                     <h1 className="blockHeader"> Services </h1>
+                </div>
+                <div className="serviceIndexTopVideo">
+                <video className="background-video" muted autoPlay >
+                        <source src={video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                </video>
+                <p className="serviceDescriptionText"> 
+                    At Las Vegas Endoscopy, we use the latest scopes and tools to make your procedure precise and easy. Our Fuse© Gastroscopes/Endoscopes are designed with three cameras and the ability to twist inside of the body and remove polyps / take samples easily.
+                    Equipped with these scopes, our doctors can find things that other medical centers can't, ensuring that nothing is left unchecked.
+                </p>
                 </div>
                 <div className="serviceIndexDiv">
                     <h2 className="serviceDivHeading"> Colonoscopy and Colon Cancer Screening Services </h2>
