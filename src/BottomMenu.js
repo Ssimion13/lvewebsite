@@ -16,7 +16,7 @@ const BottomMenu = function(){
                     <Link to="/Services" className="bottomMenuItem"> Services </Link>
                     <Link to="/ColonoscopyCancerScreening" className="bottomMenuItemInner"> Colonoscopy </Link>
                     <Link to="/UpperEndoscopy" className="bottomMenuItemInner"> Upper Endoscopy (EGD) </Link>
-                    <Link to="/Laboratory" className="bottomMenuItemInner"> Our Laboratory </Link>
+                    {/* <Link to="/Laboratory" className="bottomMenuItemInner"> Our Laboratory </Link> */}
                     <Link to="/Awards" className="bottomMenuItem"> Awards </Link>
                     <Link to="/Location" className="bottomMenuItem"> Location and Contact Information </Link>
                 </div>

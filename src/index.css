@@ -29,6 +29,15 @@ p {
 }
 
 /* Misc */
+.indented {
+  text-indent: 20px;
+}
+.slightPaddingTop {
+  padding-top: 20px;
+}
+.slightPaddingBottom {
+  padding-bottom: 20px;
+}
 .backButton {
   padding-bottom: 20px;
 }
@@ -187,7 +196,7 @@ p {
 }
 
 .aboutUsPicture {
-  height: 350px;
+  /* height: 350px; */
   padding-top: 10px;
   padding-bottom: 10px;
   width: 95%;
@@ -255,7 +264,6 @@ p {
 }
 .doctorCarouselImage {
   height: 500px;
-  width: 100% !important;
 }
 
 .doctorPicture {
@@ -350,10 +358,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid black;
-    margin-bottom: 100px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
     background-color: white;
   }
   .serviceIndexTopVideo {
@@ -362,10 +367,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid black;
-    margin-bottom: 100px;
-    padding-bottom: 20px;
-    padding-top: 20px;
     background-color: white;
   }
   .serviceDivHeading {
@@ -411,14 +412,14 @@ p {
     width: 90%;
   }
   .serviceDescriptionImage {
-
+    padding-top: 30px;
     height: 300px;
     width: 95%;
   }
 
   .specialImage {
     /* well this is really only for one image */
-    height: 300px;
+    padding-left: 30px;
     width: 95%;
   }
 
@@ -434,11 +435,14 @@ p {
   height: 50vh;
   margin-bottom: 20px;
   margin-top: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .sidePageVideo {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -496,6 +500,9 @@ p {
   .map {
     width: 100%;
     height: 420px;
+  }
+  .infoWindowText {
+    font-size: 20px;
   }
   .contactForm {
     display: flex;
@@ -630,6 +637,22 @@ p {
 /* End Bottom Menu */
 
 
+@media (min-width: 600px){
+  .bottomMenuHeading {
+    font-size: 25px;
+  }
+  .bottomMenuItem {
+    font-size: 25px;
+  }
+  .bottomMenuItemInner {
+    font-size: 25px;
+  }
+  .footerThumbnailDiv {
+    padding: 15px;
+  }
+}
+
+
 @media (min-width: 850px){
 
   .aboutDoctorSection {
@@ -689,6 +712,7 @@ p {
     }
     .footerThumbnailDiv {
       margin-right: 20px;
+      
     }
 
     /* end footer */
@@ -705,6 +729,9 @@ p {
   }
   .doctorCarousel {
     width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .aboutUsPicture {
@@ -726,6 +753,7 @@ p {
   }
   .serviceDescriptionText {
     width: 45%;
+    padding-bottom: 10px;
   }
   .serviceDescriptionImage {
     width: 40vw;
@@ -765,15 +793,21 @@ p {
 
 .bottomMenuHeading {
   width: 30%;
+  font-size: 25px;
 }
 .bottomMenuItem {
   width: 30%;
+  font-size: 25px;
 }
 
 .bottomMenuItemInner {
   width: 30%;
   padding-left: 35px;
   color: white !important;
+}
+
+.sidePageVideoDiv {
+  height: 65vh;
 }
 
 

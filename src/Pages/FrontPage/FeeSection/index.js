@@ -89,19 +89,19 @@ class FeeSection extends Component {
 
             {/* for non mobile */}
             
-            {this.state.firstSection !== 1 && window.innerWidth > 600 ? 
+            {this.state.firstSection !== 1 && window.innerWidth > 800 ? 
             <Fade left >
                 <button className="leftButton" onClick={()=>{this.currentSectionCheck("-")}}> ◀ </button>
             </Fade>
             : null }
-            {this.state.lastSection !== 5 && window.innerWidth > 600   ?
+            {this.state.lastSection !== 5 && window.innerWidth > 800   ?
             <Fade right> 
                 <button  className="rightButton" onClick={()=>{this.currentSectionCheck("+")}}> ▶ </button> 
             </Fade>
             : null  }
 
             {/* for mobile */}
-            {this.state.firstSection !== 1 && window.innerWidth < 600  ? 
+            {this.state.firstSection !== 1 && window.innerWidth < 800  ? 
             <Fade top >
                 <button className="topButton" onClick={()=>{this.currentSectionCheck("-")}}> ▲  </button>
             </Fade>
@@ -109,7 +109,7 @@ class FeeSection extends Component {
 
             {renderedSections}
 
-            {this.state.lastSection !== 5 && window.innerWidth < 600   ?
+            {this.state.lastSection !== 5 && window.innerWidth < 800   ?
             <Fade bottom> 
                 <button  className="bottomButton" onClick={()=>{this.currentSectionCheck("+")}}> ▼ </button> 
             </Fade>

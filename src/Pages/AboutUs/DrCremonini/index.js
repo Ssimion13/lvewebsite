@@ -14,7 +14,7 @@ class DrCremonini extends React.Component {
                 </div>
                 <div className="doctorSection">
                     <img src={drcremonini} className="doctorInfo" alt="drCremonini" />
-                    <p className="doctorSectionText">
+                    <p className="doctorSectionText slightPaddingBottom">
                         Dr. Filippo Cremonini, MD, PhD, MSc is a graduate of the Catholic University of Rome, Italy,
                         where he also completed residency in Internal Medicine. He finished residency at Mayo Clinic
                         College of Medicine, Rochester, MN, where he obtained a Masters’ degree in Clinical Research,

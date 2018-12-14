@@ -170,7 +170,7 @@ class TopBar extends React.Component {
                                     {!this.state.hamburgerDropdown1 ?
                                         <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
                                             <div className="hamburgerMenuInnerDiv"> 
-                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors </Link>
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> About Us </Link>
                                                 <div className="hamburgerMenuTriangle"> ▼ </div>
                                             </div>
                                         </div> 
@@ -178,7 +178,7 @@ class TopBar extends React.Component {
 
                                         <div className="hamburgerMenuDropdown" onClick={()=> this.toggle("hamburgerDropdown1")}>
                                             <div className="hamburgerMenuInnerDiv"> 
-                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> Our Doctors </Link>
+                                                <Link className="hamburgerMenuLink" onClick={()=>this.toggleMobile()} to="/AboutUs"> About Us </Link>
                                                 <div className="hamburgerMenuTriangle"> ▲ </div>
                                             </div>
                                             <Fade right>
@@ -231,7 +231,7 @@ class TopBar extends React.Component {
                                     <br/>
                                     <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/Location"> Location </Link>
                                     <br/>
-                                    <a className="hamburgerMenuLink" href="https://www.google.com"> Las Vegas Gastroenterology </a>
+                                    {/* <a className="hamburgerMenuLink" href="https://www.google.com"> Las Vegas Gastroenterology </a> */}
                                 </div>
                             </div>
                         </Fade>

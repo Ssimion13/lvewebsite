@@ -9,7 +9,7 @@ const Footer = function(){
     function backToTop() {
         window.scrollTo(0, 0)
     }
-    const icons = window.innerWidth > 800 ? "2x" : "1x";
+    const icons = window.innerWidth > 600 ? "5x" : "2x";
         return (
             <div className="footerMain">
                 <div className="footerDiv">

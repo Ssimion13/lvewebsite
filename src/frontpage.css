@@ -12,7 +12,7 @@
 
   .background-video {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     object-fit: fill;
   }
   .videoButtonDiv {
@@ -58,7 +58,10 @@
     margin-top: 100px; */
     margin-top: 140px;
     height: 400px;
-    width: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .centerAlignerText {
@@ -150,8 +153,8 @@
     align-items: center;
   }
   .feeSectionText {
-    width: 50%;
-    font-size: 20px;
+    width: 80%;
+    font-size: 18px;
   }
   
   
@@ -205,7 +208,7 @@
   
   .whyChooseLVECarouselImage {
     width: 100% !important;
-    height: 350px !important;
+    height: 400px !important;
 
   }
   .whyChooseLVECarouselHolder {
@@ -659,12 +662,13 @@
   @media (min-width: 650px){
 
     .background-video {
-      height: 85vh;
+      height: 65vh;
       width: 75vw;
     }
     .frontPageVideo {
       /* height: 85vh; */
       height: 75vh;
+      width: 95%;
     }
     .videoButtonDiv {
       transform: translateY(50px) !important;
@@ -674,11 +678,32 @@
     .drFajardoFrontPicture {
       width: 50%;
     }
+    .whyChooseLVECarouselImage {
+      height: 70vh !important;
+    }
+    .whyChooseLVECarousel {
+      display: inline;
+    }
+    .socialMediaDiv {
+      height: 550px;
+    }
+    .socialMediaTitle {
+      font-size: 55px;
+    }
+    .frontPageHeadingText {
+      text-align: center;
+      font-size: 28px;
+    }
+    .buttonHeading {
+      font-size: 40px;
+    }
   }
 
-  @media (min-width: 650px){
+  @media (min-width: 800px){
 /* frontPage CSS */
-
+  .buttonHeading {
+    font-size: 45px;
+  }
   .title {
     text-align: center;
     margin-bottom: 15px;
@@ -743,12 +768,10 @@
   }
 
   .whyChooseLVECarousel {
-    width: 75% !important;
-    display: inline;
   }
   
   .whyChooseLVECarouselHolder {
-    height: 650px;
+    padding-top: 30px;
   }
 
   .carousel-caption {
@@ -771,15 +794,14 @@
   }
 
   .whyChooseLVECarouselImage {
-    height: 90vh !important; 
-    width: 75vw !important;
+    width: 30vw !important;
+  }
+  .widescreen {
+    width: 50vw !important;
   }
 
 
-  .frontPageHeadingText {
-    text-align: center;
-    font-size: 35px;
-  }
+
 
   .frontPageServicesMain {
     padding-top: 60px;
@@ -787,7 +809,9 @@
     height: 1100px;
   }
 
-
+  .socialMediaDiv {
+    width: 75%;
+  }
   /* Fee Section CSS */
   .feeSectionThumbnailDiv {
     height: 550px;
@@ -808,15 +832,10 @@
   }
   .feeSectionText {
     width: 100%;
+    font-size: 28px;
   }
 
-  .socialMediaDiv {
-    width: 70%;
-    height: 550px;
-  }
-  .socialMediaTitle {
-    font-size: 55px;
-  }
+
 
 
   /* End Fee Section CSS */

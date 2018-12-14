@@ -5,10 +5,8 @@ import ORRoom from "../../Images/operatingroom.JPG";
 import nursestation from "../../Images/nursestation.JPG";
 import Fade from "react-reveal/Fade";
 import FeeSection from "./FeeSection";
-import microscope from "../../Images/microscope.jpg";
+// import microscope from "../../Images/microscope.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
 
 
 
@@ -20,7 +18,7 @@ class FrontPage extends Component {
     }
     render(){
         //this variable determines the size of icons based on window size.
-        const icons = window.innerWidth > 800 ? "5x" : "2x";
+        const icons = window.innerWidth > 600 ? "5x" : "2x";
         return(
             <div className="frontPage">
                 <div className="frontPageVideo">
@@ -78,9 +76,7 @@ class FrontPage extends Component {
                 </div>
                 </div>
                 <div className='whyChooseLVECarouselHolder'> 
-                    <div className="whyChooseLVECarousel">
                         <WhyChooseLVECarousel />
-                    </div>
                 </div>
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>

@@ -227,6 +227,13 @@
   }
 /* End Bottom Buttons */
 
+@media (min-width: 600px){
+  .hamburgerMenuLink {
+    font-size: 26px;
+  }
+}
+
+
 @media (min-width: 850px){
     /* topbar css */
     .topbarEmptyLeft {

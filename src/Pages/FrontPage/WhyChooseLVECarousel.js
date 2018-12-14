@@ -10,29 +10,33 @@ import {
 // import DoctorLaptop from "../../Images/doctorlaptop.jpg"
 import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
 import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
-import doctorinor2 from "../../Images/doctorinor2.JPG"
-import procedure from "../../Images/procedure.png"
-import lvg11 from "../../Images/LVG 11.jpg"
+import lvg11 from "../../Images/LVG 11.jpg";
+import lvg28 from "../../Images/LVG 28.jpg";
+import lvg52 from "../../Images/LVG 52.jpg";
+
 
 const items = [
   {
     src: cremoniniScrubs,
-    caption: ""
-  },
-  {
-    src: doctorinor2
-  },
-  {
-    src: lvgColonWarning,
-    caption: ""
-  },
-  {
-    src: procedure,
-    caption: ""
+    caption: "",
+    widescreen: true
   },
   {
     src: lvg11,
-    caption: ""
+    widescreen: false
+  },
+  {
+    src: lvgColonWarning,
+    caption: "",
+    widescreen: true
+  },
+  {
+    src: lvg28,
+    caption: false
+  },
+  {
+    src: lvg52,
+    caption: false
   }
 ];
 
@@ -83,13 +87,13 @@ class WhyChooseLVECarousel extends Component {
           key={item.src}
           tag="div"
         >
-          <img src={item.src} className="whyChooseLVECarouselImage" alt={item.altText} />
-          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+          <img src={item.src} className={item.widescreen ? "whyChooseLVECarouselImage widescreen" : "whyChooseLVECarouselImage"} alt={item.altText} />
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption}  /> */}
         </CarouselItem>
       );
     });
     return (
-      <div>
+      <div className="whyChooseLVECarousel">
       <Carousel
         activeIndex={activeIndex}
         next={this.next}
