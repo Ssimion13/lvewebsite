@@ -66,10 +66,19 @@
     font-size: 22px;
     padding-left: 15px;
   }
+  .hamburgerMenuLinkInner {
+    color: white !important;
+    font-size: 22px;
+    padding-left: 15px;
+    display: inline-block;
+    width: 100%;
+  }
   .hamburgerMenuTriangle {
     color: white;
     font-size: 16px;
     padding-right: 22px;
+  }
+  .activeHamburgerMenu {
   }
   .hamburgerMenuInnerDiv {
     display: flex;

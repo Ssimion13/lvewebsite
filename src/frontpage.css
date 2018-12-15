@@ -623,7 +623,7 @@
 }
 
 .servicesButton {
-  width: 90%;
+  width: 80%;
   height: 300px;
   color: white;
   font-family: 'Gill Sans MT', sans-serif !important;
@@ -683,6 +683,8 @@
     }
     .whyChooseLVECarousel {
       display: inline;
+      width: 50%;
+      background-color: white;
     }
     .socialMediaDiv {
       height: 550px;
@@ -745,7 +747,10 @@
 
   .servicesButton {
     height: 100%;
-    width: 85%;
+    width: 50%;
+  }
+  .frontPageButtonInfo {
+    font-size: 35px;
   }
 
 
@@ -794,7 +799,7 @@
   }
 
   .whyChooseLVECarouselImage {
-    width: 30vw !important;
+    width: 100% !important;
   }
   .widescreen {
     width: 50vw !important;
@@ -828,11 +833,17 @@
     height: 100%;
   }
   .feeSectionTextOverlay {
-    width: 50%;
+    width: 75%;
   }
   .feeSectionText {
     width: 100%;
     font-size: 28px;
+  }
+  .feeSectionHeading {
+    font-size: 50px;
+  }
+  .feeSectionButtonInfo {
+    font-size: 30px;
   }
 
 

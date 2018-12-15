@@ -14,6 +14,10 @@ class Location extends Component{
     render(){
         return(
             <div className="contactMain">
+            <div className="blockBar">
+                <h1 className="blockHeader"> Location </h1>
+            </div>
+
             <div className="contactTextContent">
                 {/* <div className="contactNavbar">
                     <Link className="contactButton" to="/"> Home </Link>

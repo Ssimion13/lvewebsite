@@ -29,6 +29,10 @@ p {
 }
 
 /* Misc */
+
+.fullwidth {
+  width: 100%;
+}
 .indented {
   text-indent: 20px;
 }
@@ -413,7 +417,7 @@ p {
   }
   .serviceDescriptionImage {
     padding-top: 30px;
-    height: 300px;
+    height: auto;
     width: 95%;
   }
 
@@ -770,6 +774,7 @@ p {
   }
   .sectionPicture {
     width: 70%;
+    height: auto;
   }
 
   .sidePageVideoDiv {

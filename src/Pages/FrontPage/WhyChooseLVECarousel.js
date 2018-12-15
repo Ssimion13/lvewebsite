@@ -10,9 +10,7 @@ import {
 // import DoctorLaptop from "../../Images/doctorlaptop.jpg"
 import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
 import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
-import lvg11 from "../../Images/LVG 11.jpg";
-import lvg28 from "../../Images/LVG 28.jpg";
-import lvg52 from "../../Images/LVG 52.jpg";
+import starwars from "../../Images/darkside.jpg"
 
 
 const items = [
@@ -22,21 +20,14 @@ const items = [
     widescreen: true
   },
   {
-    src: lvg11,
-    widescreen: false
-  },
-  {
     src: lvgColonWarning,
     caption: "",
     widescreen: true
   },
   {
-    src: lvg28,
-    caption: false
-  },
-  {
-    src: lvg52,
-    caption: false
+    src: starwars,
+    caption: "",
+    widescreen: false,
   }
 ];
 

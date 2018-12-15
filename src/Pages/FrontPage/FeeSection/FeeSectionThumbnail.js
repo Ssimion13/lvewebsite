@@ -44,12 +44,11 @@ class FeeSectionThumbnail extends Component {
         );
       }
       mouseClick(){
+        window.scrollBy(0,1)
         if(!this.state.hover){
           this.setState({hover: true,
             styles: {
               backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
-              transitionDuration: "0.45s",
-              transitionTimingFunction: "ease-out"
             }}
           );
         } else {
@@ -66,8 +65,7 @@ class FeeSectionThumbnail extends Component {
   
     render() {
       return (
-        
-          <div className="feeSectionButton fade"  style={this.state.styles} onClick={this.mouseClick} onMouseEnter={this.mouseOver.bind(this)} onMouseLeave={this.mouseOut.bind(this)}>
+          <div className="feeSectionButton"  style={this.state.styles} onClick={this.mouseClick}>
             {this.state.hover ? (
               <Flip top>
                 <div className="feeSectionImageOverlay" > 

@@ -46,12 +46,11 @@ class FrontPageService extends Component {
       }
 
       mouseClick(){
+        window.scrollBy(0,1)
         if(!this.state.hover){
           this.setState({hover: true,
             styles: {
               backgroundImage: "linear-gradient(to top right, rgb(48,48,48), black)",
-              transitionDuration: "0.45s",
-              transitionTimingFunction: "ease-out"
             }}
           );
         } else {

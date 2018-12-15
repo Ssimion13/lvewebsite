@@ -5,6 +5,7 @@ import ordoors from "../../../Images/ordoors.jpg"
 import procedure from "../../../Images/procedure.png";
 import ourwork from "../../../Images/ourwork.jpg";
 import friendlynurse from "../../../Images/friendlyNurse.png"
+import laboratory from "../../../Images/microscope.jpg"
 
 
 const items = [

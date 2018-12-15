@@ -183,9 +183,9 @@ class TopBar extends React.Component {
                                             </div>
                                             <Fade right>
                                                 <div className="activeHamburgerMenu">
-                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/DrFajardo"> Dr. Fajardo </Link>
+                                                    <Link className="hamburgerMenuLinkInner" onClick={()=> this.toggleMobile()} to="/DrFajardo"> Dr. Fajardo </Link>
                                                     <br/>
-                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/DrCremonini">Dr. Cremonini </Link> 
+                                                    <Link className="hamburgerMenuLinkInner" onClick={()=> this.toggleMobile()} to="/DrCremonini">Dr. Cremonini </Link> 
                                                 </div>
                                             </Fade>
                                         </div>
@@ -209,9 +209,9 @@ class TopBar extends React.Component {
                                             
                                             <Fade right>
                                                 <div className="activeHamburgerMenu">
-                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/ColonoscopyCancerScreening"> Colonoscopy </Link>
+                                                    <Link className="hamburgerMenuLinkInner" onClick={()=> this.toggleMobile()} to="/ColonoscopyCancerScreening"> Colonoscopy </Link>
                                                     <br/>
-                                                    <Link className="hamburgerMenuLink" onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
+                                                    <Link className="hamburgerMenuLinkInner" onClick={()=> this.toggleMobile()} to="/UpperEndoscopy">Upper Endoscopy </Link> 
                                                     <br/>
 
                                                     {/* pulling these out for use in the LVG website
