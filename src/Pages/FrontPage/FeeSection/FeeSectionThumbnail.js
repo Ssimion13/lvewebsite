@@ -44,7 +44,7 @@ class FeeSectionThumbnail extends Component {
         );
       }
       mouseClick(){
-        window.scrollBy(0,1)
+
         if(!this.state.hover){
           this.setState({hover: true,
             styles: {
@@ -61,6 +61,7 @@ class FeeSectionThumbnail extends Component {
             }
           });
         }
+        window.scrollBy(0,1)
       }
   
     render() {
@@ -88,7 +89,7 @@ class FeeSectionThumbnail extends Component {
             ) : 
             <div className="feeSectionImageOverlay overlay">
               <Flip top>
-              <h3 className="buttonHeading"> <b> {this.props.heading} </b> </h3>
+              <h3 className="buttonHeading unselectable"> <b> {this.props.heading} </b> </h3>
               <h4> {this.props.frontText} </h4>
               </Flip>
             </div>}  

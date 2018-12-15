@@ -46,7 +46,7 @@ class FrontPageService extends Component {
       }
 
       mouseClick(){
-        window.scrollBy(0,1)
+        window.scrollBy(0,2)
         if(!this.state.hover){
           this.setState({hover: true,
             styles: {
@@ -63,6 +63,7 @@ class FrontPageService extends Component {
             }
           });
         }
+        window.scrollBy(0,1)
       }
   
     render() {
@@ -74,9 +75,9 @@ class FrontPageService extends Component {
                 <Flip top>
                   <div className="feeSectionTextOverlay">
                     {window.innerWidth > 800 ?
-                      <h3 className="feeSectionHeading"> <b> {this.props.heading} </b> </h3>
+                      <h3 className="feeSectionHeading unselectable"> <b> {this.props.heading} </b> </h3>
                       :
-                      <h3 className="feeSectionHeading"> <b> {this.props.heading} </b></h3>
+                      <h3 className="feeSectionHeading unselectable"> <b> {this.props.heading} </b></h3>
                     }
                     <h4 className="frontPageButtonInfo"> {this.props.info}</h4>
                     {this.props.linkTarget && this.state.hover ? 
@@ -93,21 +94,21 @@ class FrontPageService extends Component {
             
             {window.innerWidth > 800 ?
               <Flip top>
-                <h1 className="buttonHeading"> <b> {this.props.heading} </b> </h1>
+                <h1 className="buttonHeading unselectable"> <b> {this.props.heading} </b> </h1>
               </Flip>
                 :
               <Flip top>
-                <h4 className="buttonHeading"> <b> {this.props.heading} </b></h4>
+                <h4 className="buttonHeading unselectable"> <b> {this.props.heading} </b></h4>
               </Flip>
             }
             
             {window.innerWidth > 800 ?
               <Flip top>
-                <h4 className="buttonHeading"> {this.props.frontText} </h4>
+                <h4 className="buttonHeading unselectable"> {this.props.frontText} </h4>
               </Flip>
               :
               <Flip top>
-                <h6 className="buttonHeading"> {this.props.frontText} </h6>
+                <h6 className="buttonHeading unselectable"> {this.props.frontText} </h6>
               </Flip>
             }
             </div>

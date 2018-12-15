@@ -37,6 +37,13 @@ const items = [
         img: ordoors,
         link: "/error"
     },
+    {
+        number: 5,
+        heading: "Laboratory",
+        text: "Our in-house laboratory allows us to quickly process and analyze any samples we take during procedures.",
+        img: laboratory,
+        link: "/error"
+    }
   ];
 
 
@@ -95,7 +102,7 @@ class FeeSection extends Component {
                 <button className="leftButton" onClick={()=>{this.currentSectionCheck("-")}}> ◀ </button>
             </Fade>
             : null }
-            {this.state.lastSection !== 5 && window.innerWidth > 800   ?
+            {this.state.lastSection !== 6 && window.innerWidth > 800   ?
             <Fade right> 
                 <button  className="rightButton" onClick={()=>{this.currentSectionCheck("+")}}> ▶ </button> 
             </Fade>
@@ -110,7 +117,7 @@ class FeeSection extends Component {
 
             {renderedSections}
 
-            {this.state.lastSection !== 5 && window.innerWidth < 800   ?
+            {this.state.lastSection !== 6 && window.innerWidth < 800   ?
             <Fade bottom> 
                 <button  className="bottomButton" onClick={()=>{this.currentSectionCheck("+")}}> ▼ </button> 
             </Fade>
