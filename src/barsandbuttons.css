@@ -127,7 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor:pointer
+    cursor: pointer;
   }
 
   .hamburgerMenuButton {
@@ -315,3 +315,8 @@
   } */
 }
 
+@media (min-width: 300px) {
+  .hamburgerMenuLink {
+    font-size: 20px;
+  }
+}

@@ -10,24 +10,21 @@ import {
 // import DoctorLaptop from "../../Images/doctorlaptop.jpg"
 import cremoniniScrubs from "../../Images/cremoniniscrubs.png"
 import lvgColonWarning from "../../Images/lvgcolonwarning.jpg"
-import starwars from "../../Images/darkside.jpg"
+import setuproom from "../../Images/setuproom.png"
 
 
 const items = [
   {
     src: cremoniniScrubs,
     caption: "",
-    widescreen: true
   },
   {
     src: lvgColonWarning,
     caption: "",
-    widescreen: true
   },
   {
-    src: starwars,
-    caption: "",
-    widescreen: false,
+    src: setuproom,
+    caption: ""
   }
 ];
 
@@ -78,7 +75,7 @@ class WhyChooseLVECarousel extends Component {
           key={item.src}
           tag="div"
         >
-          <img src={item.src} className={item.widescreen ? "whyChooseLVECarouselImage widescreen" : "whyChooseLVECarouselImage"} alt={item.altText} />
+          <img src={item.src} className={"whyChooseLVECarouselImage"} alt={item.altText} />
           {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption}  /> */}
         </CarouselItem>
       );
@@ -89,11 +86,12 @@ class WhyChooseLVECarousel extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        interval={300000}
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} className="unselectable" />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} className="unselectable"/>
       </Carousel>
       </div>
     );

@@ -130,7 +130,7 @@
     justify-content: center;
     text-align: center;
     box-shadow: 5px 5px 5px grey;
-    cursor:pointer
+    cursor: pointer;
   }
   
   .feeSectionButton::before {
@@ -225,6 +225,9 @@
   }
   .carousel-inner {
     /*IPHONES AND SAFARI WHY */
+    height: 100% !important;
+  }
+  .carousel {
     height: 100% !important;
   }
   .custom-tag {
@@ -634,6 +637,7 @@
   justify-content: center;
   text-align: center;
   box-shadow: 10px 10px 10px grey;
+  cursor: pointer;
 }
 
 .servicesButton::before {
@@ -647,6 +651,7 @@
   position: absolute;
   z-index: -1;   
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .topService {

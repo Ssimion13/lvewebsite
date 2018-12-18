@@ -156,7 +156,7 @@ class TopBar extends React.Component {
                  <div >
                     <Dropdown  isOpen={this.state.dropdownOpen} toggle={this.toggleMobile}>
                         <DropdownToggle className="hamburgerButton" >
-                            <div> ≡ </div>
+                            <div className="unselectable"> ≡ </div>
                         </DropdownToggle>
                         {this.state.mobileMenuOpen ? 
                         <Fade bottom>

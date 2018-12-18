@@ -75,9 +75,12 @@ class FrontPage extends Component {
                     </Fade> */}
                 </div>
                 </div>
+                {window.innerWidth > 800 ? 
                 <div className='whyChooseLVECarouselHolder'> 
                         <WhyChooseLVECarousel />
                 </div>
+                : null 
+                }
                 <div className="blockBar">
                     <h1 className="blockHeader"> Why Las Vegas Endoscopy? </h1>
                 </div>

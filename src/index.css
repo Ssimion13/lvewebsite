@@ -720,11 +720,11 @@ p {
     }
     .footerThumbnailHolder {
       justify-content: center;
-      width: 33%;
+      width: 50%;
     }
     .footerThumbnailDiv {
       margin-right: 20px;
-      
+      padding: 20px;
     }
 
     /* end footer */

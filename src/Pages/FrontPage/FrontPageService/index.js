@@ -79,7 +79,7 @@ class FrontPageService extends Component {
                       :
                       <h3 className="feeSectionHeading unselectable"> <b> {this.props.heading} </b></h3>
                     }
-                    <h4 className="frontPageButtonInfo"> {this.props.info}</h4>
+                    <h4 className="frontPageButtonInfo unselectable"> {this.props.info}</h4>
                     {this.props.linkTarget && this.state.hover ? 
                     <Link to={this.props.linkTarget}>  
                     <Button> Learn More </Button>

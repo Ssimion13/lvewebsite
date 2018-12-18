@@ -68,15 +68,22 @@ class FeeSectionThumbnail extends Component {
       return (
           <div className="feeSectionButton"  style={this.state.styles} onClick={this.mouseClick}>
             {this.state.hover ? (
-              <Flip top>
                 <div className="feeSectionImageOverlay" > 
                 <div className="feeSectionTextOverlay">
                   {window.innerWidth > 800 ?
-                  <h3 className="feeSectionText"><b> {this.props.text} </b></h3>
+                  <Flip top>
+                    <h3 className="feeSectionText unselectable"><b> {this.props.text} </b></h3>
+                  </Flip>
                   : 
-                  <p className="feeSectionText" ><b> {this.props.text} </b></p>
+                  <p className="feeSectionText unselectable" ><b> {this.props.text} </b></p>
                   }
-                  <h5> {this.props.info}</h5>
+                  {window.innerWidth > 800 ?
+                  <Flip top>
+                    <h5> {this.props.info}</h5>
+                  </Flip>
+                  : 
+                  <h5> {this.props.info} </h5>
+                  }
                   {this.props.link !== "/error" ?
                     <Link to={this.props.link || "error"}> 
                     <Button> Learn More </Button>
@@ -85,13 +92,10 @@ class FeeSectionThumbnail extends Component {
                   }
                 </div>
               </div>
-            </Flip>
             ) : 
             <div className="feeSectionImageOverlay overlay">
-              <Flip top>
               <h3 className="buttonHeading unselectable"> <b> {this.props.heading} </b> </h3>
-              <h4> {this.props.frontText} </h4>
-              </Flip>
+              <h4 className="unselectable"> {this.props.frontText} </h4>
             </div>}  
           </div>
       );
